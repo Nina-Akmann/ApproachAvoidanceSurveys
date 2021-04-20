@@ -12,7 +12,7 @@ navbar:
   - text: Test
     href: test.html
   - text: Codebook STAI
-    href: Codebook STAI.html
+    href: Codebook_STAI.html
   right:
   - icon: fa-github
     text: Source code
