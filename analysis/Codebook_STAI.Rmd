@@ -1,0 +1,121 @@
+---
+title: "Codebook STAI"
+author: "Nina Akmann"
+date: "08 4 2021"
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+    toc_float: true
+    code_folding: 'show'
+    self_contained: true
+  pdf_document:
+    toc: yes
+    toc_depth: 4
+    latex_engine: xelatex
+---
+
+```{r chunk-options,include = FALSE}
+knitr::opts_chunk$set(
+  warning = FALSE, # show warnings during codebook generation
+  message = FALSE, # show messages during codebook generation
+  error = TRUE, # do not interrupt codebook generation in case of errors,
+                # usually better for debugging
+  echo = TRUE  # show R code
+)
+ggplot2::theme_set(ggplot2::theme_bw())
+
+```
+
+## Load packages
+```{r setup}
+library(codebook) # for creating the codebook
+library(here)     # for relative paths 
+library(labelled) # for labelling variables and values 
+library(dplyr)    # for data manipulation
+library(ltm)      # for computing Cronbachs alpha 
+```
+
+## Load data
+```{r load-data}
+load(here("data/data_survey.Rda"))
+```
+
+## Subset relevant columns
+```{r subset-relevant-columns}
+#subset relevant columns
+STAI = data_survey2[8:27] 
+```
+
+## Label items
+```{r label-items}
+# add names to items 
+var_label(STAI) <- list(
+  Ich.bin.vergnügt. = "Ich bin vergnügt.", 
+  Ich.werde.schnell.müde. = "Ich werde schnell müde.",
+  Mir.ist.zum.Weinen.zumute. = "Mir ist zum Weinen zumute.",
+  Ich.glaube..mir.geht.es.schlechter.als.anderen.Leuten. = "Ich glaube, mir geht es schlechter als anderen Leuten.",
+  Ich.verpasse.günstige.Gelegenheiten..weil.ich.mich.nicht.schnell.genug.entscheiden.kann. = "Ich verpasse günstige Gelegenheiten, weil ich mich nicht schnell genug entscheiden kann.",
+  Ich.fühle.mich.ausgeruht. = "Ich fühle mich ausgeruht.", 
+  Ich.bin.ruhig.und.gelassen. = "Ich bin ruhig und gelassen.",
+  Ich.glaube..dass.mir.meine.Schwierigkeiten.über.den.Kopf.wachsen.= "Ich glaube, dass mir meine Schwierigkeiten über den Kopf wachsen.", 
+  Ich.mache.mir.zuviel.Gedanken.über.unwichtige.Dinge. = "Ich mache mir zuviel Gedanken über unwichtige Dinge.", 
+  Ich.bin.glücklich. = "Ich bin glücklich.",
+  Ich.neige.dazu..alles.schwer.zu.nehmen. = "Ich neige dazu, alles schwer zu nehmen.", 
+  Mir.fehlt.es.an.Selbstvertrauen. = "Mir fehlt es an Selbstvertrauen.",
+  Ich.fühle.mich.geborgen. = "Ich fühle mich geborgen.", 
+  Ich.mache.mir.Sorgen.über.mögliches.Missgeschick. = "Ich mache mir Sorgen über mögliches Missgeschick.", 
+  Ich.fühle.mich.niedergeschlagen. = "Ich fühle mich niedergeschlagen.",
+Ich.bin.zufrieden. = "Ich bin zufrieden.", 
+  Unwichtige.Gedanken.gehen.mir.durch.den.Kopf.und.bedrücken.mich. = "Unwichtige Gedanken gehen mir durch den Kopf und bedrücken mich.", 
+  Enttäuschungen.nehme.ich.so.schwer..dass.ich.sie.nicht.vergessen.kann. = "Enttäuschungen nehme ich so schwer, dass ich sie nicht vergessen kann.", 
+  Ich.bin.ausgeglichen. = "Ich bin ausgeglichen", 
+  Ich.werde.nervös.und.unruhig..wenn.ich.an.meine.derzeitigen.Angelegenheiten.denke. = "Ich werde nervös und unruhig, wenn ich an meine derzeitigen Angelegenheiten denke."
+)
+```
+
+## Label Likert items' values 
+```{r label}
+# create function to add likert labels 
+add_likert_labels <- function(x) {
+ val_labels(x) <- c("fast nie" = 1,
+ "manchmal" = 2,
+ "oft" = 3,
+ "fast immer" = 4) # change to correct labels 
+ x
+}
+
+# change data format to apply mutate_all
+STAI_tbl <- tibble::as_tibble(STAI)
+
+# use function for all Likert-items
+STAI =  mutate_all(STAI_tbl, 
+add_likert_labels)
+```
+
+## Rename reversed items 
+```{r rename-reversed-items}
+STAI <- STAI %>%
+ rename_at(vars(1,6,7,10,13,16,19), add_R) # add R to reverse items' names 
+```
+
+## Reverse labelled values
+```{r reverse-values}
+STAI <- STAI %>% 
+  mutate_at(vars(1,6,7,10,13,16,19), 
+  reverse_labelled_values) 
+# reverse the underlying values while keeping the values labels right
+```
+
+## Compute Cronbachs alpha 
+```{r reliabilities}
+cronbach.alpha(STAI, standardized = TRUE, na.rm = TRUE)
+```
+
+## Create codebook
+```{r codebook}
+codebook(STAI)
+```
+
+
+
