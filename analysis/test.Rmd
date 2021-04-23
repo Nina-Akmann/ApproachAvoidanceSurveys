@@ -8,7 +8,7 @@ editor_options:
 ---
 
 ## Introduction
-My name is Nina and I like sunny days and I cant open this file....Maybe I'm stupid.
+My name is Nina and I like sunny days.
 ```{r}
 
 ```
