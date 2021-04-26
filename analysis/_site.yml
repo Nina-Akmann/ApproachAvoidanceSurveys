@@ -11,8 +11,8 @@ navbar:
     href: license.html
   - text: Test
     href: test.html
-  - text: Codebook STAI
-    href: Codebook_STAI.html
+  - text: Codebooks
+    href: Codebooks.html
   right:
   - icon: fa-github
     text: Source code
