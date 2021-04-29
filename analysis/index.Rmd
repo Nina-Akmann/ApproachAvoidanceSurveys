@@ -24,6 +24,6 @@ One of the most important advantages, which will be discussed in more detail her
 
 
 
-For more information about our project and applications please visit "ABOUT".
+***For more information about our project and applications please visit [ABOUT](about.html).***
 
 
