@@ -13,7 +13,6 @@
 
 <title>Home</title>
 
-<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
@@ -42,8 +41,6 @@ div.section {
   padding-top: 12px;
 }
 </style>
-
-
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -291,7 +288,7 @@ $(document).ready(function () {
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -300,7 +297,7 @@ $(document).ready(function () {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -312,7 +309,7 @@ $(document).ready(function () {
 <strong>Last updated:</strong> 2021-04-29
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 1 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
 </p>
 <p>
 <strong>Knit directory:</strong> <code>ApproachAvoidanceSurveys/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -328,28 +325,28 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted changes </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
 <div class="panel-body">
-<p>The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
+<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
 </div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystreea05202ea4c9f3c42caebaabe513d44c90dc90ad2targetblanka05202ea"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/a05202ea4c9f3c42caebaabe513d44c90dc90ad2" target="_blank">a05202e</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystree2a436ee1169a1761a93239c8437a1a2ee5dcaabctargetblank2a436eea"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/2a436ee1169a1761a93239c8437a1a2ee5dcaabc" target="_blank">2a436ee</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystreea05202ea4c9f3c42caebaabe513d44c90dc90ad2targetblanka05202ea" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystree2a436ee1169a1761a93239c8437a1a2ee5dcaabctargetblank2a436eea" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/a05202ea4c9f3c42caebaabe513d44c90dc90ad2" target="_blank">a05202e</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/2a436ee1169a1761a93239c8437a1a2ee5dcaabc" target="_blank">2a436ee</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -358,13 +355,6 @@ Note that you need to be careful to ensure that all relevant files for the analy
 Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
-
-Untracked files:
-    Untracked:  data/data_survey.Rda
-
-Unstaged changes:
-    Modified:   analysis/index.Rmd
-    Modified:   analysis/style.css
 
 </code></pre>
 <p>
@@ -405,10 +395,61 @@ Message
 <tbody>
 <tr>
 <td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/2a436ee1169a1761a93239c8437a1a2ee5dcaabc/analysis/index.Rmd" target="_blank">2a436ee</a>
+</td>
+<td>
+Nina-Akmann
+</td>
+<td>
+2021-04-29
+</td>
+<td>
+adding link
+</td>
+</tr>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/8d767fc1f5d58c012fd76d4ea3d800299195e883/analysis/index.Rmd" target="_blank">8d767fc</a>
+</td>
+<td>
+psychub
+</td>
+<td>
+2021-04-29
+</td>
+<td>
+fix # 7
+</td>
+</tr>
+<tr>
+<td>
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/a05202ea4c9f3c42caebaabe513d44c90dc90ad2/docs/index.html" target="_blank">a05202e</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/8d767fc1f5d58c012fd76d4ea3d800299195e883/docs/index.html" target="_blank">8d767fc</a>
+</td>
+<td>
+psychub
+</td>
+<td>
+2021-04-29
+</td>
+<td>
+fix # 7
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/a05202ea4c9f3c42caebaabe513d44c90dc90ad2/docs/index.html" target="_blank">a05202e</a>
 </td>
 <td>
 psychub
@@ -425,7 +466,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/6884916b8a5e0fd91cc6fa6b39dc979f9296b870/docs/index.html" target="_blank">6884916</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/6884916b8a5e0fd91cc6fa6b39dc979f9296b870/docs/index.html" target="_blank">6884916</a>
 </td>
 <td>
 psychub
@@ -442,7 +483,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/06596c2c1b3958c4f009fad219a0eaf1c66169b2/docs/index.html" target="_blank">06596c2</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/06596c2c1b3958c4f009fad219a0eaf1c66169b2/docs/index.html" target="_blank">06596c2</a>
 </td>
 <td>
 psychub
@@ -459,7 +500,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/09952aba27ab8c9b7273ca05ddf6112f9df531d3/docs/index.html" target="_blank">09952ab</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/09952aba27ab8c9b7273ca05ddf6112f9df531d3/docs/index.html" target="_blank">09952ab</a>
 </td>
 <td>
 psychub
@@ -476,7 +517,7 @@ Build site.
 Rmd
 </td>
 <td>
-<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/d481b06f5b81859186ca34444107c5dd7e3504e3/analysis/index.Rmd" target="_blank">d481b06</a>
+<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/d481b06f5b81859186ca34444107c5dd7e3504e3/analysis/index.Rmd" target="_blank">d481b06</a>
 </td>
 <td>
 psychub
@@ -493,7 +534,7 @@ added VR text
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/0044963a71335106c14693f8fccfa406fcef8643/docs/index.html" target="_blank">0044963</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/0044963a71335106c14693f8fccfa406fcef8643/docs/index.html" target="_blank">0044963</a>
 </td>
 <td>
 psychub
@@ -510,7 +551,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/4ebd3dae0df40be9f649ae6d352e8aa27a19ea36/docs/index.html" target="_blank">4ebd3da</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/4ebd3dae0df40be9f649ae6d352e8aa27a19ea36/docs/index.html" target="_blank">4ebd3da</a>
 </td>
 <td>
 psychub
@@ -527,7 +568,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/fe86228681e429348ef0cd4f22b104e337527807/docs/index.html" target="_blank">fe86228</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/fe86228681e429348ef0cd4f22b104e337527807/docs/index.html" target="_blank">fe86228</a>
 </td>
 <td>
 psychub
@@ -544,7 +585,7 @@ blablabla
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/7d986f9b63378e0bff35754f7f3cad143cd3919c/docs/index.html" target="_blank">7d986f9</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/7d986f9b63378e0bff35754f7f3cad143cd3919c/docs/index.html" target="_blank">7d986f9</a>
 </td>
 <td>
 Nina-Akmann
@@ -561,7 +602,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/1f17fa8dc739dfdc6518b50ac7abfae7743dee66/docs/index.html" target="_blank">1f17fa8</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/1f17fa8dc739dfdc6518b50ac7abfae7743dee66/docs/index.html" target="_blank">1f17fa8</a>
 </td>
 <td>
 Nina-Akmann
@@ -578,7 +619,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/4bb86bd47e1654eff9904dc2d71ac8e26bb4734d/docs/index.html" target="_blank">4bb86bd</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/4bb86bd47e1654eff9904dc2d71ac8e26bb4734d/docs/index.html" target="_blank">4bb86bd</a>
 </td>
 <td>
 psychub
@@ -595,7 +636,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/736b020791ac6e9732dd21c0f968a3e1b6170807/docs/index.html" target="_blank">736b020</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/736b020791ac6e9732dd21c0f968a3e1b6170807/docs/index.html" target="_blank">736b020</a>
 </td>
 <td>
 psychub
@@ -612,7 +653,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/188aeaff7a3f04f3957b68fc3b41c7b41e0de5af/docs/index.html" target="_blank">188aeaf</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/188aeaff7a3f04f3957b68fc3b41c7b41e0de5af/docs/index.html" target="_blank">188aeaf</a>
 </td>
 <td>
 Nina-Akmann
@@ -629,7 +670,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/43756ad614554f0ee0ab7e7cf3ce98d1afafd5cd/docs/index.html" target="_blank">43756ad</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/43756ad614554f0ee0ab7e7cf3ce98d1afafd5cd/docs/index.html" target="_blank">43756ad</a>
 </td>
 <td>
 Nina-Akmann
@@ -646,7 +687,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/61bc5395f42d05375d4a1debf1c4aa4ad3a3e3ba/docs/index.html" target="_blank">61bc539</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/61bc5395f42d05375d4a1debf1c4aa4ad3a3e3ba/docs/index.html" target="_blank">61bc539</a>
 </td>
 <td>
 Nina-Akmann
@@ -663,7 +704,7 @@ Build site.
 Rmd
 </td>
 <td>
-<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/b946f3f7da5db3daa644441553acfa8dab12976f/analysis/index.Rmd" target="_blank">b946f3f</a>
+<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/b946f3f7da5db3daa644441553acfa8dab12976f/analysis/index.Rmd" target="_blank">b946f3f</a>
 </td>
 <td>
 Nina-Akmann
@@ -691,7 +732,7 @@ Start workflowr project.
 <div id="what-is-virtual-reality-vr" class="section level3">
 <h3>What is Virtual reality (VR) ?</h3>
 <p>Virtual reality (VR) can be characterized by the following: “Virtual Reality (VR) is a computer-generated reality with images (3D) and, in many cases, sound. It is transmitted via large screens, in special rooms (Cave Automatic Virtual Environment, CAVE for short) or via a head-mounted display (video or VR glasses).” (Bendel, 2018). Here, the illusion of participating in a synthetic environment is created instead of merely observing it from the outside (Earnshaw, 1993). Advantages of VR can already be partly inferred from the definition. For example, the high flexibility in adaptation and controllability of the synthetic and interactive intervention, the relatively low level of therapist involvement required, and the general “low cost” and wide availability make VR an interesting and novel therapeutic option outside of experimental laboratories (Freeman et al., 2017; Riva, 2005). One of the most important advantages, which will be discussed in more detail here and to which this study will contribute, is the synthetic environment. It provides the opportunity to incorporate and directly address social influence and pressure, as well as other environmental influences. Situations can be created, whose real circumstance would be immoral or illegal. In addition to the synthetic world and realistic representation, VR goggles can be used to shield external visual stimuli that can be distracting. The representation of the environment and objects within VR is possible in 3D. A 3D representation provides a more realistic presentation of the objects triggering craving and behavioral tendencies. In terms of implicit cognitions associated with AKS, this could offer a therapeutic advantage. From the combination of VR and different testing paradigms, there is also the advantage, compared to the classical variants, that the playful character of these methods can lead to an increased motivation of the subjects (Mostajeran, Kirsten, Steinicke, Gallinat, &amp; Kuhn, 2019). In psychotherapy, VR has been used primarily in the treatment of anxiety disorders. Among these were promising intervention studies for PTSD (Freeman et al., 2017; Riva, 2005). As described in the previous chapter, comorbid disorders also have an impact on AKS. VR is already used for a wide variety of substance dependencies such as cocaine, tobacco, and alcohol (Durl, Dietrich, Pang, Potter, &amp; Carter, 2018; Ghiţă et al., 2019; Kim &amp; Lee, 2015; Maples-Keller, Bunnell, Kim, &amp; Rothbaum, 2017; Mostajeran et al., 2019; Pericot-Valverde, Secades-Villa, Gutiérrez-Maldonado, &amp; García-Rodríguez, 2014; Saladin, Brady, Graap, &amp; Rothbaum, 2006). Previous studies primarily use cue exposure therapy (CET), focusing primarily on patients’ craving (Hone-Blanchet, Wensing, &amp; Fecteau, 2014; Lee, Kwon, Choi, &amp; Yang, 2007; Pelissolo, Abou Kassm, &amp; Delhay, 2019). However, for alcohol addiction and other substance use disorders, CET showed limited effects. In terms of alcohol use reduction, AAT interventions have shown more promising clinical results than CET (Eberl et al., 2013; Manning et al., 2016; Reinout W. Wiers et al., 2011). If conventional methods targeting craving can be enhanced by VR (Ghiţă &amp; Gutiérrez-Maldonado, 2018), the question is whether adding VR to an Approach Avoidance Training Program (AATP) can increase the effectiveness of this approach. The versatility of its application to a wide variety of disorders also makes VR an interesting therapeutic extension for AKS. Initial studies have already demonstrated potential effects of the Virtual Alcohol AAT (VR-A-AAT) (Kim &amp; Lee, 2015). Simulating a wider range of stimuli and other trigger stimuli , than is otherwise possible in clinical treatment settings (Ghiţă &amp; Gutiérrez-Maldonado, 2018). The research and practice of using meaningful pictorial representations of alcoholic and non-alcoholic beverages in the VR-A-AAT should benefit from this study.</p>
-<p>For more information about our project and applications please visit “ABOUT”.</p>
+<p><strong><em>For more information about our project and applications please visit <a href="about.html">ABOUT</a>.</em></strong></p>
 </div>
 </div>
 
@@ -707,8 +748,6 @@ footer is added to webpages before the MathJax javascript. -->
     "HTML-CSS": { availableFonts: ["TeX"] }
   });
 </script>
-
-
 
 
 
