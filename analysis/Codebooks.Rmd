@@ -1,7 +1,6 @@
 ---
 title: "Codebooks"
 author: "Nina Akmann & Linus Krause"
-date: "2021-04-26"
 output: workflowr::wflow_html
 editor_options:
   chunk_output_type: console

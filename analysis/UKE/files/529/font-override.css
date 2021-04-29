@@ -1,0 +1,122 @@
+/* overriding large font size on header and navigation */
+
+.default-nav > li > a:first-child,
+.default-nav li a {
+	font-size: 110%    !important;
+
+}
+
+
+/* resize line height to keep longer text from becoming invisible */
+.template-department .default-nav > li > a:first-child, .template-department .default-nav li a {
+	line-height: 16px;
+}
+
+/* -------------------------------------------------- 
+   Fact Sheet
+-------------------------------------------------- */
+.accordion {
+    margin: 40px 0px;
+        margin-top: 40px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+        margin-left: 0px;
+    background-color: #004B2C;
+}
+
+.accordion .accordion-heading{
+	background:url(/media/college-of-arts-and-sciences/style-assets/images/accordion_btn_plus.png) no-repeat center right #004b2c
+}
+
+.accordion .accordion-heading.open{
+	background:url(/media/college-of-arts-and-sciences/style-assets/images/accordion_btn_minus.png) no-repeat center right #004b2c
+}
+
+.accordion .accordion-heading a{
+	display:block;
+	padding:20px;
+	text-decoration:none
+}
+
+.accordion .accordion-heading h2{
+	margin:0;
+	padding:20px;
+	color:#fff;
+	font-size:16px;
+	cursor:pointer
+}
+
+.accordion .accordion-heading h2:hover{
+	cursor:pointer
+}
+
+.accordion .accordion-content{
+	display:none;
+	padding:20px;
+	background:#e3e6b2
+}
+
+.accordion .accordion-content li p{
+	margin:0
+}
+
+.accordion .accordion-content li p.last{
+	margin:15px 0
+}
+
+.accordion-content table,.admissions-table tr{
+	background-color:#e3e6b2;
+	color:#2c2a29
+}
+
+.accordion-content table tr:nth-child(1),
+.admissions-table tr:nth-child(1)  {
+	background-color:#a2ad00;
+	color:#fff
+}
+
+.accordion-content table a{
+	color:#2c2a29
+}
+
+.infobox {
+    margin-bottom: 38px;
+    padding: 20px 30px;
+    border-bottom: 5px solid #DC2E00;
+    background: #ED6C05 none repeat scroll 0% 0%;
+    font-color: #ffffff;
+}
+.aside-content-wrap{
+	margin-bottom:38px;
+	background:#e3e6b2
+}
+
+.aside-content-wrap h3{
+	margin:0;
+	padding:15px 30px;
+	background:#a2ad00;
+	color:#fff;
+	font-weight:bold;
+	font-size:20px;
+	font-family:georgia,serif
+}
+
+.aside-content-wrap .aside-content{
+	padding:15px 30px;
+	background:#e3e6b2
+}
+
+.aside-content-wrap .aside-content ul li{
+	color:#2c2a29;
+	font-size:15px;
+	font-family:georgia,serif;
+	line-height:26px
+}
+
+.aside-content-wrap .aside-content a{
+	color:#a2ad00;
+	text-decoration:none;
+	font-size:15px;
+	font-family:georgia,serif;
+	line-height:26px
+}

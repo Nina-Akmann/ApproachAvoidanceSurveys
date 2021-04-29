@@ -9,10 +9,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Nina Akmann &amp; Linus Krause" />
 
 
 <title>About</title>
 
+<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
@@ -42,6 +44,8 @@ div.section {
 }
 </style>
 
+
+
 <style type="text/css">
   code{white-space: pre-wrap;}
   span.smallcaps{font-variant: small-caps;}
@@ -65,6 +69,28 @@ if (window.hljs) {
 
 
 
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -282,13 +308,14 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">About</h1>
+<h4 class="author">Nina Akmann &amp; Linus Krause</h4>
 
 </div>
 
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -297,7 +324,7 @@ $(document).ready(function () {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -309,7 +336,7 @@ $(document).ready(function () {
 <strong>Last updated:</strong> 2021-04-29
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>ApproachAvoidanceSurveys/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -325,28 +352,88 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted changes </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+<p>The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystreed163daeb3aeb3a37a0ee176e7d82526880b5e511targetblankd163daea"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/d163daeb3aeb3a37a0ee176e7d82526880b5e511" target="_blank">d163dae</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongEnvironmentstrongempty"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Environment:</strong> empty </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystreed163daeb3aeb3a37a0ee176e7d82526880b5e511targetblankd163daea" class="panel-collapse collapse">
+<div id="strongEnvironmentstrongempty" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! The global environment was empty. Objects defined in the global environment can affect the analysis in your R Markdown file in unknown ways. For reproduciblity it’s best to always run the code in an empty environment.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSeedstrongcodesetseed20210420code"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Seed:</strong> <code>set.seed(20210420)</code> </a>
+</p>
+</div>
+<div id="strongSeedstrongcodesetseed20210420code" class="panel-collapse collapse">
+<div class="panel-body">
+<p>The command <code>set.seed(20210420)</code> was run prior to running the code in the R Markdown file. Setting a seed ensures that any results that rely on randomness, e.g. subsampling or permutations, are reproducible.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongSessioninformationstrongrecorded"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Session information:</strong> recorded </a>
+</p>
+</div>
+<div id="strongSessioninformationstrongrecorded" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! Recording the operating system, R version, and package versions is critical for reproducibility.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongCachestrongnone"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Cache:</strong> none </a>
+</p>
+</div>
+<div id="strongCachestrongnone" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Nice! There were no cached chunks for this analysis, so you can be confident that you successfully produced the results during this run.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongFilepathsstrongrelative"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>File paths:</strong> relative </a>
+</p>
+</div>
+<div id="strongFilepathsstrongrelative" class="panel-collapse collapse">
+<div class="panel-body">
+<p>Great job! Using relative paths to the files within your workflowr project makes it easier to run your code on other machines.</p>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<p class="panel-title">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystree75ba9c3ccc8b186e5b50a799b5f502a005e044a4targetblank75ba9c3a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/75ba9c3ccc8b186e5b50a799b5f502a005e044a4" target="_blank">75ba9c3</a> </a>
+</p>
+</div>
+<div id="strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystree75ba9c3ccc8b186e5b50a799b5f502a005e044a4targetblank75ba9c3a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/d163daeb3aeb3a37a0ee176e7d82526880b5e511" target="_blank">d163dae</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/75ba9c3ccc8b186e5b50a799b5f502a005e044a4" target="_blank">75ba9c3</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -355,6 +442,19 @@ Note that you need to be careful to ensure that all relevant files for the analy
 Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
+
+Untracked files:
+    Untracked:  analysis/UKE/
+    Untracked:  analysis/images/
+    Untracked:  data/data_survey.Rda
+    Untracked:  images/
+
+Unstaged changes:
+    Modified:   analysis/Codebook_BIS_BAS.Rmd
+    Modified:   analysis/Codebook_IUS.Rmd
+    Modified:   analysis/Codebook_STAI.Rmd
+    Modified:   analysis/Codebooks.Rmd
+    Modified:   analysis/about.Rmd
 
 </code></pre>
 <p>
@@ -398,7 +498,24 @@ Message
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/d343cdba431016ab94e84bb5e234b617d2cd6570/docs/about.html" target="_blank">d343cdb</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/75ba9c3ccc8b186e5b50a799b5f502a005e044a4/docs/about.html" target="_blank">75ba9c3</a>
+</td>
+<td>
+Nina-Akmann
+</td>
+<td>
+2021-04-29
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/d343cdba431016ab94e84bb5e234b617d2cd6570/docs/about.html" target="_blank">d343cdb</a>
 </td>
 <td>
 psychub
@@ -415,7 +532,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/a05202ea4c9f3c42caebaabe513d44c90dc90ad2/docs/about.html" target="_blank">a05202e</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/a05202ea4c9f3c42caebaabe513d44c90dc90ad2/docs/about.html" target="_blank">a05202e</a>
 </td>
 <td>
 psychub
@@ -432,7 +549,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/6884916b8a5e0fd91cc6fa6b39dc979f9296b870/docs/about.html" target="_blank">6884916</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/6884916b8a5e0fd91cc6fa6b39dc979f9296b870/docs/about.html" target="_blank">6884916</a>
 </td>
 <td>
 psychub
@@ -449,7 +566,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/06596c2c1b3958c4f009fad219a0eaf1c66169b2/docs/about.html" target="_blank">06596c2</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/06596c2c1b3958c4f009fad219a0eaf1c66169b2/docs/about.html" target="_blank">06596c2</a>
 </td>
 <td>
 psychub
@@ -466,7 +583,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/0044963a71335106c14693f8fccfa406fcef8643/docs/about.html" target="_blank">0044963</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/0044963a71335106c14693f8fccfa406fcef8643/docs/about.html" target="_blank">0044963</a>
 </td>
 <td>
 psychub
@@ -483,7 +600,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/4ebd3dae0df40be9f649ae6d352e8aa27a19ea36/docs/about.html" target="_blank">4ebd3da</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/4ebd3dae0df40be9f649ae6d352e8aa27a19ea36/docs/about.html" target="_blank">4ebd3da</a>
 </td>
 <td>
 psychub
@@ -500,7 +617,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/fe86228681e429348ef0cd4f22b104e337527807/docs/about.html" target="_blank">fe86228</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/fe86228681e429348ef0cd4f22b104e337527807/docs/about.html" target="_blank">fe86228</a>
 </td>
 <td>
 psychub
@@ -517,7 +634,7 @@ blablabla
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/7d986f9b63378e0bff35754f7f3cad143cd3919c/docs/about.html" target="_blank">7d986f9</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/7d986f9b63378e0bff35754f7f3cad143cd3919c/docs/about.html" target="_blank">7d986f9</a>
 </td>
 <td>
 Nina-Akmann
@@ -534,7 +651,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/1f17fa8dc739dfdc6518b50ac7abfae7743dee66/docs/about.html" target="_blank">1f17fa8</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/1f17fa8dc739dfdc6518b50ac7abfae7743dee66/docs/about.html" target="_blank">1f17fa8</a>
 </td>
 <td>
 Nina-Akmann
@@ -551,7 +668,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/4bb86bd47e1654eff9904dc2d71ac8e26bb4734d/docs/about.html" target="_blank">4bb86bd</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/4bb86bd47e1654eff9904dc2d71ac8e26bb4734d/docs/about.html" target="_blank">4bb86bd</a>
 </td>
 <td>
 psychub
@@ -568,7 +685,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/736b020791ac6e9732dd21c0f968a3e1b6170807/docs/about.html" target="_blank">736b020</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/736b020791ac6e9732dd21c0f968a3e1b6170807/docs/about.html" target="_blank">736b020</a>
 </td>
 <td>
 psychub
@@ -585,7 +702,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/1a83e5f14ce5b9e5912a86d43bf6eabc9d5ab1db/docs/about.html" target="_blank">1a83e5f</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/1a83e5f14ce5b9e5912a86d43bf6eabc9d5ab1db/docs/about.html" target="_blank">1a83e5f</a>
 </td>
 <td>
 Nina-Akmann
@@ -602,7 +719,7 @@ Build site.
 Rmd
 </td>
 <td>
-<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/8d9f9bc6228384f5225cf3bb3066aef1b3ca8bb7/analysis/about.Rmd" target="_blank">8d9f9bc</a>
+<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/8d9f9bc6228384f5225cf3bb3066aef1b3ca8bb7/analysis/about.Rmd" target="_blank">8d9f9bc</a>
 </td>
 <td>
 Nina-Akmann
@@ -619,7 +736,7 @@ workflowr::wflow_publish(c("analysis/_site.yml“,”analysis/about.Rmd",
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/188aeaff7a3f04f3957b68fc3b41c7b41e0de5af/docs/about.html" target="_blank">188aeaf</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/188aeaff7a3f04f3957b68fc3b41c7b41e0de5af/docs/about.html" target="_blank">188aeaf</a>
 </td>
 <td>
 Nina-Akmann
@@ -636,7 +753,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/43756ad614554f0ee0ab7e7cf3ce98d1afafd5cd/docs/about.html" target="_blank">43756ad</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/43756ad614554f0ee0ab7e7cf3ce98d1afafd5cd/docs/about.html" target="_blank">43756ad</a>
 </td>
 <td>
 Nina-Akmann
@@ -653,7 +770,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/61bc5395f42d05375d4a1debf1c4aa4ad3a3e3ba/docs/about.html" target="_blank">61bc539</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/61bc5395f42d05375d4a1debf1c4aa4ad3a3e3ba/docs/about.html" target="_blank">61bc539</a>
 </td>
 <td>
 Nina-Akmann
@@ -670,7 +787,7 @@ Build site.
 Rmd
 </td>
 <td>
-<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/b946f3f7da5db3daa644441553acfa8dab12976f/analysis/about.Rmd" target="_blank">b946f3f</a>
+<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/b946f3f7da5db3daa644441553acfa8dab12976f/analysis/about.Rmd" target="_blank">b946f3f</a>
 </td>
 <td>
 Nina-Akmann
@@ -689,7 +806,90 @@ Start workflowr project.
 </div>
 </div>
 </div>
-<p>In this project Linus Krause and I (Nina Akmann) are creating cooperatively a codebook for survey data.</p>
+<div id="in-this-project-nina-akmann-linus-krause-are-creating-cooperatively-a-codebook-for-survey-data." class="section level3">
+<h3>In this project Nina Akmann &amp; Linus Krause are creating cooperatively a codebook for survey data.</h3>
+<p>Avoidance is typically considered a maladaptive behavioral response to excessive fear and anxiety, potentially leading to the maintenance of anxiety disorders. Recent experimental work has focused on approach-avoidance (AA) conflicts by simulating foraging tasks under predation, often targeting on decision making strategies. However, little has been known about the impact of individual differences upon the AA strategies within a threatening environment. Here, we present a novel avoidance paradigm , in which an immersive AA conflict is induced in a virtual foraging task. The task is built on a matrix designed environment, which enables us to track and visualize the AA-behavior as a function of spatial movement. Individuals are required to survive a five-day period (blocks) by collecting the necessary amount of food (tokens) within three different nature-related terrains (forest, sea, desert). Each terrain, however, is assigned to a different probability of encountering an aversive (electrical) stimulus in combination with being struck by lightning in the virtual environment while collecting a token. The probabilities of receiving the unpleasant stimulus are parametrically graded to the covered distance along the terrain. In order to encourage approach behaviour, the amount of potential reward is inversely parametrically modulated to the probability of receiving the aversive stimulus. Thus, each individual is required to perform a certain approach-avoidance strategy to achieve the task’s goal, as to the time spent in each terrain and the spatial movement along the field. Each strategy behaviour results in a unique “tipping point” between the traversed distance and the maximum achieved reward, revealing the extent to which each individual is willing to approach or to avoid a threat as a trade-off for better performance (reward).</p>
+<img src="images/indexRmd_EMHFC_poster_Alexandros_Kastrinogiannis.jpg" title="fig:" alt="Alex poster" />
+<div class="figure" style="text-align: center">
+<img src="C:/Users/notfall/Desktop/ApproachAvoidanceSurveys/images/indexRmd_EMHFC_poster_Alexandros_Kastrinogiannis.jpg" alt="Poster Alexandros Kastrinogianis" width="100%" />
+<p class="caption">
+Poster Alexandros Kastrinogianis
+</p>
+</div>
+</div>
+<div id="psychometrics" class="section level2">
+<h2>Psychometrics</h2>
+<div id="the-state-trait-anxiety-inventory-stai" class="section level3">
+<h3>The State-Trait Anxiety Inventory (STAI)</h3>
+<p><strong>Construct:</strong> Adult anxiety</p>
+<p><strong>Description of Measure:</strong> The State-Trait Anxiety Inventory (STAI) is a commonly used measure of trait and state anxiety (Spielberger, Gorsuch, Lushene, Vagg, &amp; Jacobs, 1983). It can be used in clinical settings to diagnose anxiety and to distinguish it from depressive syndromes. It also is often used in research as an indicator of caregiver distress (e.g., Greene et al., 2017, Ugalde et al., 2014).</p>
+<p>Anxiety Form Y, its most popular version, has 20 items for assessing trait anxiety and 20 for state anxiety. State anxiety items include: “I am tense; I am worried” and “I feel calm; I feel secure.” Trait anxiety items include: “I worry too much over something that really doesn’t matter” and “I am content; I am a steady person.” All items are rated on a 4-point scale (e.g., from “Almost Never” to “Almost Always”). Higher scores indicate greater anxiety. The STAI is appropriate for those who have at least a sixth-grade reading level.</p>
+<p>Internal consistency coefficients for the scale have ranged from .86 to .95; test-retest reliability coefficients have ranged from .65 to .75 over a 2-month interval (Spielberger et al., 1983). Test-retest coefficients for this measure in the present study ranged from .69 to .89. Considerable evidence attests to the construct and concurrent validity of the scale (Spielberger, 1989).</p>
+<p>Studies also have shown that it is a sensitive predictor of caregiver distress over time, and that it can vary with changes in support systems, health, and other individual characteristics (Elliott, Shewchuk, &amp; Richards, 2001; Shewchuk, Richards &amp; Elliott, 1998).</p>
+</div>
+<div id="bisbas-scales" class="section level3">
+<h3>BIS/BAS scales</h3>
+<p>Several theorists have argued that two general motivational systems underlie behavior. A behavioral approach system (BAS) is believed to regulate appetitive motives, in which the goal is to move toward something desired. A behavioral avoidance (or inhibition) system (BIS) is said to regulate aversive motives, in which the goal is to move away from something unpleasant. We developed the BIS/BAS scales to assess individual differences in the sensitivity of these systems.</p>
+<p>Carver, C. S., &amp; White, T. L. (1994). Behavioral inhibition, behavioral activation, and affective responses to impending reward and punishment: The BIS/BAS scales. Journal of Personality and Social Psychology, 67, 319-333.</p>
+<p>Each item of this questionnaire is a statement that a person may either agree with or disagree with. For each item, indicate how much you agree or disagree with what the item says. Please respond to all the items; do not leave any blank. Choose only one response to each statement. Please be as accurate and honest as you can be. Respond to each item as if it were the only item. That is, don’t worry about being “consistent” in your responses. Choose from the following four response options:</p>
+<ul>
+<li>1 = very true for me</li>
+<li>2 = somewhat true for me</li>
+<li>3 = somewhat false for me</li>
+<li>4 = very false for me</li>
+</ul>
+<div id="refs">
+
+</div>
+<br>
+<p>
+<button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
+<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Session information
+</button>
+</p>
+<div id="workflowr-sessioninfo" class="collapse">
+<pre class="r"><code>sessionInfo()</code></pre>
+<pre><code>R version 4.0.2 (2020-06-22)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 19042)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=German_Germany.1252  LC_CTYPE=German_Germany.1252   
+[3] LC_MONETARY=German_Germany.1252 LC_NUMERIC=C                   
+[5] LC_TIME=German_Germany.1252    
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] usethis_2.0.1    kableExtra_1.3.4 apa_0.3.3        here_1.0.1      
+ [5] forcats_0.5.1    stringr_1.4.0    dplyr_1.0.5      purrr_0.3.4     
+ [9] readr_1.4.0      tidyr_1.1.3      tibble_3.1.1     ggplot2_3.3.3   
+[13] tidyverse_1.3.1  knitr_1.33      
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.6        svglite_2.0.0     lubridate_1.7.10  assertthat_0.2.1 
+ [5] rprojroot_2.0.2   digest_0.6.27     utf8_1.2.1        R6_2.5.0         
+ [9] cellranger_1.1.0  backports_1.2.1   reprex_2.0.0      evaluate_0.14    
+[13] highr_0.9         httr_1.4.2        pillar_1.6.0      rlang_0.4.10     
+[17] readxl_1.3.1      rstudioapi_0.13   whisker_0.4       jquerylib_0.1.3  
+[21] rmarkdown_2.7     webshot_0.5.2     munsell_0.5.0     broom_0.7.6      
+[25] compiler_4.0.2    httpuv_1.6.0      modelr_0.1.8      xfun_0.22        
+[29] systemfonts_1.0.1 pkgconfig_2.0.3   htmltools_0.5.1.1 tidyselect_1.1.0 
+[33] workflowr_1.6.2   viridisLite_0.4.0 fansi_0.4.2       crayon_1.4.1     
+[37] dbplyr_2.1.1      withr_2.4.2       later_1.2.0       grid_4.0.2       
+[41] jsonlite_1.7.2    gtable_0.3.0      lifecycle_1.0.0   DBI_1.1.1        
+[45] git2r_0.28.0      magrittr_2.0.1    scales_1.1.1      cli_2.5.0        
+[49] stringi_1.5.3     fs_1.5.0          promises_1.2.0.1  xml2_1.3.2       
+[53] bslib_0.2.4       ellipsis_0.3.1    generics_0.1.0    vctrs_0.3.7      
+[57] tools_4.0.2       glue_1.4.2        hms_1.0.0         yaml_2.2.1       
+[61] colorspace_2.0-0  MBESS_4.8.0       rvest_1.0.0       haven_2.4.1      
+[65] sass_0.3.1       </code></pre>
+</div>
+</div>
+</div>
 
 
 <!-- Adjust MathJax settings so that all math formulae are shown using
@@ -703,6 +903,8 @@ footer is added to webpages before the MathJax javascript. -->
     "HTML-CSS": { availableFonts: ["TeX"] }
   });
 </script>
+
+
 
 
 

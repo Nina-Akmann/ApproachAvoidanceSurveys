@@ -1,7 +1,6 @@
 ---
 title: "Codebook BIS_BAS"
 author: "Nina Akmann & Linus Krause"
-date: "08 4 2021"
 output:
   html_document:
     toc: true

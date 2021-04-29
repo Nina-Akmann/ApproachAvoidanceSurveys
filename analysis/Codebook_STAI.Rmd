@@ -1,7 +1,6 @@
 ---
 title: "Codebook STAI"
-author: "Nina Akmann"
-date: "08 4 2021"
+author: "Nina Akmann & Linus Krause"
 output:
   html_document:
     toc: true
