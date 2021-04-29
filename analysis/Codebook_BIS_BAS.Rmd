@@ -1,0 +1,144 @@
+---
+title: "Codebook BIS_BAS"
+author: "Nina Akmann & Linus Krause"
+date: "08 4 2021"
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+    toc_float: true
+    code_folding: 'show'
+    self_contained: true
+  pdf_document:
+    toc: yes
+    toc_depth: 4
+    latex_engine: xelatex
+---
+
+```{r chunk-options,include = FALSE}
+knitr::opts_chunk$set(
+  warning = FALSE, # show warnings during codebook generation
+  message = FALSE, # show messages during codebook generation
+  error = TRUE, # do not interrupt codebook generation in case of errors,
+                # usually better for debugging
+  echo = TRUE  # show R code
+)
+ggplot2::theme_set(ggplot2::theme_bw())
+
+```
+
+## Load packages
+```{r setup}
+library(codebook) # for creating the codebook
+library(here)     # for relative paths 
+library(labelled) # for labelling variables and values 
+library(dplyr)    # for data manipulation
+```
+
+## Load data
+```{r load-data}
+load(here("data/data_survey.Rda")) 
+```
+
+## Subset relevant columns 
+```{r subset-relevant-columns}
+# subset relevant columns
+BIS_BAS = data_survey2[28:51] 
+```
+
+## Label items
+```{r label-items}
+# add names to items 
+var_label(BIS_BAS) <- list(
+  Eine.eigene.Familie.ist.die.wichtigste.Sache.im.Leben. = "Eine eigene Familie ist die wichtigste Sache im Leben.", 
+  Sogar.wenn.mir.etwas.Schlimmes.bevor.steht..bin.ich.selten.nervös.oder.ängstlich. = "Sogar wenn mir etwas Schlimmes bevorsteht, bin ich selten nervös oder ängstlich." , 
+  Ich.strenge.mich.besonders.an..damit.ich.erreiche..was.ich.möchte. =
+    "Ich strenge mich besonders an, damit ich erreiche, was ich möchte.", 
+  Wenn.mir.etwas.gut.gelingt..bleibe.ich.sehr.gern.bei.der.Sache. = "Wenn mir etwas gut gelingt, bleibe ich sehr gern bei der Sache.", 
+  Ich.bin.immer.bereit..etwas.Neues.zu.versuchen..wenn.ich.denke..dass.es.Spass.machen.wird. = "Ich bin immer bereit, etwas Neues zu versuchen, wenn ich denke, dass es Spaß machen wird.",
+  Es.ist.wichtig.für.mich..wie.ich.gekleidet.bin. = "Es ist wichtig für mich, wie ich gekleidet bin.", 
+  Wenn.ich.erreiche..was.ich.will..bin.ich.voller.Energie.und.Spannung. = "Wenn ich erreiche, was ich will, bin ich voller Energie und Spannung.", 
+  Kritik.oder.Beschimpfungen.verletzen.mich.ziemlich.stark. = "Kritik und Verletzungen verletzen mich ziemlich stark.", 
+  Wenn.ich.etwas.haben.will..tue.ich.gewöhnlich.alles..um.es.zu.bekommen. = "Wenn ich etwas haben will, tue ich gewöhnlich alles, um es zu bekommen.", 
+  Ich.werde.oft.Dinge.nur.deshalb.tun..weil.Sie.Spass.machen.könnten. = "Ich werde oft Dinge nur deshalb tun, weil sie Spaß machen könnten.",
+  Es.ist.schwierig.für.mich..Zeit.für.solche.Dinge.wie.Friseurbesuche.zu.finden. = "Es ist schwierig für mich, Zeit für solche Dinge wie Friseurbesuche zu finden.",
+  Wenn.ich.eine.Chance.sehe..etwas.Erwünschtes.zu.bekommen..versuche.ich.sofort.mein.Glück. = "Wenn ich die Chance sehe, etwas Erwünschtes zu bekommen, versuche ich sofort mein Glück.",
+  Ich.bin.ziemlich.besorgt.oder.verstimmt..wenn.ich.glaube.oder.weiß..dass.jemand.wütend.auf.mich.ist. = "Ich bin ziemlich besorgt oder verstimmt, wenn ich glaube oder weiß, dass jemand wütend auf mich ist.", 
+  Wenn.ich.eine.Gelegenheit.für.etwas.sehe..das.ich.mag..bin.ich.sofort.voller.Spannung. = "Wenn ich eine Gelegenheit für etwas sehe, das ich mag, bin ich sofort voller Spannung.", 
+  Ich.handle.oft.so..wie.es.mir.gerade.in.den.Sinn.kommt. = "Ich handle oft so, wie es mir gerade in den Sinn kommt.",
+  Wenn.ich.glaube..dass.mir.etwas.Unangenehmes.bevorsteht..bin.ich.gewöhnlich.ziemlich.unruhig. = "Wenn ich glaube, dass mir etwas Unangenehmes bevorsteht, bin ich gewöhnlich ziemlich unruhig.", 
+  Ich.wundere.mich.oft.über.das.menschliche.Verhalten. = "Ich wundere mich oft über das menschliche Verhalten.",
+  Wenn.mir.etwas.Schönes.passiert..berührt.mich.das.sehr.stark. = "Wenn mir etwas Schönes passiert, berührt mich das sehr stark.", 
+  Ich.bin.besorgt..wenn.ich.glaube..dass.ich.eine.wichtige.Sache.schlecht.gemacht.habe. = "Ich bin besorgt, wenn ich glaube, dass ich eine wichtige Sache schlecht gemacht habe.", 
+  Ich.brauche.Abwechslung.und.neue.Erfahrungen. = "Ich brauche Abwechslung und neue Erfahrungen.",
+  Wenn.ich.etwas.erreichen.will..verfolge.ich.hartnäckig.mein.Ziel. = "Wenn ich etwas erreichen will, verfolge ich hartnäckig mein Ziel.", 
+  Verglichen.mit.meinen.Freunden.habe.ich.sehr.wenig.Ängste. = "Verglichen mit meinen Freunden habe ich sehr wenig Ängste.", 
+  Ich.fände.es.sehr.aufregend..einen.Wettbewerb.zu.gewinnen. = "Ich fände es sehr aufregend, einen Wettbewerb zu gewinnen.", 
+  Ich.habe.Angst..Fehler.zu.machen. = "Ich habe Angst, Fehler zu machen."
+)
+```
+
+## Label Likert items' values 
+```{r label}
+# create function to add likert labels 
+add_likert_labels <- function(x) {
+ val_labels(x) <- c("trifft gar nicht zu" = 1,
+ "trifft eher nicht zu" = 2,
+ "trifft eher zu" = 3,
+ "trifft genau zu" = 4) # change to correct labels
+ x
+}
+
+# change data format to apply mutate_all
+BIS_BAS_tbl <- tibble::as_tibble(BIS_BAS)
+
+# use function for all Likert-items
+BIS_BAS =  mutate_all(BIS_BAS_tbl, 
+add_likert_labels)
+```
+
+## Rename reversed items 
+```{r rename-reversed-items}
+BIS_BAS <- BIS_BAS %>%
+ rename_at(vars(2,22), add_R) # add R to reverse items' names 
+```
+
+## Reverse labelled values
+```{r reverse-values}
+BIS_BAS <- BIS_BAS %>% 
+  mutate_at(vars(2,22), 
+  reverse_labelled_values) 
+# reverse the underlying values while keeping the values labels right
+```
+
+## Add scales 
+```{r scales}
+# aggregate items to scales 
+BIS_BAS$BAS_Drive <- BIS_BAS %>% 
+  select(3,9,12,21) %>% 
+ aggregate_and_document_scale()
+
+BIS_BAS$BAS_FunSeeking <- BIS_BAS %>% 
+  select(5,10,15,20) %>% 
+ aggregate_and_document_scale()
+
+BIS_BAS$BAS_RewardResponsiveness <- BIS_BAS %>% 
+  select(4,7,14,18,23) %>% 
+ aggregate_and_document_scale()
+
+BIS_BAS$BIS <- BIS_BAS %>%
+  select(2,8,13,16,19,22,24) %>%
+ aggregate_and_document_scale()
+
+BIS_BAS$Fillers <- BIS_BAS %>% 
+  select(1,6,11,17) %>% 
+ aggregate_and_document_scale()
+```
+
+## Create codebook
+```{r codebook}
+codebook(BIS_BAS)
+```
+
+
+

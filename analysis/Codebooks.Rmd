@@ -1,6 +1,6 @@
 ---
 title: "Codebooks"
-author: "Nina-Akmann & Linus Krause"
+author: "Nina Akmann & Linus Krause"
 date: "2021-04-26"
 output: workflowr::wflow_html
 editor_options:
@@ -13,4 +13,5 @@ Click on this [link](Codebook_STAI.html) to see our results.
 ### IUS
 Click on this [link](Codebook_IUS.html) to see our results.
 
-
+### BIS_BAS
+Click on this [link](Codebook_BIS_BAS.html) to see our results.
