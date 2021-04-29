@@ -9,8 +9,6 @@ navbar:
     href: about.html
   - text: License
     href: license.html
-  - text: Test
-    href: test.html
   - text: Codebooks
     href: Codebooks.html
   right:
