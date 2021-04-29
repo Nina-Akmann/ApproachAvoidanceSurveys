@@ -27,7 +27,7 @@ Avoidance is typically considered a maladaptive behavioral response to excessive
 
 
 ![Alex poster](images/indexRmd_EMHFC_poster_Alexandros_Kastrinogiannis.jpg) 
-```{r Exclusion-figure, echo=FALSE, fig.cap="Poster Alexandros Kastrinogianis", out.width = '100%', dpi=300}
+```{r poster Alex, message=FALSE, echo=FALSE, fig.cap="Poster Alexandros Kastrinogianis", out.width = '100%', dpi=300}
 
 
 include_graphics(here("images/indexRmd_EMHFC_poster_Alexandros_Kastrinogiannis.jpg"))
@@ -55,7 +55,7 @@ Studies also have shown that it is a sensitive predictor of caregiver distress o
 
 Several theorists have argued that two general motivational systems underlie behavior. A behavioral approach system (BAS) is believed to regulate appetitive motives, in which the goal is to move toward something desired. A behavioral avoidance (or inhibition) system (BIS) is said to regulate aversive motives, in which the goal is to move away from something unpleasant.  We developed the BIS/BAS scales to assess individual differences in the sensitivity of these systems.
 
-Carver, C. S., & White, T. L. (1994). Behavioral inhibition, behavioral activation, and affective responses to impending reward and punishment: The BIS/BAS scales. Journal of Personality and Social Psychology, 67, 319-333.   
+*Carver, C. S., & White, T. L. (1994). Behavioral inhibition, behavioral activation, and affective responses to impending reward and punishment: The BIS/BAS scales. Journal of Personality and Social Psychology, 67, 319-333.*   
 
 
 
