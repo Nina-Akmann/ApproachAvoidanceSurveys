@@ -315,7 +315,7 @@ $(document).ready(function () {
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -324,7 +324,7 @@ $(document).ready(function () {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -336,7 +336,7 @@ $(document).ready(function () {
 <strong>Last updated:</strong> 2021-04-29
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
 </p>
 <p>
 <strong>Knit directory:</strong> <code>ApproachAvoidanceSurveys/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -352,12 +352,12 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted changes </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
 <div class="panel-body">
-<p>The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
+<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
 </div>
 </div>
 </div>
@@ -424,16 +424,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystree75ba9c3ccc8b186e5b50a799b5f502a005e044a4targetblank75ba9c3a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/75ba9c3ccc8b186e5b50a799b5f502a005e044a4" target="_blank">75ba9c3</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystree180795cb1b03623c367238a91aab439111e1b8e4targetblank180795ca"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/180795cb1b03623c367238a91aab439111e1b8e4" target="_blank">180795c</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystree75ba9c3ccc8b186e5b50a799b5f502a005e044a4targetblank75ba9c3a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystree180795cb1b03623c367238a91aab439111e1b8e4targetblank180795ca" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/75ba9c3ccc8b186e5b50a799b5f502a005e044a4" target="_blank">75ba9c3</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/180795cb1b03623c367238a91aab439111e1b8e4" target="_blank">180795c</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -444,17 +444,7 @@ Ignored files:
     Ignored:    .Rproj.user/
 
 Untracked files:
-    Untracked:  analysis/UKE/
-    Untracked:  analysis/images/
     Untracked:  data/data_survey.Rda
-    Untracked:  images/
-
-Unstaged changes:
-    Modified:   analysis/Codebook_BIS_BAS.Rmd
-    Modified:   analysis/Codebook_IUS.Rmd
-    Modified:   analysis/Codebook_STAI.Rmd
-    Modified:   analysis/Codebooks.Rmd
-    Modified:   analysis/about.Rmd
 
 </code></pre>
 <p>
@@ -493,6 +483,57 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/180795cb1b03623c367238a91aab439111e1b8e4/analysis/about.Rmd" target="_blank">180795c</a>
+</td>
+<td>
+psychub
+</td>
+<td>
+2021-04-29
+</td>
+<td>
+changed font style of citation
+</td>
+</tr>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/eaa2e31cb3317c234f220b1493aa2246a17b2730/analysis/about.Rmd" target="_blank">eaa2e31</a>
+</td>
+<td>
+psychub
+</td>
+<td>
+2021-04-29
+</td>
+<td>
+changed stuff
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/eaa2e31cb3317c234f220b1493aa2246a17b2730/docs/about.html" target="_blank">eaa2e31</a>
+</td>
+<td>
+psychub
+</td>
+<td>
+2021-04-29
+</td>
+<td>
+changed stuff
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -830,7 +871,7 @@ Poster Alexandros Kastrinogianis
 <div id="bisbas-scales" class="section level3">
 <h3>BIS/BAS scales</h3>
 <p>Several theorists have argued that two general motivational systems underlie behavior. A behavioral approach system (BAS) is believed to regulate appetitive motives, in which the goal is to move toward something desired. A behavioral avoidance (or inhibition) system (BIS) is said to regulate aversive motives, in which the goal is to move away from something unpleasant. We developed the BIS/BAS scales to assess individual differences in the sensitivity of these systems.</p>
-<p>Carver, C. S., &amp; White, T. L. (1994). Behavioral inhibition, behavioral activation, and affective responses to impending reward and punishment: The BIS/BAS scales. Journal of Personality and Social Psychology, 67, 319-333.</p>
+<p><em>Carver, C. S., &amp; White, T. L. (1994). Behavioral inhibition, behavioral activation, and affective responses to impending reward and punishment: The BIS/BAS scales. Journal of Personality and Social Psychology, 67, 319-333.</em></p>
 <p>Each item of this questionnaire is a statement that a person may either agree with or disagree with. For each item, indicate how much you agree or disagree with what the item says. Please respond to all the items; do not leave any blank. Choose only one response to each statement. Please be as accurate and honest as you can be. Respond to each item as if it were the only item. That is, don’t worry about being “consistent” in your responses. Choose from the following four response options:</p>
 <ul>
 <li>1 = very true for me</li>
@@ -867,18 +908,18 @@ other attached packages:
  [1] usethis_2.0.1    kableExtra_1.3.4 apa_0.3.3        here_1.0.1      
  [5] forcats_0.5.1    stringr_1.4.0    dplyr_1.0.5      purrr_0.3.4     
  [9] readr_1.4.0      tidyr_1.1.3      tibble_3.1.1     ggplot2_3.3.3   
-[13] tidyverse_1.3.1  knitr_1.33      
+[13] tidyverse_1.3.1  knitr_1.33       workflowr_1.6.2 
 
 loaded via a namespace (and not attached):
- [1] Rcpp_1.0.6        svglite_2.0.0     lubridate_1.7.10  assertthat_0.2.1 
- [5] rprojroot_2.0.2   digest_0.6.27     utf8_1.2.1        R6_2.5.0         
- [9] cellranger_1.1.0  backports_1.2.1   reprex_2.0.0      evaluate_0.14    
-[13] highr_0.9         httr_1.4.2        pillar_1.6.0      rlang_0.4.10     
-[17] readxl_1.3.1      rstudioapi_0.13   whisker_0.4       jquerylib_0.1.3  
-[21] rmarkdown_2.7     webshot_0.5.2     munsell_0.5.0     broom_0.7.6      
-[25] compiler_4.0.2    httpuv_1.6.0      modelr_0.1.8      xfun_0.22        
-[29] systemfonts_1.0.1 pkgconfig_2.0.3   htmltools_0.5.1.1 tidyselect_1.1.0 
-[33] workflowr_1.6.2   viridisLite_0.4.0 fansi_0.4.2       crayon_1.4.1     
+ [1] Rcpp_1.0.6        svglite_2.0.0     lubridate_1.7.10  ps_1.6.0         
+ [5] assertthat_0.2.1  rprojroot_2.0.2   digest_0.6.27     utf8_1.2.1       
+ [9] R6_2.5.0          cellranger_1.1.0  backports_1.2.1   reprex_2.0.0     
+[13] evaluate_0.14     highr_0.9         httr_1.4.2        pillar_1.6.0     
+[17] rlang_0.4.10      readxl_1.3.1      rstudioapi_0.13   whisker_0.4      
+[21] jquerylib_0.1.3   rmarkdown_2.7     webshot_0.5.2     munsell_0.5.0    
+[25] broom_0.7.6       compiler_4.0.2    httpuv_1.6.0      modelr_0.1.8     
+[29] xfun_0.22         systemfonts_1.0.1 pkgconfig_2.0.3   htmltools_0.5.1.1
+[33] tidyselect_1.1.0  viridisLite_0.4.0 fansi_0.4.2       crayon_1.4.1     
 [37] dbplyr_2.1.1      withr_2.4.2       later_1.2.0       grid_4.0.2       
 [41] jsonlite_1.7.2    gtable_0.3.0      lifecycle_1.0.0   DBI_1.1.1        
 [45] git2r_0.28.0      magrittr_2.0.1    scales_1.1.1      cli_2.5.0        
