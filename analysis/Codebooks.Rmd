@@ -1,13 +1,16 @@
 ---
 title: "Codebooks"
-author: "Nina-Akmann"
+author: "Nina-Akmann & Linus Krause"
 date: "2021-04-26"
 output: workflowr::wflow_html
 editor_options:
   chunk_output_type: console
 ---
 # Psychometrics 
-## STAI
-Click on this [link](Codebook_STAI.html) to see my results.
+### STAI
+Click on this [link](Codebook_STAI.html) to see our results.
+
+### IUS
+Click on this [link](Codebook_IUS.html) to see our results.
 
 
