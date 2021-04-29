@@ -14,7 +14,8 @@
 
 <title>Codebook IUS</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -37,6 +38,27 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.18/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="site_libs/jszip-1.10.20/jszip.min.js"></script>
+<script src="site_libs/pdfmake-1.10.20/pdfmake.js"></script>
+<script src="site_libs/pdfmake-1.10.20/vfs_fonts.js"></script>
+<link href="site_libs/dt-ext-buttons-1.10.20/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="site_libs/dt-ext-buttons-1.10.20/js/dataTables.buttons.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.flash.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.html5.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.colVis.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.print.min.js"></script>
+<link href="site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="site_libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="site_libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -47,6 +69,8 @@ div.section {
   padding-top: 12px;
 }
 </style>
+
+
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -339,9 +363,6 @@ div.tocify {
   <a href="license.html">License</a>
 </li>
 <li>
-  <a href="test.html">Test</a>
-</li>
-<li>
   <a href="Codebooks.html">Codebooks</a>
 </li>
       </ul>
@@ -480,16 +501,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystree51034cb7a6feeb96b28866371f0132c6b69182cdtargetblank51034cba"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/51034cb7a6feeb96b28866371f0132c6b69182cd" target="_blank">51034cb</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystree6c472e2a3d3b5453fd0899a774fadc21cb5f53d1targetblank6c472e2a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/6c472e2a3d3b5453fd0899a774fadc21cb5f53d1" target="_blank">6c472e2</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystree51034cb7a6feeb96b28866371f0132c6b69182cdtargetblank51034cba" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystree6c472e2a3d3b5453fd0899a774fadc21cb5f53d1targetblank6c472e2a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/51034cb7a6feeb96b28866371f0132c6b69182cd" target="_blank">51034cb</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/6c472e2a3d3b5453fd0899a774fadc21cb5f53d1" target="_blank">6c472e2</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -541,10 +562,27 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/52d44a157f86498bb43d3d261b8f21ce27da45f1/docs/Codebook_IUS.html" target="_blank">52d44a1</a>
+</td>
+<td>
+Nina-Akmann
+</td>
+<td>
+2021-04-29
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
-<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/51034cb7a6feeb96b28866371f0132c6b69182cd/analysis/Codebook_IUS.Rmd" target="_blank">51034cb</a>
+<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/51034cb7a6feeb96b28866371f0132c6b69182cd/analysis/Codebook_IUS.Rmd" target="_blank">51034cb</a>
 </td>
 <td>
 Nina-Akmann
@@ -652,7 +690,9 @@ alpha: 0.91</code></pre>
 <p><strong>Dataset name</strong>: IUS</p>
 <p>The dataset has N=10 rows and 27 columns. 9 rows have no missing values on any column.</p>
 <details>
-<p><summary title="Expand this section to see some additional metadata in a structured format that is useful for search engines">Metadata for search engines</summary></p>
+<summary title="Expand this section to see some additional metadata in a structured format that is useful for search engines">
+Metadata for search engines
+</summary>
 <ul>
 <li><strong>Date published</strong>: 2021-04-29</li>
 </ul>
@@ -762,7 +802,7 @@ alpha: 0.91</code></pre>
 </div>
 </div>
 <div id="Ungewissheit_hindert_mich_daran__eine_feste_Meinung_zu_haben_" class="section level3 tabset">
-<h3>Ungewissheit.hindert.mich.daran..eine.feste.Meinung.zu.haben.</h3>
+<h3 class="tabset">Ungewissheit.hindert.mich.daran..eine.feste.Meinung.zu.haben.</h3>
 <p>Ungewissheit hindert mich daran, eine feste Meinung zu haben.</p>
 <div id="Ungewissheit_hindert_mich_daran__eine_feste_Meinung_zu_haben__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -864,7 +904,7 @@ Distribution of values for Ungewissheit.hindert.mich.daran..eine.feste.Meinung.z
 </div>
 </div>
 <div id="Keine_Gewissheit_zu_haben__bedeutet_unorganisiert_zu_sein_" class="section level3 tabset">
-<h3>Keine.Gewissheit.zu.haben..bedeutet.unorganisiert.zu.sein.</h3>
+<h3 class="tabset">Keine.Gewissheit.zu.haben..bedeutet.unorganisiert.zu.sein.</h3>
 <p>Keine Gewissheit zu haben, bedeutet unorganisiert zu sein.</p>
 <div id="Keine_Gewissheit_zu_haben__bedeutet_unorganisiert_zu_sein__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -966,7 +1006,7 @@ Distribution of values for Keine.Gewissheit.zu.haben..bedeutet.unorganisiert.zu.
 </div>
 </div>
 <div id="Ungewissheit_macht_das_Leben_unerträglich_" class="section level3 tabset">
-<h3>Ungewissheit.macht.das.Leben.unerträglich.</h3>
+<h3 class="tabset">Ungewissheit.macht.das.Leben.unerträglich.</h3>
 <p>Ungewissheit macht das Leben unerträglich.</p>
 <div id="Ungewissheit_macht_das_Leben_unerträglich__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1068,7 +1108,7 @@ Distribution of values for Ungewissheit.macht.das.Leben.unerträglich.
 </div>
 </div>
 <div id="Es_ist_ungerecht__dass_es_im_Leben_keine_Garantien_gibt_" class="section level3 tabset">
-<h3>Es.ist.ungerecht..dass.es.im.Leben.keine.Garantien.gibt.</h3>
+<h3 class="tabset">Es.ist.ungerecht..dass.es.im.Leben.keine.Garantien.gibt.</h3>
 <p>Es ist ungerecht, dass es im Leben keine Garantien gibt.</p>
 <div id="Es_ist_ungerecht__dass_es_im_Leben_keine_Garantien_gibt__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1170,7 +1210,7 @@ Distribution of values for Es.ist.ungerecht..dass.es.im.Leben.keine.Garantien.gi
 </div>
 </div>
 <div id="Ungewissheit_bereitet_mir_Unbehagen__Angst_oder_Stress_" class="section level3 tabset">
-<h3>Ungewissheit.bereitet.mir.Unbehagen..Angst.oder.Stress.</h3>
+<h3 class="tabset">Ungewissheit.bereitet.mir.Unbehagen..Angst.oder.Stress.</h3>
 <p>Ungewissheit bereitet mir Unbehagen, Angst oder Stress.</p>
 <div id="Ungewissheit_bereitet_mir_Unbehagen__Angst_oder_Stress__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1272,7 +1312,7 @@ Distribution of values for Ungewissheit.bereitet.mir.Unbehagen..Angst.oder.Stres
 </div>
 </div>
 <div id="Ich_kann_geistig_nicht_zur_Ruhe_kommen__wenn_ich_nicht_weiß__was_morgen_passieren_wird_" class="section level3 tabset">
-<h3>Ich.kann.geistig.nicht.zur.Ruhe.kommen..wenn.ich.nicht.weiß..was.morgen.passieren.wird.</h3>
+<h3 class="tabset">Ich.kann.geistig.nicht.zur.Ruhe.kommen..wenn.ich.nicht.weiß..was.morgen.passieren.wird.</h3>
 <p>Ich kann geistig nicht zur Ruhe kommen, wenn ich nicht weiß, was morgen passieren wird.</p>
 <div id="Ich_kann_geistig_nicht_zur_Ruhe_kommen__wenn_ich_nicht_weiß__was_morgen_passieren_wird__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1374,7 +1414,7 @@ Distribution of values for Ich.kann.geistig.nicht.zur.Ruhe.kommen..wenn.ich.nich
 </div>
 </div>
 <div id="Das_Aufkommen_unerwarteter_Ereignisse_verstimmt_mich_sehr_" class="section level3 tabset">
-<h3>Das.Aufkommen.unerwarteter.Ereignisse.verstimmt.mich.sehr.</h3>
+<h3 class="tabset">Das.Aufkommen.unerwarteter.Ereignisse.verstimmt.mich.sehr.</h3>
 <p>Das Aufkommen unerwarteter Ereignisse verstimmt mich sehr.</p>
 <div id="Das_Aufkommen_unerwarteter_Ereignisse_verstimmt_mich_sehr__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1476,7 +1516,7 @@ Distribution of values for Das.Aufkommen.unerwarteter.Ereignisse.verstimmt.mich.
 </div>
 </div>
 <div id="Ungewissheit_hindert_mich_daran__ein_erfülltes_Leben_zu_führen_" class="section level3 tabset">
-<h3>Ungewissheit.hindert.mich.daran..ein.erfülltes.Leben.zu.führen.</h3>
+<h3 class="tabset">Ungewissheit.hindert.mich.daran..ein.erfülltes.Leben.zu.führen.</h3>
 <p>Ungewissheit.hindert.mich.daran, ein erfülltes Leben zu führen.</p>
 <div id="Ungewissheit_hindert_mich_daran__ein_erfülltes_Leben_zu_führen__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1578,7 +1618,7 @@ Distribution of values for Ungewissheit.hindert.mich.daran..ein.erfülltes.Leben
 </div>
 </div>
 <div id="Es_frustriert_mich__nicht_alle_Informationen_zu_haben__die_ich_benötige_" class="section level3 tabset">
-<h3>Es.frustriert.mich..nicht.alle.Informationen.zu.haben..die.ich.benötige.</h3>
+<h3 class="tabset">Es.frustriert.mich..nicht.alle.Informationen.zu.haben..die.ich.benötige.</h3>
 <p>Es frustriert mich, nicht alle Informationen zu haben, die ich benötige.</p>
 <div id="Es_frustriert_mich__nicht_alle_Informationen_zu_haben__die_ich_benötige__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1680,7 +1720,7 @@ Distribution of values for Es.frustriert.mich..nicht.alle.Informationen.zu.haben
 </div>
 </div>
 <div id="Man_sollte_immer_vorausschauen__um_Überraschungen_zu_vermeiden_" class="section level3 tabset">
-<h3>Man.sollte.immer.vorausschauen..um.Überraschungen.zu.vermeiden.</h3>
+<h3 class="tabset">Man.sollte.immer.vorausschauen..um.Überraschungen.zu.vermeiden.</h3>
 <p>Man sollte immer vorausschauen, um Überraschungen zu vermeiden.</p>
 <div id="Man_sollte_immer_vorausschauen__um_Überraschungen_zu_vermeiden__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1782,7 +1822,7 @@ Distribution of values for Man.sollte.immer.vorausschauen..um.Überraschungen.zu
 </div>
 </div>
 <div id="Ein_kleines_unvorhergesehenes_Ereignis_kann_alles_verderben__trotz_bester_Planung_" class="section level3 tabset">
-<h3>Ein.kleines.unvorhergesehenes.Ereignis.kann.alles.verderben..trotz.bester.Planung.</h3>
+<h3 class="tabset">Ein.kleines.unvorhergesehenes.Ereignis.kann.alles.verderben..trotz.bester.Planung.</h3>
 <p>Ein kleines unvorhergesehenes Ereignis kann alles verderben, trotz bester Planung.</p>
 <div id="Ein_kleines_unvorhergesehenes_Ereignis_kann_alles_verderben__trotz_bester_Planung__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1884,7 +1924,7 @@ Distribution of values for Ein.kleines.unvorhergesehenes.Ereignis.kann.alles.ver
 </div>
 </div>
 <div id="Unsicherheit_lähmt_mich__wenn_es_Zeit_ist__zu_handeln_" class="section level3 tabset">
-<h3>Unsicherheit.lähmt.mich..wenn.es.Zeit.ist..zu.handeln.</h3>
+<h3 class="tabset">Unsicherheit.lähmt.mich..wenn.es.Zeit.ist..zu.handeln.</h3>
 <p>Unsicherheit lähmt mich, wenn es Zeit ist,zu handeln.</p>
 <div id="Unsicherheit_lähmt_mich__wenn_es_Zeit_ist__zu_handeln__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1986,7 +2026,7 @@ Distribution of values for Unsicherheit.lähmt.mich..wenn.es.Zeit.ist..zu.handel
 </div>
 </div>
 <div id="Wenn_ich_keine_Gewissheit_habe__heißt_das__dass_ich_nicht_erstklassig_bin_" class="section level3 tabset">
-<h3>Wenn.ich.keine.Gewissheit.habe..heißt.das..dass.ich.nicht.erstklassig.bin.</h3>
+<h3 class="tabset">Wenn.ich.keine.Gewissheit.habe..heißt.das..dass.ich.nicht.erstklassig.bin.</h3>
 <p>Wenn ich keine Gewissheit habe, heißt das, dass ich nicht erstklassig bin.</p>
 <div id="Wenn_ich_keine_Gewissheit_habe__heißt_das__dass_ich_nicht_erstklassig_bin__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2088,7 +2128,7 @@ Distribution of values for Wenn.ich.keine.Gewissheit.habe..heißt.das..dass.ich.
 </div>
 </div>
 <div id="Wenn_ich_keine_Gewissheit_habe__dann_komme_ich_nicht_voran_" class="section level3 tabset">
-<h3>Wenn.ich.keine.Gewissheit.habe..dann.komme.ich.nicht.voran.</h3>
+<h3 class="tabset">Wenn.ich.keine.Gewissheit.habe..dann.komme.ich.nicht.voran.</h3>
 <p>Wenn ich keine Gewissheit habe, dann komme ich nicht voran.</p>
 <div id="Wenn_ich_keine_Gewissheit_habe__dann_komme_ich_nicht_voran__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2190,7 +2230,7 @@ Distribution of values for Wenn.ich.keine.Gewissheit.habe..dann.komme.ich.nicht.
 </div>
 </div>
 <div id="Wenn_ich_keine_Gewissheit_habe__dann_funktioniere_ich_nicht_sehr_gut_" class="section level3 tabset">
-<h3>Wenn.ich.keine.Gewissheit.habe..dann.funktioniere.ich.nicht.sehr.gut.</h3>
+<h3 class="tabset">Wenn.ich.keine.Gewissheit.habe..dann.funktioniere.ich.nicht.sehr.gut.</h3>
 <p>Wenn ich keine Gewissheit habe, dann funktioniere ich nicht sehr gut.</p>
 <div id="Wenn_ich_keine_Gewissheit_habe__dann_funktioniere_ich_nicht_sehr_gut__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2292,7 +2332,7 @@ Distribution of values for Wenn.ich.keine.Gewissheit.habe..dann.funktioniere.ich
 </div>
 </div>
 <div id="Im_Gegensatz_zu_mir__scheinen_andere_immer_zu_wissen__wohin_sie_im_Leben_gehen_" class="section level3 tabset">
-<h3>Im.Gegensatz.zu.mir..scheinen.andere.immer.zu.wissen..wohin.sie.im.Leben.gehen.</h3>
+<h3 class="tabset">Im.Gegensatz.zu.mir..scheinen.andere.immer.zu.wissen..wohin.sie.im.Leben.gehen.</h3>
 <p>Ich Gegensatz zu mir, scheinen andere immer zu wissen, wohin sie im Leben gehen.</p>
 <div id="Im_Gegensatz_zu_mir__scheinen_andere_immer_zu_wissen__wohin_sie_im_Leben_gehen__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2394,7 +2434,7 @@ Distribution of values for Im.Gegensatz.zu.mir..scheinen.andere.immer.zu.wissen.
 </div>
 </div>
 <div id="Ungewissheit_macht_mich_verwundbar__unglücklich_oder_traurig_" class="section level3 tabset">
-<h3>Ungewissheit.macht.mich.verwundbar..unglücklich.oder.traurig.</h3>
+<h3 class="tabset">Ungewissheit.macht.mich.verwundbar..unglücklich.oder.traurig.</h3>
 <p>Ungewissheit macht mich verwunbar, unglücklich oder traurig.</p>
 <div id="Ungewissheit_macht_mich_verwundbar__unglücklich_oder_traurig__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2496,7 +2536,7 @@ Distribution of values for Ungewissheit.macht.mich.verwundbar..unglücklich.oder
 </div>
 </div>
 <div id="Ich_will_immer_wissen__was_die_Zukunft_für_mich_bereithält_" class="section level3 tabset">
-<h3>Ich.will.immer.wissen..was.die.Zukunft.für.mich.bereithält.</h3>
+<h3 class="tabset">Ich.will.immer.wissen..was.die.Zukunft.für.mich.bereithält.</h3>
 <p>Ich will immer wissen, was die Zukunft für mich bereithält.</p>
 <div id="Ich_will_immer_wissen__was_die_Zukunft_für_mich_bereithält__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2598,7 +2638,7 @@ Distribution of values for Ich.will.immer.wissen..was.die.Zukunft.für.mich.bere
 </div>
 </div>
 <div id="Ich_kann_es_nicht_leiden__überrumpelt_zu_werden_" class="section level3 tabset">
-<h3>Ich.kann.es.nicht.leiden..überrumpelt.zu.werden.</h3>
+<h3 class="tabset">Ich.kann.es.nicht.leiden..überrumpelt.zu.werden.</h3>
 <p>Ich kann es nicht leiden, überrumpelt zu werden.</p>
 <div id="Ich_kann_es_nicht_leiden__überrumpelt_zu_werden__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2700,7 +2740,7 @@ Distribution of values for Ich.kann.es.nicht.leiden..überrumpelt.zu.werden.
 </div>
 </div>
 <div id="Der_geringste_Zweifel_kann_mich_vom_Handeln_abhalten_" class="section level3 tabset">
-<h3>Der.geringste.Zweifel.kann.mich.vom.Handeln.abhalten.</h3>
+<h3 class="tabset">Der.geringste.Zweifel.kann.mich.vom.Handeln.abhalten.</h3>
 <p>Der geringste Zweifel kann mich vom Handeln abhalten.</p>
 <div id="Der_geringste_Zweifel_kann_mich_vom_Handeln_abhalten__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2802,7 +2842,7 @@ Distribution of values for Der.geringste.Zweifel.kann.mich.vom.Handeln.abhalten.
 </div>
 </div>
 <div id="Ich_sollte_in_der_Lage_sein__alles_im_Voraus_zu_organisieren_" class="section level3 tabset">
-<h3>Ich.sollte.in.der.Lage.sein..alles.im.Voraus.zu.organisieren.</h3>
+<h3 class="tabset">Ich.sollte.in.der.Lage.sein..alles.im.Voraus.zu.organisieren.</h3>
 <p>Ich sollte in der Lage sein, alles im Voraus zu organisieren.</p>
 <div id="Ich_sollte_in_der_Lage_sein__alles_im_Voraus_zu_organisieren__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2904,7 +2944,7 @@ Distribution of values for Ich.sollte.in.der.Lage.sein..alles.im.Voraus.zu.organ
 </div>
 </div>
 <div id="Ungewissheit_zu_haben_bedeutet__dass_es_mir_an_Selbstvertrauen_mangelt_" class="section level3 tabset">
-<h3>Ungewissheit.zu.haben.bedeutet..dass.es.mir.an.Selbstvertrauen.mangelt.</h3>
+<h3 class="tabset">Ungewissheit.zu.haben.bedeutet..dass.es.mir.an.Selbstvertrauen.mangelt.</h3>
 <p>Ungewissheit zu haben bedeutet, dass es mir an Selbstvertrauen mangelt.</p>
 <div id="Ungewissheit_zu_haben_bedeutet__dass_es_mir_an_Selbstvertrauen_mangelt__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -3006,7 +3046,7 @@ Distribution of values for Ungewissheit.zu.haben.bedeutet..dass.es.mir.an.Selbst
 </div>
 </div>
 <div id="Ich_denke__es_ist_ungerecht__dass_andere_Leute_sich_über_ihre_Zukunft_sicher_zu_sein_scheinen_" class="section level3 tabset">
-<h3>Ich.denke..es.ist.ungerecht..dass.andere.Leute.sich.über.ihre.Zukunft.sicher.zu.sein.scheinen.</h3>
+<h3 class="tabset">Ich.denke..es.ist.ungerecht..dass.andere.Leute.sich.über.ihre.Zukunft.sicher.zu.sein.scheinen.</h3>
 <p>Ich denke, es ist ungerecht, dass andere Leute sich über ihr Zukunft sicher zu sein scheinen.</p>
 <div id="Ich_denke__es_ist_ungerecht__dass_andere_Leute_sich_über_ihre_Zukunft_sicher_zu_sein_scheinen__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -3108,7 +3148,7 @@ Distribution of values for Ich.denke..es.ist.ungerecht..dass.andere.Leute.sich.�
 </div>
 </div>
 <div id="Ungewissheit_hindert_mich_daran__gut_zu_schlafen_" class="section level3 tabset">
-<h3>Ungewissheit.hindert.mich.daran..gut.zu.schlafen.</h3>
+<h3 class="tabset">Ungewissheit.hindert.mich.daran..gut.zu.schlafen.</h3>
 <p>Ungeiwssheit hindert mich daran, gut zu schlafen.</p>
 <div id="Ungewissheit_hindert_mich_daran__gut_zu_schlafen__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -3210,7 +3250,7 @@ Distribution of values for Ungewissheit.hindert.mich.daran..gut.zu.schlafen.
 </div>
 </div>
 <div id="Ich_muss_allen_ungewissen_Situationen_entkommen_" class="section level3 tabset">
-<h3>Ich.muss.allen.ungewissen.Situationen.entkommen.</h3>
+<h3 class="tabset">Ich.muss.allen.ungewissen.Situationen.entkommen.</h3>
 <p>Ich muss allen ungewissen Situationen entkommen.</p>
 <div id="Ich_muss_allen_ungewissen_Situationen_entkommen__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -3312,7 +3352,7 @@ Distribution of values for Ich.muss.allen.ungewissen.Situationen.entkommen.
 </div>
 </div>
 <div id="Unklarheiten_im_Leben_belasten_mich__" class="section level3 tabset">
-<h3>Unklarheiten.im.Leben.belasten.mich..</h3>
+<h3 class="tabset">Unklarheiten.im.Leben.belasten.mich..</h3>
 <p>Unklarheiten.im.Leben.belasten.mich.</p>
 <div id="Unklarheiten_im_Leben_belasten_mich___distribution" class="section level4">
 <h4>Distribution</h4>
@@ -3414,7 +3454,7 @@ Distribution of values for Unklarheiten.im.Leben.belasten.mich..
 </div>
 </div>
 <div id="Ich_kann_es_nicht_aushalten__unentschieden_bezüglich_meiner_Zukunft_zu_sein_" class="section level3 tabset">
-<h3>Ich.kann.es.nicht.aushalten..unentschieden.bezüglich.meiner.Zukunft.zu.sein.</h3>
+<h3 class="tabset">Ich.kann.es.nicht.aushalten..unentschieden.bezüglich.meiner.Zukunft.zu.sein.</h3>
 <p>Ich kann es nicht aushalten, unentschieden bezüglich meiner Zukunft zu sein.</p>
 <div id="Ich_kann_es_nicht_aushalten__unentschieden_bezüglich_meiner_Zukunft_zu_sein__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -3526,447 +3566,8 @@ Distribution of values for Ich.kann.es.nicht.aushalten..unentschieden.bezüglich
 </div>
 <div id="codebook-table" class="section level2">
 <h2>Codebook table</h2>
-<table>
-<colgroup>
-<col width="35%" />
-<col width="16%" />
-<col width="2%" />
-<col width="21%" />
-<col width="1%" />
-<col width="2%" />
-<col width="0%" />
-<col width="1%" />
-<col width="0%" />
-<col width="1%" />
-<col width="1%" />
-<col width="2%" />
-<col width="11%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">name</th>
-<th align="left">label</th>
-<th align="left">data_type</th>
-<th align="left">value_labels</th>
-<th align="right">n_missing</th>
-<th align="right">complete_rate</th>
-<th align="left">min</th>
-<th align="left">median</th>
-<th align="left">max</th>
-<th align="right">mean</th>
-<th align="right">sd</th>
-<th align="right">n_value_labels</th>
-<th align="left">hist</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><a href="#Ungewissheit_hindert_mich_daran__eine_feste_Meinung_zu_haben_">Ungewissheit.hindert.mich.daran..eine.feste.Meinung.zu.haben.</a></td>
-<td align="left">Ungewissheit hindert mich daran, eine feste Meinung zu haben.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">5</td>
-<td align="right">3.222222</td>
-<td align="right">1.3017083</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2582&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2583&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Keine_Gewissheit_zu_haben__bedeutet_unorganisiert_zu_sein_">Keine.Gewissheit.zu.haben..bedeutet.unorganisiert.zu.sein.</a></td>
-<td align="left">Keine Gewissheit zu haben, bedeutet unorganisiert zu sein.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">4</td>
-<td align="right">2.666667</td>
-<td align="right">1.2247449</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2587&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ungewissheit_macht_das_Leben_unerträglich_">Ungewissheit.macht.das.Leben.unerträglich.</a></td>
-<td align="left">Ungewissheit macht das Leben unerträglich.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">5</td>
-<td align="right">2.888889</td>
-<td align="right">1.1666667</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2582&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Es_ist_ungerecht__dass_es_im_Leben_keine_Garantien_gibt_">Es.ist.ungerecht..dass.es.im.Leben.keine.Garantien.gibt.</a></td>
-<td align="left">Es ist ungerecht, dass es im Leben keine Garantien gibt.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">5</td>
-<td align="right">2.666667</td>
-<td align="right">1.4142136</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2585&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ungewissheit_bereitet_mir_Unbehagen__Angst_oder_Stress_">Ungewissheit.bereitet.mir.Unbehagen..Angst.oder.Stress.</a></td>
-<td align="left">Ungewissheit bereitet mir Unbehagen, Angst oder Stress.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">2</td>
-<td align="left">4</td>
-<td align="left">5</td>
-<td align="right">3.555556</td>
-<td align="right">0.8819171</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Ich_kann_geistig_nicht_zur_Ruhe_kommen__wenn_ich_nicht_weiß__was_morgen_passieren_wird_">Ich.kann.geistig.nicht.zur.Ruhe.kommen..wenn.ich.nicht.weiß..was.morgen.passieren.wird.</a></td>
-<td align="left">Ich kann geistig nicht zur Ruhe kommen, wenn ich nicht weiß, was morgen passieren wird.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">4</td>
-<td align="left">5</td>
-<td align="right">3.000000</td>
-<td align="right">1.7320508</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2587&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2585&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Das_Aufkommen_unerwarteter_Ereignisse_verstimmt_mich_sehr_">Das.Aufkommen.unerwarteter.Ereignisse.verstimmt.mich.sehr.</a></td>
-<td align="left">Das Aufkommen unerwarteter Ereignisse verstimmt mich sehr.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">5</td>
-<td align="right">2.666667</td>
-<td align="right">1.5000000</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2585&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2585&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Ungewissheit_hindert_mich_daran__ein_erfülltes_Leben_zu_führen_">Ungewissheit.hindert.mich.daran..ein.erfülltes.Leben.zu.führen.</a></td>
-<td align="left">Ungewissheit.hindert.mich.daran, ein erfülltes Leben zu führen.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">5</td>
-<td align="right">3.111111</td>
-<td align="right">1.4529663</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2582&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2585&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Es_frustriert_mich__nicht_alle_Informationen_zu_haben__die_ich_benötige_">Es.frustriert.mich..nicht.alle.Informationen.zu.haben..die.ich.benötige.</a></td>
-<td align="left">Es frustriert mich, nicht alle Informationen zu haben, die ich benötige.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">4</td>
-<td align="left">5</td>
-<td align="right">3.666667</td>
-<td align="right">1.3228757</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2587&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Man_sollte_immer_vorausschauen__um_Überraschungen_zu_vermeiden_">Man.sollte.immer.vorausschauen..um.Überraschungen.zu.vermeiden.</a></td>
-<td align="left">Man sollte immer vorausschauen, um Überraschungen zu vermeiden.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">5</td>
-<td align="right">3.333333</td>
-<td align="right">1.3228757</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2582&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2585&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ein_kleines_unvorhergesehenes_Ereignis_kann_alles_verderben__trotz_bester_Planung_">Ein.kleines.unvorhergesehenes.Ereignis.kann.alles.verderben..trotz.bester.Planung.</a></td>
-<td align="left">Ein kleines unvorhergesehenes Ereignis kann alles verderben, trotz bester Planung.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">5</td>
-<td align="right">2.555556</td>
-<td align="right">1.5092309</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2587&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Unsicherheit_lähmt_mich__wenn_es_Zeit_ist__zu_handeln_">Unsicherheit.lähmt.mich..wenn.es.Zeit.ist..zu.handeln.</a></td>
-<td align="left">Unsicherheit lähmt mich, wenn es Zeit ist,zu handeln.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">5</td>
-<td align="right">3.000000</td>
-<td align="right">1.4142136</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2582&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2585&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Wenn_ich_keine_Gewissheit_habe__heißt_das__dass_ich_nicht_erstklassig_bin_">Wenn.ich.keine.Gewissheit.habe..heißt.das..dass.ich.nicht.erstklassig.bin.</a></td>
-<td align="left">Wenn ich keine Gewissheit habe, heißt das, dass ich nicht erstklassig bin.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">5</td>
-<td align="right">2.444444</td>
-<td align="right">1.3333333</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2586&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Wenn_ich_keine_Gewissheit_habe__dann_komme_ich_nicht_voran_">Wenn.ich.keine.Gewissheit.habe..dann.komme.ich.nicht.voran.</a></td>
-<td align="left">Wenn ich keine Gewissheit habe, dann komme ich nicht voran.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">4</td>
-<td align="right">2.222222</td>
-<td align="right">1.2018504</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2585&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Wenn_ich_keine_Gewissheit_habe__dann_funktioniere_ich_nicht_sehr_gut_">Wenn.ich.keine.Gewissheit.habe..dann.funktioniere.ich.nicht.sehr.gut.</a></td>
-<td align="left">Wenn ich keine Gewissheit habe, dann funktioniere ich nicht sehr gut.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">2</td>
-<td align="left">3</td>
-<td align="left">4</td>
-<td align="right">3.000000</td>
-<td align="right">0.7071068</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2583&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Im_Gegensatz_zu_mir__scheinen_andere_immer_zu_wissen__wohin_sie_im_Leben_gehen_">Im.Gegensatz.zu.mir..scheinen.andere.immer.zu.wissen..wohin.sie.im.Leben.gehen.</a></td>
-<td align="left">Ich Gegensatz zu mir, scheinen andere immer zu wissen, wohin sie im Leben gehen.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">4</td>
-<td align="left">5</td>
-<td align="right">3.444444</td>
-<td align="right">1.5898987</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2587&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ungewissheit_macht_mich_verwundbar__unglücklich_oder_traurig_">Ungewissheit.macht.mich.verwundbar..unglücklich.oder.traurig.</a></td>
-<td align="left">Ungewissheit macht mich verwunbar, unglücklich oder traurig.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">5</td>
-<td align="right">3.000000</td>
-<td align="right">1.1180340</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2582&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Ich_will_immer_wissen__was_die_Zukunft_für_mich_bereithält_">Ich.will.immer.wissen..was.die.Zukunft.für.mich.bereithält.</a></td>
-<td align="left">Ich will immer wissen, was die Zukunft für mich bereithält.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">2</td>
-<td align="left">3</td>
-<td align="left">5</td>
-<td align="right">3.555556</td>
-<td align="right">1.0137938</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2583&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ich_kann_es_nicht_leiden__überrumpelt_zu_werden_">Ich.kann.es.nicht.leiden..überrumpelt.zu.werden.</a></td>
-<td align="left">Ich kann es nicht leiden, überrumpelt zu werden.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">2</td>
-<td align="left">3</td>
-<td align="left">5</td>
-<td align="right">3.222222</td>
-<td align="right">1.3017083</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2583&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Der_geringste_Zweifel_kann_mich_vom_Handeln_abhalten_">Der.geringste.Zweifel.kann.mich.vom.Handeln.abhalten.</a></td>
-<td align="left">Der geringste Zweifel kann mich vom Handeln abhalten.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">5</td>
-<td align="right">2.888889</td>
-<td align="right">1.1666667</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2582&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ich_sollte_in_der_Lage_sein__alles_im_Voraus_zu_organisieren_">Ich.sollte.in.der.Lage.sein..alles.im.Voraus.zu.organisieren.</a></td>
-<td align="left">Ich sollte in der Lage sein, alles im Voraus zu organisieren.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">4</td>
-<td align="left">5</td>
-<td align="right">3.333333</td>
-<td align="right">1.2247449</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2582&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Ungewissheit_zu_haben_bedeutet__dass_es_mir_an_Selbstvertrauen_mangelt_">Ungewissheit.zu.haben.bedeutet..dass.es.mir.an.Selbstvertrauen.mangelt.</a></td>
-<td align="left">Ungewissheit zu haben bedeutet, dass es mir an Selbstvertrauen mangelt.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">5</td>
-<td align="right">3.000000</td>
-<td align="right">1.3228757</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2582&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ich_denke__es_ist_ungerecht__dass_andere_Leute_sich_über_ihre_Zukunft_sicher_zu_sein_scheinen_">Ich.denke..es.ist.ungerecht..dass.andere.Leute.sich.über.ihre.Zukunft.sicher.zu.sein.scheinen.</a></td>
-<td align="left">Ich denke, es ist ungerecht, dass andere Leute sich über ihr Zukunft sicher zu sein scheinen.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">5</td>
-<td align="right">3.000000</td>
-<td align="right">1.5000000</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2585&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2585&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Ungewissheit_hindert_mich_daran__gut_zu_schlafen_">Ungewissheit.hindert.mich.daran..gut.zu.schlafen.</a></td>
-<td align="left">Ungeiwssheit hindert mich daran, gut zu schlafen.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">5</td>
-<td align="right">3.111111</td>
-<td align="right">1.7638342</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2587&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ich_muss_allen_ungewissen_Situationen_entkommen_">Ich.muss.allen.ungewissen.Situationen.entkommen.</a></td>
-<td align="left">Ich muss allen ungewissen Situationen entkommen.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">3</td>
-<td align="right">2.111111</td>
-<td align="right">0.7817360</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2586&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Unklarheiten_im_Leben_belasten_mich__">Unklarheiten.im.Leben.belasten.mich..</a></td>
-<td align="left">Unklarheiten.im.Leben.belasten.mich.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">5</td>
-<td align="right">2.888889</td>
-<td align="right">1.3642255</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2585&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ich_kann_es_nicht_aushalten__unentschieden_bezüglich_meiner_Zukunft_zu_sein_">Ich.kann.es.nicht.aushalten..unentschieden.bezüglich.meiner.Zukunft.zu.sein.</a></td>
-<td align="left">Ich kann es nicht aushalten, unentschieden bezüglich meiner Zukunft zu sein.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">3</td>
-<td align="left">4</td>
-<td align="left">5</td>
-<td align="right">3.888889</td>
-<td align="right">0.7817360</td>
-<td align="right">5</td>
-<td align="left">&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2583&gt;</td>
-</tr>
-</tbody>
-</table>
+<div id="htmlwidget-5fc2dd05cd7afda0dede" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5fc2dd05cd7afda0dede">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"2.11111111111111\" data-max=\"3.88888888888889\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"0.707106781186547\" data-max=\"1.76383420737639\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[["<a href=\"#Ungewissheit_hindert_mich_daran__eine_feste_Meinung_zu_haben_\">Ungewissheit.hindert.mich.daran..eine.feste.Meinung.zu.haben.<\/a>","<a href=\"#Keine_Gewissheit_zu_haben__bedeutet_unorganisiert_zu_sein_\">Keine.Gewissheit.zu.haben..bedeutet.unorganisiert.zu.sein.<\/a>","<a href=\"#Ungewissheit_macht_das_Leben_unerträglich_\">Ungewissheit.macht.das.Leben.unerträglich.<\/a>","<a href=\"#Es_ist_ungerecht__dass_es_im_Leben_keine_Garantien_gibt_\">Es.ist.ungerecht..dass.es.im.Leben.keine.Garantien.gibt.<\/a>","<a href=\"#Ungewissheit_bereitet_mir_Unbehagen__Angst_oder_Stress_\">Ungewissheit.bereitet.mir.Unbehagen..Angst.oder.Stress.<\/a>","<a href=\"#Ich_kann_geistig_nicht_zur_Ruhe_kommen__wenn_ich_nicht_weiß__was_morgen_passieren_wird_\">Ich.kann.geistig.nicht.zur.Ruhe.kommen..wenn.ich.nicht.weiß..was.morgen.passieren.wird.<\/a>","<a href=\"#Das_Aufkommen_unerwarteter_Ereignisse_verstimmt_mich_sehr_\">Das.Aufkommen.unerwarteter.Ereignisse.verstimmt.mich.sehr.<\/a>","<a href=\"#Ungewissheit_hindert_mich_daran__ein_erfülltes_Leben_zu_führen_\">Ungewissheit.hindert.mich.daran..ein.erfülltes.Leben.zu.führen.<\/a>","<a href=\"#Es_frustriert_mich__nicht_alle_Informationen_zu_haben__die_ich_benötige_\">Es.frustriert.mich..nicht.alle.Informationen.zu.haben..die.ich.benötige.<\/a>","<a href=\"#Man_sollte_immer_vorausschauen__um_Überraschungen_zu_vermeiden_\">Man.sollte.immer.vorausschauen..um.Überraschungen.zu.vermeiden.<\/a>","<a href=\"#Ein_kleines_unvorhergesehenes_Ereignis_kann_alles_verderben__trotz_bester_Planung_\">Ein.kleines.unvorhergesehenes.Ereignis.kann.alles.verderben..trotz.bester.Planung.<\/a>","<a href=\"#Unsicherheit_lähmt_mich__wenn_es_Zeit_ist__zu_handeln_\">Unsicherheit.lähmt.mich..wenn.es.Zeit.ist..zu.handeln.<\/a>","<a href=\"#Wenn_ich_keine_Gewissheit_habe__heißt_das__dass_ich_nicht_erstklassig_bin_\">Wenn.ich.keine.Gewissheit.habe..heißt.das..dass.ich.nicht.erstklassig.bin.<\/a>","<a href=\"#Wenn_ich_keine_Gewissheit_habe__dann_komme_ich_nicht_voran_\">Wenn.ich.keine.Gewissheit.habe..dann.komme.ich.nicht.voran.<\/a>","<a href=\"#Wenn_ich_keine_Gewissheit_habe__dann_funktioniere_ich_nicht_sehr_gut_\">Wenn.ich.keine.Gewissheit.habe..dann.funktioniere.ich.nicht.sehr.gut.<\/a>","<a href=\"#Im_Gegensatz_zu_mir__scheinen_andere_immer_zu_wissen__wohin_sie_im_Leben_gehen_\">Im.Gegensatz.zu.mir..scheinen.andere.immer.zu.wissen..wohin.sie.im.Leben.gehen.<\/a>","<a href=\"#Ungewissheit_macht_mich_verwundbar__unglücklich_oder_traurig_\">Ungewissheit.macht.mich.verwundbar..unglücklich.oder.traurig.<\/a>","<a href=\"#Ich_will_immer_wissen__was_die_Zukunft_für_mich_bereithält_\">Ich.will.immer.wissen..was.die.Zukunft.für.mich.bereithält.<\/a>","<a href=\"#Ich_kann_es_nicht_leiden__überrumpelt_zu_werden_\">Ich.kann.es.nicht.leiden..überrumpelt.zu.werden.<\/a>","<a href=\"#Der_geringste_Zweifel_kann_mich_vom_Handeln_abhalten_\">Der.geringste.Zweifel.kann.mich.vom.Handeln.abhalten.<\/a>","<a href=\"#Ich_sollte_in_der_Lage_sein__alles_im_Voraus_zu_organisieren_\">Ich.sollte.in.der.Lage.sein..alles.im.Voraus.zu.organisieren.<\/a>","<a href=\"#Ungewissheit_zu_haben_bedeutet__dass_es_mir_an_Selbstvertrauen_mangelt_\">Ungewissheit.zu.haben.bedeutet..dass.es.mir.an.Selbstvertrauen.mangelt.<\/a>","<a href=\"#Ich_denke__es_ist_ungerecht__dass_andere_Leute_sich_über_ihre_Zukunft_sicher_zu_sein_scheinen_\">Ich.denke..es.ist.ungerecht..dass.andere.Leute.sich.über.ihre.Zukunft.sicher.zu.sein.scheinen.<\/a>","<a href=\"#Ungewissheit_hindert_mich_daran__gut_zu_schlafen_\">Ungewissheit.hindert.mich.daran..gut.zu.schlafen.<\/a>","<a href=\"#Ich_muss_allen_ungewissen_Situationen_entkommen_\">Ich.muss.allen.ungewissen.Situationen.entkommen.<\/a>","<a href=\"#Unklarheiten_im_Leben_belasten_mich__\">Unklarheiten.im.Leben.belasten.mich..<\/a>","<a href=\"#Ich_kann_es_nicht_aushalten__unentschieden_bezüglich_meiner_Zukunft_zu_sein_\">Ich.kann.es.nicht.aushalten..unentschieden.bezüglich.meiner.Zukunft.zu.sein.<\/a>"],["Ungewissheit hindert mich daran, eine feste Meinung zu haben.","Keine Gewissheit zu haben, bedeutet unorganisiert zu sein.","Ungewissheit macht das Leben unerträglich.","Es ist ungerecht, dass es im Leben keine Garantien gibt.","Ungewissheit bereitet mir Unbehagen, Angst oder Stress.","Ich kann geistig nicht zur Ruhe kommen, wenn ich nicht weiß, was morgen passieren wird.","Das Aufkommen unerwarteter Ereignisse verstimmt mich sehr.","Ungewissheit.hindert.mich.daran, ein erfülltes Leben zu führen.","Es frustriert mich, nicht alle Informationen zu haben, die ich benötige.","Man sollte immer vorausschauen, um Überraschungen zu vermeiden.","Ein kleines unvorhergesehenes Ereignis kann alles verderben, trotz bester Planung.","Unsicherheit lähmt mich, wenn es Zeit ist,zu handeln.","Wenn ich keine Gewissheit habe, heißt das, dass ich nicht erstklassig bin.","Wenn ich keine Gewissheit habe, dann komme ich nicht voran.","Wenn ich keine Gewissheit habe, dann funktioniere ich nicht sehr gut.","Ich Gegensatz zu mir, scheinen andere immer zu wissen, wohin sie im Leben gehen.","Ungewissheit macht mich verwunbar, unglücklich oder traurig.","Ich will immer wissen, was die Zukunft für mich bereithält.","Ich kann es nicht leiden, überrumpelt zu werden.","Der geringste Zweifel kann mich vom Handeln abhalten.","Ich sollte in der Lage sein, alles im Voraus zu organisieren.","Ungewissheit zu haben bedeutet, dass es mir an Selbstvertrauen mangelt.","Ich denke, es ist ungerecht, dass andere Leute sich über ihr Zukunft sicher zu sein scheinen.","Ungeiwssheit hindert mich daran, gut zu schlafen.","Ich muss allen ungewissen Situationen entkommen.","Unklarheiten.im.Leben.belasten.mich.","Ich kann es nicht aushalten, unentschieden bezüglich meiner Zukunft zu sein."],["haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled"],["1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich","1. überhaupt nicht typisch für mich,<br>2. 2,<br>3. einigermaßen typisch für mich,<br>4. 4,<br>5. vollkommen typisch für mich"],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9],["1","1","1","1","2","1","1","1","1","1","1","1","1","1","2","1","1","2","2","1","1","1","1","1","1","1","3"],["3","3","3","2","4","4","2","3","4","3","2","3","3","2","3","4","3","3","3","3","4","3","3","3","2","3","4"],["5","4","5","5","5","5","5","5","5","5","5","5","5","4","4","5","5","5","5","5","5","5","5","5","3","5","5"],[3.22222222222222,2.66666666666667,2.88888888888889,2.66666666666667,3.55555555555556,3,2.66666666666667,3.11111111111111,3.66666666666667,3.33333333333333,2.55555555555556,3,2.44444444444444,2.22222222222222,3,3.44444444444444,3,3.55555555555556,3.22222222222222,2.88888888888889,3.33333333333333,3,3,3.11111111111111,2.11111111111111,2.88888888888889,3.88888888888889],[1.30170827931778,1.22474487139159,1.16666666666667,1.4142135623731,0.881917103688197,1.73205080756888,1.5,1.45296631451356,1.3228756555323,1.3228756555323,1.50923085635624,1.4142135623731,1.33333333333333,1.20185042515466,0.707106781186548,1.58989866902824,1.11803398874989,1.0137937550497,1.30170827931778,1.16666666666667,1.22474487139159,1.3228756555323,1.5,1.76383420737639,0.781735959970572,1.36422546197874,0.781735959970572],[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],["▂▂▁▇▁▂▁▃","▅▁▅▁▁▅▁▇","▂▃▁▇▁▂▁▂","▅▇▁▂▁▅▁▂","▂▁▆▁▁▇▁▂","▇▂▁▁▁▇▁▅","▅▇▁▅▁▁▁▅","▂▇▁▂▁▅▁▅","▂▁▁▇▁▅▁▇","▂▂▁▇▁▅▁▅","▇▅▁▂▁▅▁▂","▂▇▁▅▁▂▁▅","▆▂▁▇▁▁▁▂","▇▁▇▁▁▂▁▅","▃▁▁▇▁▁▁▃","▅▁▁▅▁▅▁▇","▂▂▁▇▁▂▁▂","▂▁▇▁▁▃▁▃","▇▁▂▁▁▃▁▃","▂▃▁▇▁▂▁▂","▂▂▁▃▁▇▁▂","▂▇▁▂▁▇▁▂","▅▂▁▇▁▂▁▅","▇▁▁▅▁▂▁▇","▃▁▁▇▁▁▁▆","▅▂▁▇▁▅▁▂","▆▁▁▇▁▁▁▃"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>name<\/th>\n      <th>label<\/th>\n      <th>data_type<\/th>\n      <th>value_labels<\/th>\n      <th>n_missing<\/th>\n      <th>complete_rate<\/th>\n      <th>min<\/th>\n      <th>median<\/th>\n      <th>max<\/th>\n      <th>mean<\/th>\n      <th>sd<\/th>\n      <th>n_value_labels<\/th>\n      <th>hist<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"pageLength":200,"columnDefs":[{"className":"dt-right","targets":[4,5,9,10,11]}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,200]}},"evals":[],"jsHooks":[]}</script>
 <script type="application/ld+json">
 {
   "name": "IUS",
@@ -4196,7 +3797,10 @@ Distribution of values for Ich.kann.es.nicht.aushalten..unentschieden.bezüglich
 }
 </script>
 <details>
-<p><summary>JSON-LD metadata</summary> The following JSON-LD can be found by search engines, if you share this codebook publicly on the web.</p>
+<summary>
+JSON-LD metadata
+</summary>
+<p>The following JSON-LD can be found by search engines, if you share this codebook publicly on the web.</p>
 <pre class="json"><code>{
   &quot;name&quot;: &quot;IUS&quot;,
   &quot;datePublished&quot;: &quot;2021-04-29&quot;,
@@ -4432,7 +4036,7 @@ Distribution of values for Ich.kann.es.nicht.aushalten..unentschieden.bezüglich
 </p>
 <div id="workflowr-sessioninfo" class="collapse">
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>R version 4.0.4 (2021-02-15)
+<pre><code>R version 4.0.2 (2020-06-22)
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 Running under: Windows 10 x64 (build 19042)
 
@@ -4447,28 +4051,31 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
-[1] ltm_1.1-1       polycor_0.7-10  msm_1.6.8       MASS_7.3-53    
+[1] ltm_1.1-1       polycor_0.7-10  msm_1.6.8       MASS_7.3-53.1  
 [5] dplyr_1.0.5     labelled_2.8.0  here_1.0.1      codebook_0.9.2 
 [9] workflowr_1.6.2
 
 loaded via a namespace (and not attached):
  [1] Rcpp_1.0.6        mvtnorm_1.1-1     lattice_0.20-41   tidyr_1.1.3      
  [5] listenv_0.8.0     assertthat_0.2.1  rprojroot_2.0.2   digest_0.6.27    
- [9] utf8_1.2.1        parallelly_1.24.0 R6_2.5.0          repr_1.1.3       
-[13] evaluate_0.14     ggplot2_3.3.3     highr_0.8         pillar_1.6.0     
-[17] rlang_0.4.10      whisker_0.4       Matrix_1.3-2      rmarkdown_2.7    
-[21] labeling_0.4.2    splines_4.0.4     stringr_1.4.0     munsell_0.5.0    
-[25] compiler_4.0.4    httpuv_1.5.5      xfun_0.22         base64enc_0.1-3  
-[29] pkgconfig_2.0.3   globals_0.14.0    htmltools_0.5.1.1 tidyselect_1.1.0 
-[33] tibble_3.1.0      expm_0.999-6      codetools_0.2-18  fansi_0.4.2      
-[37] future_1.21.0     crayon_1.4.1      later_1.1.0.1     grid_4.0.4       
-[41] jsonlite_1.7.2    gtable_0.3.0      lifecycle_1.0.0   DBI_1.1.1        
-[45] git2r_0.28.0      magrittr_2.0.1    scales_1.1.1      stringi_1.5.3    
-[49] farver_2.1.0      fs_1.5.0          promises_1.2.0.1  rmdpartials_0.5.8
-[53] skimr_2.1.3       ellipsis_0.3.1    generics_0.1.0    vctrs_0.3.7      
-[57] tools_4.0.4       forcats_0.5.1     glue_1.4.2        purrr_0.3.4      
-[61] hms_1.0.0         parallel_4.0.4    survival_3.2-7    yaml_2.2.1       
-[65] colorspace_2.0-0  knitr_1.32        haven_2.3.1      </code></pre>
+ [9] utf8_1.2.1        mime_0.10         parallelly_1.24.0 repr_1.1.3       
+[13] R6_2.5.0          evaluate_0.14     ggplot2_3.3.3     highr_0.9        
+[17] pillar_1.6.0      rlang_0.4.10      whisker_0.4       jquerylib_0.1.3  
+[21] DT_0.18           Matrix_1.2-18     rmarkdown_2.7     labeling_0.4.2   
+[25] splines_4.0.2     stringr_1.4.0     htmlwidgets_1.5.3 munsell_0.5.0    
+[29] shiny_1.6.0       compiler_4.0.2    httpuv_1.6.0      xfun_0.22        
+[33] base64enc_0.1-3   pkgconfig_2.0.3   globals_0.14.0    htmltools_0.5.1.1
+[37] tidyselect_1.1.0  tibble_3.1.1      expm_0.999-6      codetools_0.2-16 
+[41] fansi_0.4.2       future_1.21.0     crayon_1.4.1      later_1.2.0      
+[45] grid_4.0.2        xtable_1.8-4      jsonlite_1.7.2    gtable_0.3.0     
+[49] lifecycle_1.0.0   DBI_1.1.1         git2r_0.28.0      magrittr_2.0.1   
+[53] scales_1.1.1      stringi_1.5.3     farver_2.1.0      fs_1.5.0         
+[57] promises_1.2.0.1  rmdpartials_0.5.8 skimr_2.1.3       bslib_0.2.4      
+[61] ellipsis_0.3.1    generics_0.1.0    vctrs_0.3.7       tools_4.0.2      
+[65] forcats_0.5.1     glue_1.4.2        purrr_0.3.4       crosstalk_1.1.1  
+[69] hms_1.0.0         fastmap_1.1.0     parallel_4.0.2    survival_3.1-12  
+[73] yaml_2.2.1        colorspace_2.0-0  knitr_1.33        haven_2.4.1      
+[77] sass_0.3.1       </code></pre>
 </div>
 </div>
 
@@ -4484,6 +4091,8 @@ footer is added to webpages before the MathJax javascript. -->
     "HTML-CSS": { availableFonts: ["TeX"] }
   });
 </script>
+
+
 
 
 </div>
