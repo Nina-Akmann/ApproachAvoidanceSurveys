@@ -1,12 +1,14 @@
 ---
 title: "About"
 author: "Nina Akmann & Linus Krause"
+bibliography: UKE/UKE.bib
+link-citations: true
 output:
   workflowr::wflow_html:
     toc: false
 editor_options:
   chunk_output_type: console
-bibliography: UKE/UKE.bib
+
 
 ---
 
@@ -65,6 +67,7 @@ Each item of this questionnaire is a statement that a person may either agree wi
 -  2 = somewhat true for me
 -  3 = somewhat false for me
 -  4 = very false for me
+
 
 
 
