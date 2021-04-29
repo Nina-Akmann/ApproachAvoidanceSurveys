@@ -1,0 +1,116 @@
+---
+title: "Codebook IUS"
+author: "Nina Akmann"
+date: "08 4 2021"
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+    toc_float: true
+    code_folding: 'show'
+    self_contained: true
+  pdf_document:
+    toc: yes
+    toc_depth: 4
+    latex_engine: xelatex
+---
+
+```{r chunk-options,include = FALSE}
+knitr::opts_chunk$set(
+  warning = FALSE, # show warnings during codebook generation
+  message = FALSE, # show messages during codebook generation
+  error = TRUE, # do not interrupt codebook generation in case of errors,
+                # usually better for debugging
+  echo = TRUE  # show R code
+)
+ggplot2::theme_set(ggplot2::theme_bw())
+
+```
+
+## Load packages
+```{r setup}
+library(codebook) # for creating the codebook
+library(here)     # for relative paths 
+library(labelled) # for labelling variables and values 
+library(dplyr)    # for data manipulation
+library(ltm)      # for computing Cronbachs alpha 
+```
+
+## Load data
+```{r load-data}
+load(here("data/data_survey.Rda")) 
+```
+
+## Subset relevant columns
+```{r subset-relevant-columns}
+# subset relevant columns
+IUS = data_survey2[52:78] 
+```
+
+## Label items
+```{r label-items}
+# add names to items 
+var_label(IUS) <- list(
+  Ungewissheit.hindert.mich.daran..eine.feste.Meinung.zu.haben. = "Ungewissheit hindert mich daran, eine feste Meinung zu haben.", 
+  Keine.Gewissheit.zu.haben..bedeutet.unorganisiert.zu.sein. = "Keine Gewissheit zu haben, bedeutet unorganisiert zu sein.", 
+  Ungewissheit.macht.das.Leben.unerträglich. = "Ungewissheit macht das Leben unerträglich.", 
+  Es.ist.ungerecht..dass.es.im.Leben.keine.Garantien.gibt. = "Es ist ungerecht, dass es im Leben keine Garantien gibt.", 
+ Ungewissheit.bereitet.mir.Unbehagen..Angst.oder.Stress. = "Ungewissheit bereitet mir Unbehagen, Angst oder Stress.", 
+  Ich.kann.geistig.nicht.zur.Ruhe.kommen..wenn.ich.nicht.weiß..was.morgen.passieren.wird. = "Ich kann geistig nicht zur Ruhe kommen, wenn ich nicht weiß, was morgen passieren wird.", 
+  Das.Aufkommen.unerwarteter.Ereignisse.verstimmt.mich.sehr. = "Das Aufkommen unerwarteter Ereignisse verstimmt mich sehr.", 
+  Ungewissheit.hindert.mich.daran..ein.erfülltes.Leben.zu.führen. = "Ungewissheit.hindert.mich.daran, ein erfülltes Leben zu führen.", 
+  Es.frustriert.mich..nicht.alle.Informationen.zu.haben..die.ich.benötige. = "Es frustriert mich, nicht alle Informationen zu haben, die ich benötige.", 
+  Man.sollte.immer.vorausschauen..um.Überraschungen.zu.vermeiden. = "Man sollte immer vorausschauen, um Überraschungen zu vermeiden.",
+ Ein.kleines.unvorhergesehenes.Ereignis.kann.alles.verderben..trotz.bester.Planung. = "Ein kleines unvorhergesehenes Ereignis kann alles verderben, trotz bester Planung.", 
+  Unsicherheit.lähmt.mich..wenn.es.Zeit.ist..zu.handeln. = "Unsicherheit lähmt mich, wenn es Zeit ist,zu handeln.", 
+  Wenn.ich.keine.Gewissheit.habe..heißt.das..dass.ich.nicht.erstklassig.bin. = "Wenn ich keine Gewissheit habe, heißt das, dass ich nicht erstklassig bin.", 
+  Wenn.ich.keine.Gewissheit.habe..dann.komme.ich.nicht.voran. = "Wenn ich keine Gewissheit habe, dann komme ich nicht voran.", 
+  Wenn.ich.keine.Gewissheit.habe..dann.funktioniere.ich.nicht.sehr.gut. = "Wenn ich keine Gewissheit habe, dann funktioniere ich nicht sehr gut.",
+  Im.Gegensatz.zu.mir..scheinen.andere.immer.zu.wissen..wohin.sie.im.Leben.gehen. = "Ich Gegensatz zu mir, scheinen andere immer zu wissen, wohin sie im Leben gehen.", 
+  Ungewissheit.macht.mich.verwundbar..unglücklich.oder.traurig. = "Ungewissheit macht mich verwunbar, unglücklich oder traurig.", 
+  Ich.will.immer.wissen..was.die.Zukunft.für.mich.bereithält. = "Ich will immer wissen, was die Zukunft für mich bereithält.", 
+  Ich.kann.es.nicht.leiden..überrumpelt.zu.werden. = "Ich kann es nicht leiden, überrumpelt zu werden.", 
+  Der.geringste.Zweifel.kann.mich.vom.Handeln.abhalten. = "Der geringste Zweifel kann mich vom Handeln abhalten.",
+ Ich.sollte.in.der.Lage.sein..alles.im.Voraus.zu.organisieren. = "Ich sollte in der Lage sein, alles im Voraus zu organisieren.", 
+Ungewissheit.zu.haben.bedeutet..dass.es.mir.an.Selbstvertrauen.mangelt. = "Ungewissheit zu haben bedeutet, dass es mir an Selbstvertrauen mangelt.", 
+Ich.denke..es.ist.ungerecht..dass.andere.Leute.sich.über.ihre.Zukunft.sicher.zu.sein.scheinen. = "Ich denke, es ist ungerecht, dass andere Leute sich über ihr Zukunft sicher zu sein scheinen.", 
+Ungewissheit.hindert.mich.daran..gut.zu.schlafen. = "Ungeiwssheit hindert mich daran, gut zu schlafen.", 
+Ich.muss.allen.ungewissen.Situationen.entkommen. = "Ich muss allen ungewissen Situationen entkommen.",
+ Unklarheiten.im.Leben.belasten.mich.. = "Unklarheiten.im.Leben.belasten.mich.", 
+  Ich.kann.es.nicht.aushalten..unentschieden.bezüglich.meiner.Zukunft.zu.sein. = "Ich kann es nicht aushalten, unentschieden bezüglich meiner Zukunft zu sein."
+)
+```
+
+## Label Likert items' values 
+```{r label}
+# create function to add likert labels 
+add_likert_labels <- function(x) {
+ val_labels(x) <- c("überhaupt nicht typisch für mich" = 1,
+ "2" = 2,
+ "einigermaßen typisch für mich" = 3,
+ "4" = 4, 
+ "vollkommen typisch für mich" = 5) # change to correct labels 
+ x
+}
+
+# change data format to apply mutate_all
+IUS_tbl <- tibble::as_tibble(IUS)
+
+# use function for all Likert items
+IUS =  mutate_all(IUS_tbl, 
+add_likert_labels)
+```
+
+## Compute Cronbachs alpha 
+```{r reliabilities}
+cronbach.alpha(IUS, standardized = TRUE, na.rm = TRUE)
+```
+
+## Create codebook
+```{r codebook}
+codebook(IUS)
+```
+
+
+
+
