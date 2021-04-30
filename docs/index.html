@@ -69,6 +69,28 @@ if (window.hljs) {
 
 
 
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -293,7 +315,7 @@ $(document).ready(function () {
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -302,7 +324,7 @@ $(document).ready(function () {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -311,10 +333,10 @@ $(document).ready(function () {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2021-04-29
+<strong>Last updated:</strong> 2021-04-30
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 1 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>ApproachAvoidanceSurveys/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -330,28 +352,28 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted changes </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+<p>The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystree75ba9c3ccc8b186e5b50a799b5f502a005e044a4targetblank75ba9c3a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/75ba9c3ccc8b186e5b50a799b5f502a005e044a4" target="_blank">75ba9c3</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystreec494c1af5e91d87265c2516c8830ee43ea56482ctargetblankc494c1aa"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/c494c1af5e91d87265c2516c8830ee43ea56482c" target="_blank">c494c1a</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystree75ba9c3ccc8b186e5b50a799b5f502a005e044a4targetblank75ba9c3a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystreec494c1af5e91d87265c2516c8830ee43ea56482ctargetblankc494c1aa" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/75ba9c3ccc8b186e5b50a799b5f502a005e044a4" target="_blank">75ba9c3</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/c494c1af5e91d87265c2516c8830ee43ea56482c" target="_blank">c494c1a</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -362,17 +384,11 @@ Ignored files:
     Ignored:    .Rproj.user/
 
 Untracked files:
-    Untracked:  analysis/UKE/
-    Untracked:  analysis/images/
+    Untracked:  analysis/references.bib
     Untracked:  data/data_survey.Rda
-    Untracked:  images/
 
 Unstaged changes:
-    Modified:   analysis/Codebook_BIS_BAS.Rmd
-    Modified:   analysis/Codebook_IUS.Rmd
-    Modified:   analysis/Codebook_STAI.Rmd
-    Modified:   analysis/Codebooks.Rmd
-    Modified:   analysis/about.Rmd
+    Modified:   analysis/index.Rmd
 
 </code></pre>
 <p>
@@ -411,6 +427,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/f8017cca95ca6e140de877de40a6f0cb69255992/docs/index.html" target="_blank">f8017cc</a>
+</td>
+<td>
+psychub
+</td>
+<td>
+2021-04-29
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -834,8 +867,23 @@ Start workflowr project.
 </div>
 <div id="what-is-virtual-reality-vr" class="section level3">
 <h3>What is Virtual reality (VR) ?</h3>
-<p>Virtual reality (VR) can be characterized by the following: “Virtual Reality (VR) is a computer-generated reality with images (3D) and, in many cases, sound. It is transmitted via large screens, in special rooms (Cave Automatic Virtual Environment, CAVE for short) or via a head-mounted display (video or VR glasses).” (Bendel, 2018). Here, the illusion of participating in a synthetic environment is created instead of merely observing it from the outside (Earnshaw, 1993). Advantages of VR can already be partly inferred from the definition. For example, the high flexibility in adaptation and controllability of the synthetic and interactive intervention, the relatively low level of therapist involvement required, and the general “low cost” and wide availability make VR an interesting and novel therapeutic option outside of experimental laboratories (Freeman et al., 2017; Riva, 2005). One of the most important advantages, which will be discussed in more detail here and to which this study will contribute, is the synthetic environment. It provides the opportunity to incorporate and directly address social influence and pressure, as well as other environmental influences. Situations can be created, whose real circumstance would be immoral or illegal. In addition to the synthetic world and realistic representation, VR goggles can be used to shield external visual stimuli that can be distracting. The representation of the environment and objects within VR is possible in 3D. A 3D representation provides a more realistic presentation of the objects triggering craving and behavioral tendencies. In terms of implicit cognitions associated with AKS, this could offer a therapeutic advantage. From the combination of VR and different testing paradigms, there is also the advantage, compared to the classical variants, that the playful character of these methods can lead to an increased motivation of the subjects (Mostajeran, Kirsten, Steinicke, Gallinat, &amp; Kuhn, 2019). In psychotherapy, VR has been used primarily in the treatment of anxiety disorders. Among these were promising intervention studies for PTSD (Freeman et al., 2017; Riva, 2005).</p>
+<p>Virtual reality (VR) can be characterized by the following: “Virtual Reality (VR) is a computer-generated reality with images (3D) and, in many cases, sound. It is transmitted via large screens, in special rooms (Cave Automatic Virtual Environment, CAVE for short) or via a head-mounted display (video or VR glasses).” <span class="citation">(Bendel 2018)</span>. Here, the illusion of participating in a synthetic environment is created instead of merely observing it from the outside (Earnshaw, 1993). Advantages of VR can already be partly inferred from the definition. For example, the high flexibility in adaptation and controllability of the synthetic and interactive intervention, the relatively low level of therapist involvement required, and the general “low cost” and wide availability make VR an interesting and novel therapeutic option outside of experimental laboratories <span class="citation">Riva (2005)</span>. One of the most important advantages, which will be discussed in more detail here and to which this study will contribute, is the synthetic environment. It provides the opportunity to incorporate and directly address social influence and pressure, as well as other environmental influences. Situations can be created, whose real circumstance would be immoral or illegal. In addition to the synthetic world and realistic representation, VR goggles can be used to shield external visual stimuli that can be distracting. The representation of the environment and objects within VR is possible in 3D. A 3D representation provides a more realistic presentation of the objects triggering craving and behavioral tendencies. In terms of implicit cognitions associated with AKS, this could offer a therapeutic advantage. From the combination of VR and different testing paradigms, there is also the advantage, compared to the classical variants, that the playful character of these methods can lead to an increased motivation of the subjects <span class="citation">(Mostajeran et al. 2019)</span>. In psychotherapy, VR has been used primarily in the treatment of anxiety disorders. Among these were promising intervention studies for PTSD <span class="citation">Riva (2005)</span>.</p>
 <p><strong><em>For more information about our project and applications please visit <a href="about.html">ABOUT</a>.</em></strong></p>
+<p><strong><em>References:</em></strong></p>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-bendelDefinitionVirtuelleRealitaet2018" class="csl-entry">
+Bendel, Prof Dr Oliver. 2018. <span>“Definition: Virtuelle Realität.”</span> <a href="https://wirtschaftslexikon.gabler.de/definition/virtuelle-realitaet-54243">https://wirtschaftslexikon.gabler.de/definition/virtuelle-realitaet-54243</a>.
+</div>
+<div id="ref-freemanVirtualRealityAssessment2017" class="csl-entry">
+Freeman, D., S. Reeve, A. Robinson, A. Ehlers, D. Clark, B. Spanlang, and M. Slater. 2017. <span>“Virtual reality in the assessment, understanding, and treatment of mental health disorders.”</span> <em>Psychological Medicine</em> 47 (14): 2393–2400. <a href="https://doi.org/10.1017/S003329171700040X">https://doi.org/10.1017/S003329171700040X</a>.
+</div>
+<div id="ref-mostajeranGamifiedAlcoholUse2019" class="csl-entry">
+Mostajeran, Fariba, Aila Kirsten, Frank Steinicke, Jürgen Gallinat, and Simone Kühn. 2019. <span>“2019 IEEE Conference on Virtual Reality and 3d User Interfaces (VR).”</span> In, 1471–76. <a href="https://doi.org/10.1109/VR.2019.8797817">https://doi.org/10.1109/VR.2019.8797817</a>.
+</div>
+<div id="ref-rivaVirtualRealityPsychotherapy2005" class="csl-entry">
+Riva, Giuseppe. 2005. <span>“Virtual Reality in Psychotherapy: Review.”</span> <em>CyberPsychology &amp; Behavior</em> 8 (3): 220–30. <a href="https://doi.org/10.1089/cpb.2005.8.220">https://doi.org/10.1089/cpb.2005.8.220</a>.
+</div>
+</div>
 </div>
 </div>
 

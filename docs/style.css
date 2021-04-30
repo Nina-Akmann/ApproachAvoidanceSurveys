@@ -5,11 +5,6 @@
 }
 
 
-/* Add red border around workflowr report button */
-.btn-workflowr-report {
-  border: red 5px solid;
-}
-
 
 /* Add blue border around workflowr past figure version buttons */
 .btn-workflowr-fig {
@@ -26,7 +21,7 @@
 body {
   line-height: 2.5;
   font-family: "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-size: 16px;
 
 
 }
