@@ -63,3 +63,7 @@ Each item of this questionnaire is a statement that a person may either agree wi
 -   4 = very false for me
 
 [@DepartmentPsychologyBIS]
+
+### Intolerance of Uncertainty Scale (IUS)
+
+
