@@ -66,6 +66,10 @@ Each item of this questionnaire is a statement that a person may either agree wi
 
 ### Intolerance of Uncertainty Scale (IUS)
 
-Current research provides the result that intolerance of uncertainty may be a key construct in the emergence and maintenance of worrying.  Worrying plays a role in both clinical and non-clinical populations. Researchers hypothesize that people who are more likely to worry also have difficulty dealing with uncertainty.
+**Construct:** Current research provides the result that intolerance of uncertainty may be a key construct in the emergence and maintenance of worrying.  Worrying plays a role in both clinical and non-clinical studies. Researchers have been able to find a correlation between intolerance of uncertainty and worry. They suggest that people who are more likely to worry also have difficulty coping with uncertainty.This manifests itself in the fact that these individuals find it difficult to accept that a negative event could occur, even though the probability of its occurrence is perceived as low.  Individuals with a tendency toward intolerance of uncertainty are less able to cope with the uncertainty and ambiguity of life.
+
+**Description of measurement:** The original version of the IUS was developed in French. It measures emotional, cognitive, and behavioral responses to ambiguous situations, effects of uncertainty, and attempts to control the future. The IUS includes 27 items that relate to the idea that uncertainty is unacceptable, reflects poorly on a person, and leads to frustration, stress, and inability to act. Participants rate the items on a five-point Likert scale ranging from 1='not at all characteristic of me' to 5='entirely characteristic of me'.
+
+**Psychometric properties:** Both the English-translated and French versions of the IUS show excellent internal consistency (alpha=0.94/alpha=0.91) and good test-retest reliability (r=0.74/r=0.78) over a 5-week period. In addition, they show convergent and divergent validity with respect to measurement methods for worry, depression, and anxiety. 
 
 Buhr, K., & Dugas, M. J. (2002). The intolerance of uncertainty scale: psychometric properties of the English version, Behaviour Research and Therapy, 40, 931 - 945
