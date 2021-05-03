@@ -66,4 +66,6 @@ Each item of this questionnaire is a statement that a person may either agree wi
 
 ### Intolerance of Uncertainty Scale (IUS)
 
+Current research provides the result that intolerance of uncertainty may be a key construct in the emergence and maintenance of worrying.  Worrying plays a role in both clinical and non-clinical populations. Researchers hypothesize that people who are more likely to worry also have difficulty dealing with uncertainty.
 
+Buhr, K., & Dugas, M. J. (2002). The intolerance of uncertainty scale: psychometric properties of the English version, Behaviour Research and Therapy, 40, 931 - 945
