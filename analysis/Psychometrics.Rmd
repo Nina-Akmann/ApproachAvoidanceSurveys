@@ -1,0 +1,53 @@
+---
+title: "Psychometrics"
+author: "Nina Akmann & Linus Krause"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+bibliography: UKE/UKE.bib
+---
+
+### The State-Trait Anxiety Inventory (STAI)
+
+**Construct:** Adult anxiety
+
+**Description of Measure:** The State-Trait Anxiety Inventory (STAI) is a commonly used measure of trait and state anxiety (Spielberger, Gorsuch, Lushene, Vagg, & Jacobs, 1983). It can be used in clinical settings to diagnose anxiety and to distinguish it from depressive syndromes. It also is often used in research as an indicator of caregiver distress (e.g., Greene et al., 2017, Ugalde et al., 2014).
+
+Anxiety Form Y, its most popular version, has 20 items for assessing trait anxiety and 20 for state anxiety. State anxiety items include: "I am tense; I am worried" and "I feel calm; I feel secure." Trait anxiety items include: "I worry too much over something that really doesn't matter" and "I am content; I am a steady person." All items are rated on a 4-point scale (e.g., from "Almost Never" to "Almost Always"). Higher scores indicate greater anxiety. The STAI is appropriate for those who have at least a sixth-grade reading level.
+
+Internal consistency coefficients for the scale have ranged from .86 to .95; test-retest reliability coefficients have ranged from .65 to .75 over a 2-month interval (Spielberger et al., 1983). Test-retest coefficients for this measure in the present study ranged from .69 to .89. Considerable evidence attests to the construct and concurrent validity of the scale (Spielberger, 1989).
+
+Studies also have shown that it is a sensitive predictor of caregiver distress over time, and that it can vary with changes in support systems, health, and other individual characteristics (Elliott, Shewchuk, & Richards, 2001; Shewchuk, Richards & Elliott, 1998).
+
+[@StateTraitAnxietyInventory]
+
+***Click on this [link](Codebook_STAI.html) to see our codebook for STAI.***
+
+### Intolerance of Uncertainty Scale (IUS)
+
+**Construct:** Current research provides the result that intolerance of uncertainty may be a key construct in the emergence and maintenance of worrying.  Worrying plays a role in both clinical and non-clinical studies. Researchers have been able to find a correlation between intolerance of uncertainty and worry. They suggest that people who are more likely to worry also have difficulty coping with uncertainty.This manifests itself in the fact that these individuals find it difficult to accept that a negative event could occur, even though the probability of its occurrence is perceived as low.  Individuals with a tendency toward intolerance of uncertainty are less able to cope with the uncertainty and ambiguity of life.
+
+**Description of measurement:** The original version of the IUS was developed in French. It measures emotional, cognitive, and behavioral responses to ambiguous situations, effects of uncertainty, and attempts to control the future. The IUS includes 27 items that relate to the idea that uncertainty is unacceptable, reflects poorly on a person, and leads to frustration, stress, and inability to act. Participants rate the items on a five-point Likert scale ranging from 1='not at all characteristic of me' to 5='entirely characteristic of me'.
+
+**Psychometric properties:** Both the English-translated and French versions of the IUS show excellent internal consistency (alpha=0.94/alpha=0.91) and good test-retest reliability (r=0.74/r=0.78) over a 5-week period. In addition, they show convergent and divergent validity with respect to measurement methods for worry, depression, and anxiety. 
+
+Buhr, K., & Dugas, M. J. (2002). The intolerance of uncertainty scale: psychometric properties of the English version, Behaviour Research and Therapy, 40, 931 - 945
+
+***Click on this [link](Codebook_IUS.html) to see our codebook for IUS.***
+
+### BIS_BAS scales 
+
+Several theorists have argued that two general motivational systems underlie behavior. A behavioral approach system (BAS) is believed to regulate appetitive motives, in which the goal is to move toward something desired. A behavioral avoidance (or inhibition) system (BIS) is said to regulate aversive motives, in which the goal is to move away from something unpleasant. We developed the BIS/BAS scales to assess individual differences in the sensitivity of these systems.
+
+*Carver, C. S., & White, T. L. (1994). Behavioral inhibition, behavioral activation, and affective responses to impending reward and punishment: The BIS/BAS scales. Journal of Personality and Social Psychology, 67, 319-333.*
+
+Each item of this questionnaire is a statement that a person may either agree with or disagree with. For each item, indicate how much you agree or disagree with what the item says. Please respond to all the items; do not leave any blank. Choose only one response to each statement. Please be as accurate and honest as you can be. Respond to each item as if it were the only item. That is, don't worry about being "consistent" in your responses. Choose from the following four response options:
+
+-   1 = very true for me
+-   2 = somewhat true for me
+-   3 = somewhat false for me
+-   4 = very false for me
+
+[@DepartmentPsychologyBIS]
+
+***Click on this [link](Codebook_BIS_BAS.html) to see our codebook for BIS_BAS.***

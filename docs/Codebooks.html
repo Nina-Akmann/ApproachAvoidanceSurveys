@@ -12,9 +12,8 @@
 <meta name="author" content="Nina Akmann &amp; Linus Krause" />
 
 
-<title>Codebooks</title>
+<title>Psychometrics</title>
 
-<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
@@ -46,8 +45,6 @@ div.section {
   padding-top: 12px;
 }
 </style>
-
-
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -361,7 +358,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Codebooks</h1>
+<h1 class="title toc-ignore">Psychometrics</h1>
 <h4 class="author">Nina Akmann &amp; Linus Krause</h4>
 
 </div>
@@ -369,7 +366,7 @@ div.tocify {
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -378,7 +375,7 @@ div.tocify {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -387,10 +384,10 @@ div.tocify {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2021-04-30
+<strong>Last updated:</strong> 2021-05-06
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 1 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>ApproachAvoidanceSurveys/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -406,28 +403,28 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted changes </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+<p>The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystree6c790a0e429671d0fd230cc8ad26057e36c13612targetblank6c790a0a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/6c790a0e429671d0fd230cc8ad26057e36c13612" target="_blank">6c790a0</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystree71d9f90ed891fbb836112598fd9e634e64f581b1targetblank71d9f90a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/71d9f90ed891fbb836112598fd9e634e64f581b1" target="_blank">71d9f90</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystree6c790a0e429671d0fd230cc8ad26057e36c13612targetblank6c790a0a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystree71d9f90ed891fbb836112598fd9e634e64f581b1targetblank71d9f90a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/6c790a0e429671d0fd230cc8ad26057e36c13612" target="_blank">6c790a0</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/71d9f90ed891fbb836112598fd9e634e64f581b1" target="_blank">71d9f90</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -437,8 +434,8 @@ Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
 
-Untracked files:
-    Untracked:  data/data_survey.Rda
+Unstaged changes:
+    Modified:   analysis/Codebooks.Rmd
 
 </code></pre>
 <p>
@@ -479,10 +476,27 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/018906588fdee75949fecf7e85a9d88ed28aa4b8/docs/Codebooks.html" target="_blank">0189065</a>
+</td>
+<td>
+psychub
+</td>
+<td>
+2021-04-30
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
-<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/eaa2e31cb3317c234f220b1493aa2246a17b2730/analysis/Codebooks.Rmd" target="_blank">eaa2e31</a>
+<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/eaa2e31cb3317c234f220b1493aa2246a17b2730/analysis/Codebooks.Rmd" target="_blank">eaa2e31</a>
 </td>
 <td>
 psychub
@@ -499,7 +513,7 @@ changed stuff
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/eaa2e31cb3317c234f220b1493aa2246a17b2730/docs/Codebooks.html" target="_blank">eaa2e31</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/eaa2e31cb3317c234f220b1493aa2246a17b2730/docs/Codebooks.html" target="_blank">eaa2e31</a>
 </td>
 <td>
 psychub
@@ -516,7 +530,7 @@ changed stuff
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/75ba9c3ccc8b186e5b50a799b5f502a005e044a4/docs/Codebooks.html" target="_blank">75ba9c3</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/75ba9c3ccc8b186e5b50a799b5f502a005e044a4/docs/Codebooks.html" target="_blank">75ba9c3</a>
 </td>
 <td>
 Nina-Akmann
@@ -533,7 +547,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/d343cdba431016ab94e84bb5e234b617d2cd6570/docs/Codebooks.html" target="_blank">d343cdb</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/d343cdba431016ab94e84bb5e234b617d2cd6570/docs/Codebooks.html" target="_blank">d343cdb</a>
 </td>
 <td>
 psychub
@@ -550,7 +564,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/a05202ea4c9f3c42caebaabe513d44c90dc90ad2/docs/Codebooks.html" target="_blank">a05202e</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/a05202ea4c9f3c42caebaabe513d44c90dc90ad2/docs/Codebooks.html" target="_blank">a05202e</a>
 </td>
 <td>
 psychub
@@ -567,7 +581,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/6884916b8a5e0fd91cc6fa6b39dc979f9296b870/docs/Codebooks.html" target="_blank">6884916</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/6884916b8a5e0fd91cc6fa6b39dc979f9296b870/docs/Codebooks.html" target="_blank">6884916</a>
 </td>
 <td>
 psychub
@@ -584,7 +598,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/d57577e3f594df538fc29f5e3f12bc9523e9daa0/docs/Codebooks.html" target="_blank">d57577e</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/d57577e3f594df538fc29f5e3f12bc9523e9daa0/docs/Codebooks.html" target="_blank">d57577e</a>
 </td>
 <td>
 psychub
@@ -601,7 +615,7 @@ true
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/06596c2c1b3958c4f009fad219a0eaf1c66169b2/docs/Codebooks.html" target="_blank">06596c2</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/06596c2c1b3958c4f009fad219a0eaf1c66169b2/docs/Codebooks.html" target="_blank">06596c2</a>
 </td>
 <td>
 psychub
@@ -618,7 +632,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/fb6508126fc7b0413a142583617c966c00d70cda/docs/Codebooks.html" target="_blank">fb65081</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/fb6508126fc7b0413a142583617c966c00d70cda/docs/Codebooks.html" target="_blank">fb65081</a>
 </td>
 <td>
 Nina-Akmann
@@ -635,7 +649,7 @@ Build site.
 Rmd
 </td>
 <td>
-<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/ee4649809d89eb6c1499c576b699353f40036425/analysis/Codebooks.Rmd" target="_blank">ee46498</a>
+<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/ee4649809d89eb6c1499c576b699353f40036425/analysis/Codebooks.Rmd" target="_blank">ee46498</a>
 </td>
 <td>
 Nina-Akmann
@@ -652,7 +666,7 @@ adding Codebook BIS_BAS
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/0044963a71335106c14693f8fccfa406fcef8643/docs/Codebooks.html" target="_blank">0044963</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/0044963a71335106c14693f8fccfa406fcef8643/docs/Codebooks.html" target="_blank">0044963</a>
 </td>
 <td>
 psychub
@@ -669,7 +683,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/10e9438197eb4cd9fc3946dd9fcfccc437d289dd/docs/Codebooks.html" target="_blank">10e9438</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/10e9438197eb4cd9fc3946dd9fcfccc437d289dd/docs/Codebooks.html" target="_blank">10e9438</a>
 </td>
 <td>
 psychub
@@ -686,7 +700,7 @@ Build site.
 Rmd
 </td>
 <td>
-<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/5658fd433ecfa4b86fd75bce24f0a81d28de1e97/analysis/Codebooks.Rmd" target="_blank">5658fd4</a>
+<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/5658fd433ecfa4b86fd75bce24f0a81d28de1e97/analysis/Codebooks.Rmd" target="_blank">5658fd4</a>
 </td>
 <td>
 psychub
@@ -703,7 +717,7 @@ adding the link to the IUS codebook
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/4ebd3dae0df40be9f649ae6d352e8aa27a19ea36/docs/Codebooks.html" target="_blank">4ebd3da</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/4ebd3dae0df40be9f649ae6d352e8aa27a19ea36/docs/Codebooks.html" target="_blank">4ebd3da</a>
 </td>
 <td>
 psychub
@@ -720,7 +734,7 @@ Build site.
 Rmd
 </td>
 <td>
-<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/81d61923764b955908f060b2ce541fc757052b47/analysis/Codebooks.Rmd" target="_blank">81d6192</a>
+<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/81d61923764b955908f060b2ce541fc757052b47/analysis/Codebooks.Rmd" target="_blank">81d6192</a>
 </td>
 <td>
 psychub
@@ -737,7 +751,7 @@ fix #5 we solved it
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/81d61923764b955908f060b2ce541fc757052b47/docs/Codebooks.html" target="_blank">81d6192</a>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/81d61923764b955908f060b2ce541fc757052b47/docs/Codebooks.html" target="_blank">81d6192</a>
 </td>
 <td>
 psychub
@@ -756,19 +770,44 @@ fix #5 we solved it
 </div>
 </div>
 </div>
-<div id="psychometrics" class="section level1">
-<h1>Psychometrics</h1>
-<div id="stai" class="section level3">
-<h3>STAI</h3>
-<p>Click on this <a href="Codebook_STAI.html">link</a> to see our results.</p>
+<div id="the-state-trait-anxiety-inventory-stai" class="section level3">
+<h3>The State-Trait Anxiety Inventory (STAI)</h3>
+<p><strong>Construct:</strong> Adult anxiety</p>
+<p><strong>Description of Measure:</strong> The State-Trait Anxiety Inventory (STAI) is a commonly used measure of trait and state anxiety (Spielberger, Gorsuch, Lushene, Vagg, &amp; Jacobs, 1983). It can be used in clinical settings to diagnose anxiety and to distinguish it from depressive syndromes. It also is often used in research as an indicator of caregiver distress (e.g., Greene et al., 2017, Ugalde et al., 2014).</p>
+<p>Anxiety Form Y, its most popular version, has 20 items for assessing trait anxiety and 20 for state anxiety. State anxiety items include: “I am tense; I am worried” and “I feel calm; I feel secure.” Trait anxiety items include: “I worry too much over something that really doesn’t matter” and “I am content; I am a steady person.” All items are rated on a 4-point scale (e.g., from “Almost Never” to “Almost Always”). Higher scores indicate greater anxiety. The STAI is appropriate for those who have at least a sixth-grade reading level.</p>
+<p>Internal consistency coefficients for the scale have ranged from .86 to .95; test-retest reliability coefficients have ranged from .65 to .75 over a 2-month interval (Spielberger et al., 1983). Test-retest coefficients for this measure in the present study ranged from .69 to .89. Considerable evidence attests to the construct and concurrent validity of the scale (Spielberger, 1989).</p>
+<p>Studies also have shown that it is a sensitive predictor of caregiver distress over time, and that it can vary with changes in support systems, health, and other individual characteristics (Elliott, Shewchuk, &amp; Richards, 2001; Shewchuk, Richards &amp; Elliott, 1998).</p>
+<p><span class="citation">(“The State-Trait Anxiety Inventory (Stai),” n.d.)</span></p>
+<p><strong><em>Click on this <a href="Codebook_STAI.html">link</a> to see our codebook for STAI.</em></strong></p>
 </div>
-<div id="ius" class="section level3">
-<h3>IUS</h3>
-<p>Click on this <a href="Codebook_IUS.html">link</a> to see our results.</p>
+<div id="intolerance-of-uncertainty-scale-ius" class="section level3">
+<h3>Intolerance of Uncertainty Scale (IUS)</h3>
+<p><strong>Construct:</strong> Current research provides the result that intolerance of uncertainty may be a key construct in the emergence and maintenance of worrying. Worrying plays a role in both clinical and non-clinical studies. Researchers have been able to find a correlation between intolerance of uncertainty and worry. They suggest that people who are more likely to worry also have difficulty coping with uncertainty.This manifests itself in the fact that these individuals find it difficult to accept that a negative event could occur, even though the probability of its occurrence is perceived as low. Individuals with a tendency toward intolerance of uncertainty are less able to cope with the uncertainty and ambiguity of life.</p>
+<p><strong>Description of measurement:</strong> The original version of the IUS was developed in French. It measures emotional, cognitive, and behavioral responses to ambiguous situations, effects of uncertainty, and attempts to control the future. The IUS includes 27 items that relate to the idea that uncertainty is unacceptable, reflects poorly on a person, and leads to frustration, stress, and inability to act. Participants rate the items on a five-point Likert scale ranging from 1=‘not at all characteristic of me’ to 5=‘entirely characteristic of me’.</p>
+<p><strong>Psychometric properties:</strong> Both the English-translated and French versions of the IUS show excellent internal consistency (alpha=0.94/alpha=0.91) and good test-retest reliability (r=0.74/r=0.78) over a 5-week period. In addition, they show convergent and divergent validity with respect to measurement methods for worry, depression, and anxiety.</p>
+<p>Buhr, K., &amp; Dugas, M. J. (2002). The intolerance of uncertainty scale: psychometric properties of the English version, Behaviour Research and Therapy, 40, 931 - 945</p>
+<p><strong><em>Click on this <a href="Codebook_IUS.html">link</a> to see our codebook for IUS.</em></strong></p>
 </div>
-<div id="bis_bas" class="section level3">
-<h3>BIS_BAS</h3>
-<p>Click on this <a href="Codebook_BIS_BAS.html">link</a> to see our results.</p>
+<div id="bis_bas-scales" class="section level3">
+<h3>BIS_BAS scales</h3>
+<p>Several theorists have argued that two general motivational systems underlie behavior. A behavioral approach system (BAS) is believed to regulate appetitive motives, in which the goal is to move toward something desired. A behavioral avoidance (or inhibition) system (BIS) is said to regulate aversive motives, in which the goal is to move away from something unpleasant. We developed the BIS/BAS scales to assess individual differences in the sensitivity of these systems.</p>
+<p><em>Carver, C. S., &amp; White, T. L. (1994). Behavioral inhibition, behavioral activation, and affective responses to impending reward and punishment: The BIS/BAS scales. Journal of Personality and Social Psychology, 67, 319-333.</em></p>
+<p>Each item of this questionnaire is a statement that a person may either agree with or disagree with. For each item, indicate how much you agree or disagree with what the item says. Please respond to all the items; do not leave any blank. Choose only one response to each statement. Please be as accurate and honest as you can be. Respond to each item as if it were the only item. That is, don’t worry about being “consistent” in your responses. Choose from the following four response options:</p>
+<ul>
+<li>1 = very true for me</li>
+<li>2 = somewhat true for me</li>
+<li>3 = somewhat false for me</li>
+<li>4 = very false for me</li>
+</ul>
+<p><span class="citation">(“Department of Psychology - BIS/BAS Scales,” n.d.)</span></p>
+<p><strong><em>Click on this <a href="Codebook_BIS_BAS.html">link</a> to see our codebook for BIS_BAS.</em></strong></p>
+<div id="refs" class="references">
+<div id="ref-DepartmentPsychologyBIS">
+<p>“Department of Psychology - BIS/BAS Scales.” n.d. https://local.psy.miami.edu/people/faculty/ccarver/availbale-self-report-instruments/bisbas-scales/.</p>
+</div>
+<div id="ref-StateTraitAnxietyInventory">
+<p>“The State-Trait Anxiety Inventory (Stai).” n.d. <a href="https://www.apa.org/pi/about/publications/caregivers/practice-settings/assessment/tools/trait-state">https://www.apa.org/pi/about/publications/caregivers/practice-settings/assessment/tools/trait-state</a>.</p>
+</div>
 </div>
 </div>
 
@@ -784,8 +823,6 @@ footer is added to webpages before the MathJax javascript. -->
     "HTML-CSS": { availableFonts: ["TeX"] }
   });
 </script>
-
-
 
 
 </div>
