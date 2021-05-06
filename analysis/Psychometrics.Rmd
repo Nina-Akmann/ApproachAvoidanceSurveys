@@ -15,7 +15,7 @@ bibliography: UKE/UKE.bib
 
 Anxiety Form Y, its most popular version, has 20 items for assessing trait anxiety and 20 for state anxiety. State anxiety items include: "I am tense; I am worried" and "I feel calm; I feel secure." Trait anxiety items include: "I worry too much over something that really doesn't matter" and "I am content; I am a steady person." All items are rated on a 4-point scale (e.g., from "Almost Never" to "Almost Always"). Higher scores indicate greater anxiety. The STAI is appropriate for those who have at least a sixth-grade reading level.
 
-Internal consistency coefficients for the scale have ranged from .86 to .95; test-retest reliability coefficients have ranged from .65 to .75 over a 2-month interval (Spielberger et al., 1983). Test-retest coefficients for this measure in the present study ranged from .69 to .89. Considerable evidence attests to the construct and concurrent validity of the scale (Spielberger, 1989).
+**Psychometric properties:**Internal consistency coefficients for the scale have ranged from .86 to .95; test-retest reliability coefficients have ranged from .65 to .75 over a 2-month interval (Spielberger et al., 1983). Test-retest coefficients for this measure in the present study ranged from .69 to .89. Considerable evidence attests to the construct and concurrent validity of the scale (Spielberger, 1989).
 
 Studies also have shown that it is a sensitive predictor of caregiver distress over time, and that it can vary with changes in support systems, health, and other individual characteristics (Elliott, Shewchuk, & Richards, 2001; Shewchuk, Richards & Elliott, 1998).
 
