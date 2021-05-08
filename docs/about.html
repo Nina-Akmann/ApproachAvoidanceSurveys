@@ -290,7 +290,7 @@ $(document).ready(function () {
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -299,7 +299,7 @@ $(document).ready(function () {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -308,10 +308,10 @@ $(document).ready(function () {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2021-05-06
+<strong>Last updated:</strong> 2021-05-08
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>ApproachAvoidanceSurveys/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -327,12 +327,12 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted changes </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+<p>The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </div>
 </div>
 </div>
@@ -399,16 +399,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystree4ebb0541afc725f853c7e4722773235085675cd2targetblank4ebb054a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/4ebb0541afc725f853c7e4722773235085675cd2" target="_blank">4ebb054</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystreee00a284716c71a0e68a83c4b74dc25e72a83500ftargetblanke00a284a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/e00a284716c71a0e68a83c4b74dc25e72a83500f" target="_blank">e00a284</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystree4ebb0541afc725f853c7e4722773235085675cd2targetblank4ebb054a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystreee00a284716c71a0e68a83c4b74dc25e72a83500ftargetblanke00a284a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/4ebb0541afc725f853c7e4722773235085675cd2" target="_blank">4ebb054</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/e00a284716c71a0e68a83c4b74dc25e72a83500f" target="_blank">e00a284</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -417,6 +417,12 @@ Note that you need to be careful to ensure that all relevant files for the analy
 Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
+
+Untracked files:
+    Untracked:  data/data_survey.Rda
+
+Unstaged changes:
+    Modified:   analysis/about.Rmd
 
 </code></pre>
 <p>
@@ -455,6 +461,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/04bb55e3bb76fa8eb4f37c9f981639d172de3acc/docs/about.html" target="_blank">04bb55e</a>
+</td>
+<td>
+Nina-Akmann
+</td>
+<td>
+2021-05-06
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -1036,44 +1059,8 @@ Start workflowr project.
 Poster Alexandros Kastrinogianis
 </p>
 </div>
-</div>
-<div id="psychometrics" class="section level2">
-<h2>Psychometrics</h2>
-<div id="the-state-trait-anxiety-inventory-stai" class="section level3">
-<h3>The State-Trait Anxiety Inventory (STAI)</h3>
-<p><strong>Construct:</strong> Adult anxiety</p>
-<p><strong>Description of Measure:</strong> The State-Trait Anxiety Inventory (STAI) is a commonly used measure of trait and state anxiety (Spielberger, Gorsuch, Lushene, Vagg, &amp; Jacobs, 1983). It can be used in clinical settings to diagnose anxiety and to distinguish it from depressive syndromes. It also is often used in research as an indicator of caregiver distress (e.g., Greene et al., 2017, Ugalde et al., 2014).</p>
-<p>Anxiety Form Y, its most popular version, has 20 items for assessing trait anxiety and 20 for state anxiety. State anxiety items include: “I am tense; I am worried” and “I feel calm; I feel secure.” Trait anxiety items include: “I worry too much over something that really doesn’t matter” and “I am content; I am a steady person.” All items are rated on a 4-point scale (e.g., from “Almost Never” to “Almost Always”). Higher scores indicate greater anxiety. The STAI is appropriate for those who have at least a sixth-grade reading level.</p>
-<p>Internal consistency coefficients for the scale have ranged from .86 to .95; test-retest reliability coefficients have ranged from .65 to .75 over a 2-month interval (Spielberger et al., 1983). Test-retest coefficients for this measure in the present study ranged from .69 to .89. Considerable evidence attests to the construct and concurrent validity of the scale (Spielberger, 1989).</p>
-<p>Studies also have shown that it is a sensitive predictor of caregiver distress over time, and that it can vary with changes in support systems, health, and other individual characteristics (Elliott, Shewchuk, &amp; Richards, 2001; Shewchuk, Richards &amp; Elliott, 1998).</p>
-<p><span class="citation">(“The State-Trait Anxiety Inventory (Stai),” <a href="#ref-StateTraitAnxietyInventory">n.d.</a>)</span></p>
-</div>
-<div id="bisbas-scales" class="section level3">
-<h3>BIS/BAS scales</h3>
-<p>Several theorists have argued that two general motivational systems underlie behavior. A behavioral approach system (BAS) is believed to regulate appetitive motives, in which the goal is to move toward something desired. A behavioral avoidance (or inhibition) system (BIS) is said to regulate aversive motives, in which the goal is to move away from something unpleasant. We developed the BIS/BAS scales to assess individual differences in the sensitivity of these systems.</p>
-<p><em>Carver, C. S., &amp; White, T. L. (1994). Behavioral inhibition, behavioral activation, and affective responses to impending reward and punishment: The BIS/BAS scales. Journal of Personality and Social Psychology, 67, 319-333.</em></p>
-<p>Each item of this questionnaire is a statement that a person may either agree with or disagree with. For each item, indicate how much you agree or disagree with what the item says. Please respond to all the items; do not leave any blank. Choose only one response to each statement. Please be as accurate and honest as you can be. Respond to each item as if it were the only item. That is, don’t worry about being “consistent” in your responses. Choose from the following four response options:</p>
-<ul>
-<li>1 = very true for me</li>
-<li>2 = somewhat true for me</li>
-<li>3 = somewhat false for me</li>
-<li>4 = very false for me</li>
-</ul>
-<p><span class="citation">(“Department of Psychology - BIS/BAS Scales,” <a href="#ref-DepartmentPsychologyBIS">n.d.</a>)</span></p>
-</div>
-<div id="intolerance-of-uncertainty-scale-ius" class="section level3">
-<h3>Intolerance of Uncertainty Scale (IUS)</h3>
-<p><strong>Construct:</strong> Current research provides the result that intolerance of uncertainty may be a key construct in the emergence and maintenance of worrying. Worrying plays a role in both clinical and non-clinical studies. Researchers have been able to find a correlation between intolerance of uncertainty and worry. They suggest that people who are more likely to worry also have difficulty coping with uncertainty.This manifests itself in the fact that these individuals find it difficult to accept that a negative event could occur, even though the probability of its occurrence is perceived as low. Individuals with a tendency toward intolerance of uncertainty are less able to cope with the uncertainty and ambiguity of life.</p>
-<p><strong>Description of measurement:</strong> The original version of the IUS was developed in French. It measures emotional, cognitive, and behavioral responses to ambiguous situations, effects of uncertainty, and attempts to control the future. The IUS includes 27 items that relate to the idea that uncertainty is unacceptable, reflects poorly on a person, and leads to frustration, stress, and inability to act. Participants rate the items on a five-point Likert scale ranging from 1=‘not at all characteristic of me’ to 5=‘entirely characteristic of me’.</p>
-<p><strong>Psychometric properties:</strong> Both the English-translated and French versions of the IUS show excellent internal consistency (alpha=0.94/alpha=0.91) and good test-retest reliability (r=0.74/r=0.78) over a 5-week period. In addition, they show convergent and divergent validity with respect to measurement methods for worry, depression, and anxiety.</p>
-<p>Buhr, K., &amp; Dugas, M. J. (2002). The intolerance of uncertainty scale: psychometric properties of the English version, Behaviour Research and Therapy, 40, 931 - 945</p>
 <div id="refs">
-<div id="ref-DepartmentPsychologyBIS">
-<p>“Department of Psychology - BIS/BAS Scales.” n.d. https://local.psy.miami.edu/people/faculty/ccarver/availbale-self-report-instruments/bisbas-scales/.</p>
-</div>
-<div id="ref-StateTraitAnxietyInventory">
-<p>“The State-Trait Anxiety Inventory (Stai).” n.d. <a href="https://www.apa.org/pi/about/publications/caregivers/practice-settings/assessment/tools/trait-state">https://www.apa.org/pi/about/publications/caregivers/practice-settings/assessment/tools/trait-state</a>.</p>
-</div>
+
 </div>
 <br>
 <p>
@@ -1101,17 +1088,17 @@ other attached packages:
  [1] usethis_2.0.1    kableExtra_1.3.4 apa_0.3.3        here_1.0.1      
  [5] forcats_0.5.1    stringr_1.4.0    dplyr_1.0.5      purrr_0.3.4     
  [9] readr_1.4.0      tidyr_1.1.3      tibble_3.1.0     ggplot2_3.3.3   
-[13] tidyverse_1.3.1  knitr_1.32       workflowr_1.6.2 
+[13] tidyverse_1.3.1  knitr_1.32      
 
 loaded via a namespace (and not attached):
- [1] Rcpp_1.0.6        svglite_2.0.0     lubridate_1.7.10  ps_1.6.0         
- [5] assertthat_0.2.1  rprojroot_2.0.2   digest_0.6.27     utf8_1.2.1       
- [9] R6_2.5.0          cellranger_1.1.0  backports_1.2.1   reprex_2.0.0     
-[13] evaluate_0.14     highr_0.8         httr_1.4.2        pillar_1.6.0     
-[17] rlang_0.4.10      readxl_1.3.1      rstudioapi_0.13   whisker_0.4      
-[21] rmarkdown_2.7     webshot_0.5.2     munsell_0.5.0     broom_0.7.6      
-[25] compiler_4.0.4    httpuv_1.5.5      modelr_0.1.8      xfun_0.22        
-[29] systemfonts_1.0.1 pkgconfig_2.0.3   htmltools_0.5.1.1 tidyselect_1.1.0 
+ [1] Rcpp_1.0.6        svglite_2.0.0     lubridate_1.7.10  assertthat_0.2.1 
+ [5] rprojroot_2.0.2   digest_0.6.27     utf8_1.2.1        R6_2.5.0         
+ [9] cellranger_1.1.0  backports_1.2.1   reprex_2.0.0      evaluate_0.14    
+[13] highr_0.8         httr_1.4.2        pillar_1.6.0      rlang_0.4.10     
+[17] readxl_1.3.1      rstudioapi_0.13   whisker_0.4       rmarkdown_2.7    
+[21] webshot_0.5.2     munsell_0.5.0     broom_0.7.6       compiler_4.0.4   
+[25] httpuv_1.5.5      modelr_0.1.8      xfun_0.22         systemfonts_1.0.1
+[29] pkgconfig_2.0.3   htmltools_0.5.1.1 tidyselect_1.1.0  workflowr_1.6.2  
 [33] viridisLite_0.4.0 fansi_0.4.2       crayon_1.4.1      dbplyr_2.1.1     
 [37] withr_2.4.1       later_1.1.0.1     grid_4.0.4        jsonlite_1.7.2   
 [41] gtable_0.3.0      lifecycle_1.0.0   DBI_1.1.1         git2r_0.28.0     
@@ -1120,7 +1107,6 @@ loaded via a namespace (and not attached):
 [53] generics_0.1.0    vctrs_0.3.7       tools_4.0.4       glue_1.4.2       
 [57] hms_1.0.0         yaml_2.2.1        colorspace_2.0-0  MBESS_4.8.0      
 [61] rvest_1.0.0       haven_2.3.1      </code></pre>
-</div>
 </div>
 </div>
 
