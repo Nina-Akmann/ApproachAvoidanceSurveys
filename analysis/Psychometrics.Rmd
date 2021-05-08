@@ -9,7 +9,7 @@ bibliography: UKE/UKE.bib
 
 ### The State-Trait Anxiety Inventory (STAI)
 
-**Construct:** Adult anxiety usw.
+**Construct:** Adult anxiety usw..
 
 **Description of Measure:** The State-Trait Anxiety Inventory (STAI) is a commonly used measure of trait and state anxiety (Spielberger, Gorsuch, Lushene, Vagg, & Jacobs, 1983). It can be used in clinical settings to diagnose anxiety and to distinguish it from depressive syndromes. It also is often used in research as an indicator of caregiver distress (e.g., Greene et al., 2017, Ugalde et al., 2014).
 
