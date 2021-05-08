@@ -110,30 +110,6 @@ BIS_BAS <- BIS_BAS %>%
 # reverse the underlying values while keeping the values labels right
 ```
 
-## Add scales 
-```{r scales}
-# aggregate items to scales 
-BIS_BAS$BAS_Drive <- BIS_BAS %>% 
-  select(3,9,12,21) %>% 
- aggregate_and_document_scale()
-
-BIS_BAS$BAS_FunSeeking <- BIS_BAS %>% 
-  select(5,10,15,20) %>% 
- aggregate_and_document_scale()
-
-BIS_BAS$BAS_RewardResponsiveness <- BIS_BAS %>% 
-  select(4,7,14,18,23) %>% 
- aggregate_and_document_scale()
-
-BIS_BAS$BIS <- BIS_BAS %>%
-  select(2,8,13,16,19,22,24) %>%
- aggregate_and_document_scale()
-
-BIS_BAS$Fillers <- BIS_BAS %>% 
-  select(1,6,11,17) %>% 
- aggregate_and_document_scale()
-```
-
 ## Create codebook
 ```{r codebook}
 codebook(BIS_BAS)
