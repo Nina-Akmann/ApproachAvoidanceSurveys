@@ -12,9 +12,12 @@ bibliography: references.bib
 
 ## Welcome to our research website.
 
-### Fear Conditioning
+### Research interests
 
-Text is in works
+The research of our group "Fear, anxiety and stress" focuses on the neurobiological underpinnings of fear and anxiety related processes. Thereby we use fear conditioning, extinction as well as return of fear manipulations as laboratory models for the acquisition and (behavioural) treatment of anxiety disorders as well as relapse respectively. In addition, we are interested in emotional attention processes as well as the molecular genetic associations with fear and anxiety related processes. Specifically, we are interested in how acute and chronic stress experiences over the lifetime affects behavioural and neural correlates of fear conditioning, extinction as well as attention processes. We use a multidimensional approach including peripheral psychophysiological (skin conductance responses, fear potentiated startle), hormone measurements, Virtual-Reality as well as functional neuroimaging (fMRI) methods.
+
+***For more information [(https://www.uke.de/kliniken-institute/institute/systemische-neurowissenschaften/forschung/arbeitsgruppen/fear-anxiety-and-stress.html)]***
+
 
 ### What is Virtual reality (VR) ?
 
