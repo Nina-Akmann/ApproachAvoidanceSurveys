@@ -12,15 +12,15 @@ navbar:
   - text: License
     href: license.html
   right:
-  - icon: fa-github
+  - icon: fa-git
     style:
-      transform: scale(2,2)
+    transform: scale(2,2)
     text: Source code
     href: https://github.com/Nina-Akmann/ApproachAvoidanceSurveys
 output:
   workflowr::wflow_html:
     toc: yes
     toc_float: yes
-    theme: journal
+    theme: sandstone
     highlight: textmate
     css: style.css
