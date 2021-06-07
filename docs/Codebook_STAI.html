@@ -14,7 +14,8 @@
 
 <title>Codebook STAI</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -35,6 +36,29 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.18/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="site_libs/jszip-1.10.20/jszip.min.js"></script>
+<script src="site_libs/pdfmake-1.10.20/pdfmake.js"></script>
+<script src="site_libs/pdfmake-1.10.20/vfs_fonts.js"></script>
+<link href="site_libs/dt-ext-buttons-1.10.20/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="site_libs/dt-ext-buttons-1.10.20/js/dataTables.buttons.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.flash.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.html5.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.colVis.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.print.min.js"></script>
+<link href="site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="site_libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="site_libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -45,6 +69,8 @@ div.section {
   padding-top: 12px;
 }
 </style>
+
+
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -344,7 +370,7 @@ div.tocify {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys">
-    <span class="fas fa-github"></span>
+    <span class="fas fa-database"></span>
      
     Source code
   </a>
@@ -384,7 +410,7 @@ div.tocify {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2021-05-06
+<strong>Last updated:</strong> 2021-06-07
 </p>
 <p>
 <strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
@@ -475,16 +501,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystree4ebb0541afc725f853c7e4722773235085675cd2targetblank4ebb054a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/4ebb0541afc725f853c7e4722773235085675cd2" target="_blank">4ebb054</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystree4e00d89f92a917f5e6088acfd466c6a6de07f44etargetblank4e00d89a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/4e00d89f92a917f5e6088acfd466c6a6de07f44e" target="_blank">4e00d89</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystree4ebb0541afc725f853c7e4722773235085675cd2targetblank4ebb054a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystree4e00d89f92a917f5e6088acfd466c6a6de07f44etargetblank4e00d89a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/4ebb0541afc725f853c7e4722773235085675cd2" target="_blank">4ebb054</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/4e00d89f92a917f5e6088acfd466c6a6de07f44e" target="_blank">4e00d89</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -493,6 +519,9 @@ Note that you need to be careful to ensure that all relevant files for the analy
 Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
+
+Untracked files:
+    Untracked:  data/data_survey.Rda
 
 </code></pre>
 <p>
@@ -533,10 +562,27 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/04bb55e3bb76fa8eb4f37c9f981639d172de3acc/docs/Codebook_STAI.html" target="_blank">04bb55e</a>
+</td>
+<td>
+Nina-Akmann
+</td>
+<td>
+2021-05-06
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
-<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/18ca4f44622f59e68c88d10121c30b20f171cf9b/analysis/Codebook_STAI.Rmd" target="_blank">18ca4f4</a>
+<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/18ca4f44622f59e68c88d10121c30b20f171cf9b/analysis/Codebook_STAI.Rmd" target="_blank">18ca4f4</a>
 </td>
 <td>
 psychub
@@ -553,7 +599,7 @@ didn’t change much
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/18ca4f44622f59e68c88d10121c30b20f171cf9b/docs/Codebook_STAI.html" target="_blank">18ca4f4</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/18ca4f44622f59e68c88d10121c30b20f171cf9b/docs/Codebook_STAI.html" target="_blank">18ca4f4</a>
 </td>
 <td>
 psychub
@@ -570,7 +616,7 @@ didn’t change much
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/401c4909812d5422c232cc12fcac17c6ea367875/docs/Codebook_STAI.html" target="_blank">401c490</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/401c4909812d5422c232cc12fcac17c6ea367875/docs/Codebook_STAI.html" target="_blank">401c490</a>
 </td>
 <td>
 psychub
@@ -587,7 +633,7 @@ just knited
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/018906588fdee75949fecf7e85a9d88ed28aa4b8/docs/Codebook_STAI.html" target="_blank">0189065</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/018906588fdee75949fecf7e85a9d88ed28aa4b8/docs/Codebook_STAI.html" target="_blank">0189065</a>
 </td>
 <td>
 psychub
@@ -604,7 +650,7 @@ Build site.
 Rmd
 </td>
 <td>
-<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/eaa2e31cb3317c234f220b1493aa2246a17b2730/analysis/Codebook_STAI.Rmd" target="_blank">eaa2e31</a>
+<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/eaa2e31cb3317c234f220b1493aa2246a17b2730/analysis/Codebook_STAI.Rmd" target="_blank">eaa2e31</a>
 </td>
 <td>
 psychub
@@ -621,7 +667,7 @@ changed stuff
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/eaa2e31cb3317c234f220b1493aa2246a17b2730/docs/Codebook_STAI.html" target="_blank">eaa2e31</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/eaa2e31cb3317c234f220b1493aa2246a17b2730/docs/Codebook_STAI.html" target="_blank">eaa2e31</a>
 </td>
 <td>
 psychub
@@ -638,7 +684,7 @@ changed stuff
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/75ba9c3ccc8b186e5b50a799b5f502a005e044a4/docs/Codebook_STAI.html" target="_blank">75ba9c3</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/75ba9c3ccc8b186e5b50a799b5f502a005e044a4/docs/Codebook_STAI.html" target="_blank">75ba9c3</a>
 </td>
 <td>
 Nina-Akmann
@@ -655,7 +701,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/d343cdba431016ab94e84bb5e234b617d2cd6570/docs/Codebook_STAI.html" target="_blank">d343cdb</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/d343cdba431016ab94e84bb5e234b617d2cd6570/docs/Codebook_STAI.html" target="_blank">d343cdb</a>
 </td>
 <td>
 psychub
@@ -672,7 +718,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/a05202ea4c9f3c42caebaabe513d44c90dc90ad2/docs/Codebook_STAI.html" target="_blank">a05202e</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/a05202ea4c9f3c42caebaabe513d44c90dc90ad2/docs/Codebook_STAI.html" target="_blank">a05202e</a>
 </td>
 <td>
 psychub
@@ -689,7 +735,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/6884916b8a5e0fd91cc6fa6b39dc979f9296b870/docs/Codebook_STAI.html" target="_blank">6884916</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/6884916b8a5e0fd91cc6fa6b39dc979f9296b870/docs/Codebook_STAI.html" target="_blank">6884916</a>
 </td>
 <td>
 psychub
@@ -706,7 +752,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/06596c2c1b3958c4f009fad219a0eaf1c66169b2/docs/Codebook_STAI.html" target="_blank">06596c2</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/06596c2c1b3958c4f009fad219a0eaf1c66169b2/docs/Codebook_STAI.html" target="_blank">06596c2</a>
 </td>
 <td>
 psychub
@@ -723,7 +769,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/0044963a71335106c14693f8fccfa406fcef8643/docs/Codebook_STAI.html" target="_blank">0044963</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/0044963a71335106c14693f8fccfa406fcef8643/docs/Codebook_STAI.html" target="_blank">0044963</a>
 </td>
 <td>
 psychub
@@ -740,7 +786,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/4ebd3dae0df40be9f649ae6d352e8aa27a19ea36/docs/Codebook_STAI.html" target="_blank">4ebd3da</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/4ebd3dae0df40be9f649ae6d352e8aa27a19ea36/docs/Codebook_STAI.html" target="_blank">4ebd3da</a>
 </td>
 <td>
 psychub
@@ -757,7 +803,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/fe86228681e429348ef0cd4f22b104e337527807/docs/Codebook_STAI.html" target="_blank">fe86228</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/fe86228681e429348ef0cd4f22b104e337527807/docs/Codebook_STAI.html" target="_blank">fe86228</a>
 </td>
 <td>
 psychub
@@ -774,7 +820,7 @@ blablabla
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/7d986f9b63378e0bff35754f7f3cad143cd3919c/docs/Codebook_STAI.html" target="_blank">7d986f9</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/7d986f9b63378e0bff35754f7f3cad143cd3919c/docs/Codebook_STAI.html" target="_blank">7d986f9</a>
 </td>
 <td>
 Nina-Akmann
@@ -791,7 +837,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/1f17fa8dc739dfdc6518b50ac7abfae7743dee66/docs/Codebook_STAI.html" target="_blank">1f17fa8</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/1f17fa8dc739dfdc6518b50ac7abfae7743dee66/docs/Codebook_STAI.html" target="_blank">1f17fa8</a>
 </td>
 <td>
 Nina-Akmann
@@ -808,7 +854,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/4bb86bd47e1654eff9904dc2d71ac8e26bb4734d/docs/Codebook_STAI.html" target="_blank">4bb86bd</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/4bb86bd47e1654eff9904dc2d71ac8e26bb4734d/docs/Codebook_STAI.html" target="_blank">4bb86bd</a>
 </td>
 <td>
 psychub
@@ -825,7 +871,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/736b020791ac6e9732dd21c0f968a3e1b6170807/docs/Codebook_STAI.html" target="_blank">736b020</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/736b020791ac6e9732dd21c0f968a3e1b6170807/docs/Codebook_STAI.html" target="_blank">736b020</a>
 </td>
 <td>
 psychub
@@ -842,7 +888,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/bf586bb557911317f83d77ac615ca11548b6e08e/docs/Codebook_STAI.html" target="_blank">bf586bb</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/bf586bb557911317f83d77ac615ca11548b6e08e/docs/Codebook_STAI.html" target="_blank">bf586bb</a>
 </td>
 <td>
 Nina-Akmann
@@ -859,7 +905,7 @@ Build site.
 Rmd
 </td>
 <td>
-<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/45f2d17f1dbc30c0f3d9cb0317701e4f82f61d8c/analysis/Codebook_STAI.Rmd" target="_blank">45f2d17</a>
+<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/45f2d17f1dbc30c0f3d9cb0317701e4f82f61d8c/analysis/Codebook_STAI.Rmd" target="_blank">45f2d17</a>
 </td>
 <td>
 Nina-Akmann
@@ -889,13 +935,11 @@ library(ltm)      # for computing Cronbachs alpha </code></pre>
 <div id="load-data" class="section level2">
 <h2>Load data</h2>
 <pre class="r"><code>load(here(&quot;data/data_survey.Rda&quot;))</code></pre>
-<pre><code>Error in readChar(con, 5L, useBytes = TRUE): kann Verbindung nicht öffnen</code></pre>
 </div>
 <div id="subset-relevant-columns" class="section level2">
 <h2>Subset relevant columns</h2>
 <pre class="r"><code>#subset relevant columns
 STAI = data_survey2[8:27] </code></pre>
-<pre><code>Error in eval(expr, envir, enclos): Objekt &#39;data_survey2&#39; nicht gefunden</code></pre>
 </div>
 <div id="label-items" class="section level2">
 <h2>Label items</h2>
@@ -922,7 +966,6 @@ Ich.bin.zufrieden. = &quot;Ich bin zufrieden.&quot;,
   Ich.bin.ausgeglichen. = &quot;Ich bin ausgeglichen&quot;, 
   Ich.werde.nervös.und.unruhig..wenn.ich.an.meine.derzeitigen.Angelegenheiten.denke. = &quot;Ich werde nervös und unruhig, wenn ich an meine derzeitigen Angelegenheiten denke.&quot;
 )</code></pre>
-<pre><code>Error in var_label(STAI) &lt;- list(Ich.bin.vergnügt. = &quot;Ich bin vergnügt.&quot;, : Objekt &#39;STAI&#39; nicht gefunden</code></pre>
 </div>
 <div id="label-likert-items-values" class="section level2">
 <h2>Label Likert items’ values</h2>
@@ -936,36 +979,2455 @@ add_likert_labels &lt;- function(x) {
 }
 
 # change data format to apply mutate_all
-STAI_tbl &lt;- tibble::as_tibble(STAI)</code></pre>
-<pre><code>Error in tibble::as_tibble(STAI): Objekt &#39;STAI&#39; nicht gefunden</code></pre>
-<pre class="r"><code># use function for all Likert-items
+STAI_tbl &lt;- tibble::as_tibble(STAI)
+
+# use function for all Likert-items
 STAI =  mutate_all(STAI_tbl, 
 add_likert_labels)</code></pre>
-<pre><code>Error in is_grouped_df(tbl): Objekt &#39;STAI_tbl&#39; nicht gefunden</code></pre>
 </div>
 <div id="rename-reversed-items" class="section level2">
 <h2>Rename reversed items</h2>
 <pre class="r"><code>STAI &lt;- STAI %&gt;%
  rename_at(vars(1,6,7,10,13,16,19), add_R) # add R to reverse items&#39; names </code></pre>
-<pre><code>Error in tbl_vars_dispatch(x): Objekt &#39;STAI&#39; nicht gefunden</code></pre>
 </div>
 <div id="reverse-labelled-values" class="section level2">
 <h2>Reverse labelled values</h2>
 <pre class="r"><code>STAI &lt;- STAI %&gt;% 
   mutate_at(vars(1,6,7,10,13,16,19), 
-  reverse_labelled_values) </code></pre>
-<pre><code>Error in tbl_vars_dispatch(x): Objekt &#39;STAI&#39; nicht gefunden</code></pre>
-<pre class="r"><code># reverse the underlying values while keeping the values labels right</code></pre>
+  reverse_labelled_values) 
+# reverse the underlying values while keeping the values labels right</code></pre>
 </div>
 <div id="compute-cronbachs-alpha" class="section level2">
 <h2>Compute Cronbachs alpha</h2>
 <pre class="r"><code>cronbach.alpha(STAI, standardized = TRUE, na.rm = TRUE)</code></pre>
-<pre><code>Error in cronbach.alpha(STAI, standardized = TRUE, na.rm = TRUE): Objekt &#39;STAI&#39; nicht gefunden</code></pre>
+<pre><code>
+Standardized Cronbach&#39;s alpha for the &#39;STAI&#39; data-set
+
+Items: 20
+Sample units: 10
+alpha: 0.827</code></pre>
 </div>
 <div id="create-codebook" class="section level2">
 <h2>Create codebook</h2>
 <pre class="r"><code>codebook(STAI)</code></pre>
-<pre><code>Error in exists(&quot;session&quot;, results): Objekt &#39;STAI&#39; nicht gefunden</code></pre>
+<div id="metadata" class="section level3">
+<h3>Metadata</h3>
+<div id="description" class="section level4">
+<h4>Description</h4>
+<p><strong>Dataset name</strong>: STAI</p>
+<p>The dataset has N=10 rows and 20 columns. 9 rows have no missing values on any column.</p>
+<details>
+<summary title="Expand this section to see some additional metadata in a structured format that is useful for search engines">
+Metadata for search engines
+</summary>
+<ul>
+<li><strong>Date published</strong>: 2021-06-07</li>
+</ul>
+<table class="kable_wrapper">
+<tbody>
+<tr>
+<td>
+<table>
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">x</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.bin.vergnügt.R</td>
+</tr>
+<tr class="even">
+<td align="left">Ich.werde.schnell.müde.</td>
+</tr>
+<tr class="odd">
+<td align="left">Mir.ist.zum.Weinen.zumute.</td>
+</tr>
+<tr class="even">
+<td align="left">Ich.glaube..mir.geht.es.schlechter.als.anderen.Leuten.</td>
+</tr>
+<tr class="odd">
+<td align="left">Ich.verpasse.günstige.Gelegenheiten..weil.ich.mich.nicht.schnell.genug.entscheiden.kann.</td>
+</tr>
+<tr class="even">
+<td align="left">Ich.fühle.mich.ausgeruht.R</td>
+</tr>
+<tr class="odd">
+<td align="left">Ich.bin.ruhig.und.gelassen.R</td>
+</tr>
+<tr class="even">
+<td align="left">Ich.glaube..dass.mir.meine.Schwierigkeiten.über.den.Kopf.wachsen.</td>
+</tr>
+<tr class="odd">
+<td align="left">Ich.mache.mir.zuviel.Gedanken.über.unwichtige.Dinge.</td>
+</tr>
+<tr class="even">
+<td align="left">Ich.bin.glücklich.R</td>
+</tr>
+<tr class="odd">
+<td align="left">Ich.neige.dazu..alles.schwer.zu.nehmen.</td>
+</tr>
+<tr class="even">
+<td align="left">Mir.fehlt.es.an.Selbstvertrauen.</td>
+</tr>
+<tr class="odd">
+<td align="left">Ich.fühle.mich.geborgen.R</td>
+</tr>
+<tr class="even">
+<td align="left">Ich.mache.mir.Sorgen.über.mögliches.Missgeschick.</td>
+</tr>
+<tr class="odd">
+<td align="left">Ich.fühle.mich.niedergeschlagen.</td>
+</tr>
+<tr class="even">
+<td align="left">Ich.bin.zufrieden.R</td>
+</tr>
+<tr class="odd">
+<td align="left">Unwichtige.Gedanken.gehen.mir.durch.den.Kopf.und.bedrücken.mich.</td>
+</tr>
+<tr class="even">
+<td align="left">Enttäuschungen.nehme.ich.so.schwer..dass.ich.sie.nicht.vergessen.kann.</td>
+</tr>
+<tr class="odd">
+<td align="left">Ich.bin.ausgeglichen.R</td>
+</tr>
+<tr class="even">
+<td align="left">Ich.werde.nervös.und.unruhig..wenn.ich.an.meine.derzeitigen.Angelegenheiten.denke.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</details>
+<p>#Variables</p>
+</div>
+</div>
+<div id="Ich_bin_vergnügt_R" class="section level3 tabset">
+<h3 class="tabset">Ich.bin.vergnügt.R</h3>
+<p>Ich bin vergnügt.</p>
+<div id="Ich_bin_vergnügt_R_distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-1.png" alt="Distribution of values for Ich.bin.vergnügt.R" width="672" />
+<p class="caption">
+Distribution of values for Ich.bin.vergnügt.R
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_bin_vergnügt_R_summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="10%" />
+<col width="9%" />
+<col width="7%" />
+<col width="5%" />
+<col width="7%" />
+<col width="2%" />
+<col width="3%" />
+<col width="2%" />
+<col width="4%" />
+<col width="5%" />
+<col width="7%" />
+<col width="34%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.bin.vergnügt.R</td>
+<td align="left">Ich bin vergnügt.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">4</td>
+<td align="right">2.444444</td>
+<td align="right">0.8819171</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_bin_vergnügt_R_labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_werde_schnell_müde_" class="section level3 tabset">
+<h3 class="tabset">Ich.werde.schnell.müde.</h3>
+<p>Ich werde schnell müde.</p>
+<div id="Ich_werde_schnell_müde__distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-15-1.png" alt="Distribution of values for Ich.werde.schnell.müde." width="672" />
+<p class="caption">
+Distribution of values for Ich.werde.schnell.müde.
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_werde_schnell_müde__summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="11%" />
+<col width="11%" />
+<col width="7%" />
+<col width="4%" />
+<col width="6%" />
+<col width="1%" />
+<col width="3%" />
+<col width="1%" />
+<col width="4%" />
+<col width="4%" />
+<col width="7%" />
+<col width="32%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.werde.schnell.müde.</td>
+<td align="left">Ich werde schnell müde.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">4</td>
+<td align="right">2.222222</td>
+<td align="right">0.8333333</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_werde_schnell_müde__labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Mir_ist_zum_Weinen_zumute_" class="section level3 tabset">
+<h3 class="tabset">Mir.ist.zum.Weinen.zumute.</h3>
+<p>Mir ist zum Weinen zumute.</p>
+<div id="Mir_ist_zum_Weinen_zumute__distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-22-1.png" alt="Distribution of values for Mir.ist.zum.Weinen.zumute." width="672" />
+<p class="caption">
+Distribution of values for Mir.ist.zum.Weinen.zumute.
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Mir_ist_zum_Weinen_zumute__summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="13%" />
+<col width="13%" />
+<col width="7%" />
+<col width="4%" />
+<col width="6%" />
+<col width="1%" />
+<col width="3%" />
+<col width="1%" />
+<col width="4%" />
+<col width="4%" />
+<col width="7%" />
+<col width="31%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Mir.ist.zum.Weinen.zumute.</td>
+<td align="left">Mir ist zum Weinen zumute.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="right">1.777778</td>
+<td align="right">0.8333333</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2583&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Mir_ist_zum_Weinen_zumute__labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_glaube__mir_geht_es_schlechter_als_anderen_Leuten_" class="section level3 tabset">
+<h3 class="tabset">Ich.glaube..mir.geht.es.schlechter.als.anderen.Leuten.</h3>
+<p>Ich glaube, mir geht es schlechter als anderen Leuten.</p>
+<div id="Ich_glaube__mir_geht_es_schlechter_als_anderen_Leuten__distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-29-1.png" alt="Distribution of values for Ich.glaube..mir.geht.es.schlechter.als.anderen.Leuten." width="672" />
+<p class="caption">
+Distribution of values for Ich.glaube..mir.geht.es.schlechter.als.anderen.Leuten.
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_glaube__mir_geht_es_schlechter_als_anderen_Leuten__summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="21%" />
+<col width="21%" />
+<col width="5%" />
+<col width="3%" />
+<col width="5%" />
+<col width="1%" />
+<col width="2%" />
+<col width="1%" />
+<col width="1%" />
+<col width="3%" />
+<col width="5%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.glaube..mir.geht.es.schlechter.als.anderen.Leuten.</td>
+<td align="left">Ich glaube, mir geht es schlechter als anderen Leuten.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">4</td>
+<td align="right">2</td>
+<td align="right">1.118034</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_glaube__mir_geht_es_schlechter_als_anderen_Leuten__labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_verpasse_günstige_Gelegenheiten__weil_ich_mich_nicht_schnell_genug_entscheiden_kann_" class="section level3 tabset">
+<h3 class="tabset">Ich.verpasse.günstige.Gelegenheiten..weil.ich.mich.nicht.schnell.genug.entscheiden.kann.</h3>
+<p>Ich verpasse günstige Gelegenheiten, weil ich mich nicht schnell genug entscheiden kann.</p>
+<div id="Ich_verpasse_günstige_Gelegenheiten__weil_ich_mich_nicht_schnell_genug_entscheiden_kann__distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-36-1.png" alt="Distribution of values for Ich.verpasse.günstige.Gelegenheiten..weil.ich.mich.nicht.schnell.genug.entscheiden.kann." width="672" />
+<p class="caption">
+Distribution of values for Ich.verpasse.günstige.Gelegenheiten..weil.ich.mich.nicht.schnell.genug.entscheiden.kann.
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_verpasse_günstige_Gelegenheiten__weil_ich_mich_nicht_schnell_genug_entscheiden_kann__summary" class="section level4">
+<h4>Summary statistics</h4>
+<table style="width:100%;">
+<colgroup>
+<col width="26%" />
+<col width="26%" />
+<col width="4%" />
+<col width="3%" />
+<col width="4%" />
+<col width="1%" />
+<col width="2%" />
+<col width="1%" />
+<col width="2%" />
+<col width="3%" />
+<col width="4%" />
+<col width="19%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.verpasse.günstige.Gelegenheiten..weil.ich.mich.nicht.schnell.genug.entscheiden.kann.</td>
+<td align="left">Ich verpasse günstige Gelegenheiten, weil ich mich nicht schnell genug entscheiden kann.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">4</td>
+<td align="right">2.333333</td>
+<td align="right">0.8660254</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_verpasse_günstige_Gelegenheiten__weil_ich_mich_nicht_schnell_genug_entscheiden_kann__labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_fühle_mich_ausgeruht_R" class="section level3 tabset">
+<h3 class="tabset">Ich.fühle.mich.ausgeruht.R</h3>
+<p>Ich fühle mich ausgeruht.</p>
+<div id="Ich_fühle_mich_ausgeruht_R_distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-43-1.png" alt="Distribution of values for Ich.fühle.mich.ausgeruht.R" width="672" />
+<p class="caption">
+Distribution of values for Ich.fühle.mich.ausgeruht.R
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_fühle_mich_ausgeruht_R_summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="13%" />
+<col width="13%" />
+<col width="7%" />
+<col width="5%" />
+<col width="7%" />
+<col width="2%" />
+<col width="3%" />
+<col width="2%" />
+<col width="4%" />
+<col width="2%" />
+<col width="7%" />
+<col width="32%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.fühle.mich.ausgeruht.R</td>
+<td align="left">Ich fühle mich ausgeruht.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left">3</td>
+<td align="right">2.666667</td>
+<td align="right">0.5</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_fühle_mich_ausgeruht_R_labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_bin_ruhig_und_gelassen_R" class="section level3 tabset">
+<h3 class="tabset">Ich.bin.ruhig.und.gelassen.R</h3>
+<p>Ich bin ruhig und gelassen.</p>
+<div id="Ich_bin_ruhig_und_gelassen_R_distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-50-1.png" alt="Distribution of values for Ich.bin.ruhig.und.gelassen.R" width="672" />
+<p class="caption">
+Distribution of values for Ich.bin.ruhig.und.gelassen.R
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_bin_ruhig_und_gelassen_R_summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="13%" />
+<col width="13%" />
+<col width="7%" />
+<col width="4%" />
+<col width="6%" />
+<col width="1%" />
+<col width="3%" />
+<col width="1%" />
+<col width="4%" />
+<col width="4%" />
+<col width="7%" />
+<col width="30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.bin.ruhig.und.gelassen.R</td>
+<td align="left">Ich bin ruhig und gelassen.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">4</td>
+<td align="right">2.555556</td>
+<td align="right">0.8819171</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_bin_ruhig_und_gelassen_R_labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_glaube__dass_mir_meine_Schwierigkeiten_über_den_Kopf_wachsen_" class="section level3 tabset">
+<h3 class="tabset">Ich.glaube..dass.mir.meine.Schwierigkeiten.über.den.Kopf.wachsen.</h3>
+<p>Ich glaube, dass mir meine Schwierigkeiten über den Kopf wachsen.</p>
+<div id="Ich_glaube__dass_mir_meine_Schwierigkeiten_über_den_Kopf_wachsen__distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-57-1.png" alt="Distribution of values for Ich.glaube..dass.mir.meine.Schwierigkeiten.über.den.Kopf.wachsen." width="672" />
+<p class="caption">
+Distribution of values for Ich.glaube..dass.mir.meine.Schwierigkeiten.über.den.Kopf.wachsen.
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_glaube__dass_mir_meine_Schwierigkeiten_über_den_Kopf_wachsen__summary" class="section level4">
+<h4>Summary statistics</h4>
+<table style="width:100%;">
+<colgroup>
+<col width="23%" />
+<col width="23%" />
+<col width="5%" />
+<col width="3%" />
+<col width="4%" />
+<col width="1%" />
+<col width="2%" />
+<col width="1%" />
+<col width="3%" />
+<col width="3%" />
+<col width="5%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.glaube..dass.mir.meine.Schwierigkeiten.über.den.Kopf.wachsen.</td>
+<td align="left">Ich glaube, dass mir meine Schwierigkeiten über den Kopf wachsen.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left">4</td>
+<td align="right">2.666667</td>
+<td align="right">0.7071068</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_glaube__dass_mir_meine_Schwierigkeiten_über_den_Kopf_wachsen__labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_mache_mir_zuviel_Gedanken_über_unwichtige_Dinge_" class="section level3 tabset">
+<h3 class="tabset">Ich.mache.mir.zuviel.Gedanken.über.unwichtige.Dinge.</h3>
+<p>Ich mache mir zuviel Gedanken über unwichtige Dinge.</p>
+<div id="Ich_mache_mir_zuviel_Gedanken_über_unwichtige_Dinge__distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-64-1.png" alt="Distribution of values for Ich.mache.mir.zuviel.Gedanken.über.unwichtige.Dinge." width="672" />
+<p class="caption">
+Distribution of values for Ich.mache.mir.zuviel.Gedanken.über.unwichtige.Dinge.
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_mache_mir_zuviel_Gedanken_über_unwichtige_Dinge__summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="5%" />
+<col width="3%" />
+<col width="5%" />
+<col width="1%" />
+<col width="2%" />
+<col width="1%" />
+<col width="3%" />
+<col width="3%" />
+<col width="5%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.mache.mir.zuviel.Gedanken.über.unwichtige.Dinge.</td>
+<td align="left">Ich mache mir zuviel Gedanken über unwichtige Dinge.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">4</td>
+<td align="right">2.666667</td>
+<td align="right">0.8660254</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2583&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_mache_mir_zuviel_Gedanken_über_unwichtige_Dinge__labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_bin_glücklich_R" class="section level3 tabset">
+<h3 class="tabset">Ich.bin.glücklich.R</h3>
+<p>Ich bin glücklich.</p>
+<div id="Ich_bin_glücklich_R_distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-71-1.png" alt="Distribution of values for Ich.bin.glücklich.R" width="672" />
+<p class="caption">
+Distribution of values for Ich.bin.glücklich.R
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_bin_glücklich_R_summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="10%" />
+<col width="9%" />
+<col width="7%" />
+<col width="5%" />
+<col width="7%" />
+<col width="2%" />
+<col width="3%" />
+<col width="2%" />
+<col width="4%" />
+<col width="5%" />
+<col width="7%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.bin.glücklich.R</td>
+<td align="left">Ich bin glücklich.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="right">2.222222</td>
+<td align="right">0.8333333</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_bin_glücklich_R_labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_neige_dazu__alles_schwer_zu_nehmen_" class="section level3 tabset">
+<h3 class="tabset">Ich.neige.dazu..alles.schwer.zu.nehmen.</h3>
+<p>Ich neige dazu, alles schwer zu nehmen.</p>
+<div id="Ich_neige_dazu__alles_schwer_zu_nehmen__distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-78-1.png" alt="Distribution of values for Ich.neige.dazu..alles.schwer.zu.nehmen." width="672" />
+<p class="caption">
+Distribution of values for Ich.neige.dazu..alles.schwer.zu.nehmen.
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_neige_dazu__alles_schwer_zu_nehmen__summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="17%" />
+<col width="17%" />
+<col width="6%" />
+<col width="4%" />
+<col width="6%" />
+<col width="1%" />
+<col width="3%" />
+<col width="1%" />
+<col width="2%" />
+<col width="4%" />
+<col width="6%" />
+<col width="28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.neige.dazu..alles.schwer.zu.nehmen.</td>
+<td align="left">Ich neige dazu, alles schwer zu nehmen.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="right">2</td>
+<td align="right">0.8660254</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_neige_dazu__alles_schwer_zu_nehmen__labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Mir_fehlt_es_an_Selbstvertrauen_" class="section level3 tabset">
+<h3 class="tabset">Mir.fehlt.es.an.Selbstvertrauen.</h3>
+<p>Mir fehlt es an Selbstvertrauen.</p>
+<div id="Mir_fehlt_es_an_Selbstvertrauen__distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-85-1.png" alt="Distribution of values for Mir.fehlt.es.an.Selbstvertrauen." width="672" />
+<p class="caption">
+Distribution of values for Mir.fehlt.es.an.Selbstvertrauen.
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Mir_fehlt_es_an_Selbstvertrauen__summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="15%" />
+<col width="7%" />
+<col width="4%" />
+<col width="6%" />
+<col width="1%" />
+<col width="3%" />
+<col width="1%" />
+<col width="2%" />
+<col width="1%" />
+<col width="7%" />
+<col width="31%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Mir.fehlt.es.an.Selbstvertrauen.</td>
+<td align="left">Mir fehlt es an Selbstvertrauen.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">4</td>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Mir_fehlt_es_an_Selbstvertrauen__labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_fühle_mich_geborgen_R" class="section level3 tabset">
+<h3 class="tabset">Ich.fühle.mich.geborgen.R</h3>
+<p>Ich fühle mich geborgen.</p>
+<div id="Ich_fühle_mich_geborgen_R_distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-92-1.png" alt="Distribution of values for Ich.fühle.mich.geborgen.R" width="672" />
+<p class="caption">
+Distribution of values for Ich.fühle.mich.geborgen.R
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_fühle_mich_geborgen_R_summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="13%" />
+<col width="12%" />
+<col width="7%" />
+<col width="5%" />
+<col width="7%" />
+<col width="2%" />
+<col width="3%" />
+<col width="2%" />
+<col width="4%" />
+<col width="1%" />
+<col width="7%" />
+<col width="32%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.fühle.mich.geborgen.R</td>
+<td align="left">Ich fühle mich geborgen.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">4</td>
+<td align="right">2.666667</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2585&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_fühle_mich_geborgen_R_labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_mache_mir_Sorgen_über_mögliches_Missgeschick_" class="section level3 tabset">
+<h3 class="tabset">Ich.mache.mir.Sorgen.über.mögliches.Missgeschick.</h3>
+<p>Ich mache mir Sorgen über mögliches Missgeschick.</p>
+<div id="Ich_mache_mir_Sorgen_über_mögliches_Missgeschick__distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-99-1.png" alt="Distribution of values for Ich.mache.mir.Sorgen.über.mögliches.Missgeschick." width="672" />
+<p class="caption">
+Distribution of values for Ich.mache.mir.Sorgen.über.mögliches.Missgeschick.
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_mache_mir_Sorgen_über_mögliches_Missgeschick__summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="19%" />
+<col width="19%" />
+<col width="5%" />
+<col width="3%" />
+<col width="5%" />
+<col width="1%" />
+<col width="2%" />
+<col width="1%" />
+<col width="3%" />
+<col width="3%" />
+<col width="5%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.mache.mir.Sorgen.über.mögliches.Missgeschick.</td>
+<td align="left">Ich mache mir Sorgen über mögliches Missgeschick.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">4</td>
+<td align="right">2.444444</td>
+<td align="right">0.8819171</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_mache_mir_Sorgen_über_mögliches_Missgeschick__labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_fühle_mich_niedergeschlagen_" class="section level3 tabset">
+<h3 class="tabset">Ich.fühle.mich.niedergeschlagen.</h3>
+<p>Ich fühle mich niedergeschlagen.</p>
+<div id="Ich_fühle_mich_niedergeschlagen__distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-106-1.png" alt="Distribution of values for Ich.fühle.mich.niedergeschlagen." width="672" />
+<p class="caption">
+Distribution of values for Ich.fühle.mich.niedergeschlagen.
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_fühle_mich_niedergeschlagen__summary" class="section level4">
+<h4>Summary statistics</h4>
+<table style="width:100%;">
+<colgroup>
+<col width="15%" />
+<col width="15%" />
+<col width="6%" />
+<col width="4%" />
+<col width="6%" />
+<col width="1%" />
+<col width="3%" />
+<col width="1%" />
+<col width="4%" />
+<col width="4%" />
+<col width="6%" />
+<col width="29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.fühle.mich.niedergeschlagen.</td>
+<td align="left">Ich fühle mich niedergeschlagen.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">4</td>
+<td align="right">2.222222</td>
+<td align="right">0.8333333</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_fühle_mich_niedergeschlagen__labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_bin_zufrieden_R" class="section level3 tabset">
+<h3 class="tabset">Ich.bin.zufrieden.R</h3>
+<p>Ich bin zufrieden.</p>
+<div id="Ich_bin_zufrieden_R_distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-113-1.png" alt="Distribution of values for Ich.bin.zufrieden.R" width="672" />
+<p class="caption">
+Distribution of values for Ich.bin.zufrieden.R
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_bin_zufrieden_R_summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="10%" />
+<col width="9%" />
+<col width="7%" />
+<col width="5%" />
+<col width="7%" />
+<col width="2%" />
+<col width="3%" />
+<col width="2%" />
+<col width="4%" />
+<col width="5%" />
+<col width="7%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.bin.zufrieden.R</td>
+<td align="left">Ich bin zufrieden.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left">3</td>
+<td align="right">2.555556</td>
+<td align="right">0.5270463</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_bin_zufrieden_R_labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Unwichtige_Gedanken_gehen_mir_durch_den_Kopf_und_bedrücken_mich_" class="section level3 tabset">
+<h3 class="tabset">Unwichtige.Gedanken.gehen.mir.durch.den.Kopf.und.bedrücken.mich.</h3>
+<p>Unwichtige Gedanken gehen mir durch den Kopf und bedrücken mich.</p>
+<div id="Unwichtige_Gedanken_gehen_mir_durch_den_Kopf_und_bedrücken_mich__distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-120-1.png" alt="Distribution of values for Unwichtige.Gedanken.gehen.mir.durch.den.Kopf.und.bedrücken.mich." width="672" />
+<p class="caption">
+Distribution of values for Unwichtige.Gedanken.gehen.mir.durch.den.Kopf.und.bedrücken.mich.
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Unwichtige_Gedanken_gehen_mir_durch_den_Kopf_und_bedrücken_mich__summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="22%" />
+<col width="22%" />
+<col width="5%" />
+<col width="3%" />
+<col width="4%" />
+<col width="1%" />
+<col width="2%" />
+<col width="1%" />
+<col width="3%" />
+<col width="3%" />
+<col width="5%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Unwichtige.Gedanken.gehen.mir.durch.den.Kopf.und.bedrücken.mich.</td>
+<td align="left">Unwichtige Gedanken gehen mir durch den Kopf und bedrücken mich.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="right">2.333333</td>
+<td align="right">0.7071068</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Unwichtige_Gedanken_gehen_mir_durch_den_Kopf_und_bedrücken_mich__labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Enttäuschungen_nehme_ich_so_schwer__dass_ich_sie_nicht_vergessen_kann_" class="section level3 tabset">
+<h3 class="tabset">Enttäuschungen.nehme.ich.so.schwer..dass.ich.sie.nicht.vergessen.kann.</h3>
+<p>Enttäuschungen nehme ich so schwer, dass ich sie nicht vergessen kann.</p>
+<div id="Enttäuschungen_nehme_ich_so_schwer__dass_ich_sie_nicht_vergessen_kann__distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-127-1.png" alt="Distribution of values for Enttäuschungen.nehme.ich.so.schwer..dass.ich.sie.nicht.vergessen.kann." width="672" />
+<p class="caption">
+Distribution of values for Enttäuschungen.nehme.ich.so.schwer..dass.ich.sie.nicht.vergessen.kann.
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Enttäuschungen_nehme_ich_so_schwer__dass_ich_sie_nicht_vergessen_kann__summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="24%" />
+<col width="24%" />
+<col width="5%" />
+<col width="3%" />
+<col width="4%" />
+<col width="1%" />
+<col width="2%" />
+<col width="1%" />
+<col width="3%" />
+<col width="3%" />
+<col width="5%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Enttäuschungen.nehme.ich.so.schwer..dass.ich.sie.nicht.vergessen.kann.</td>
+<td align="left">Enttäuschungen nehme ich so schwer, dass ich sie nicht vergessen kann.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">4</td>
+<td align="right">2.444444</td>
+<td align="right">0.8819171</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Enttäuschungen_nehme_ich_so_schwer__dass_ich_sie_nicht_vergessen_kann__labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_bin_ausgeglichen_R" class="section level3 tabset">
+<h3 class="tabset">Ich.bin.ausgeglichen.R</h3>
+<p>Ich bin ausgeglichen</p>
+<div id="Ich_bin_ausgeglichen_R_distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-134-1.png" alt="Distribution of values for Ich.bin.ausgeglichen.R" width="672" />
+<p class="caption">
+Distribution of values for Ich.bin.ausgeglichen.R
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_bin_ausgeglichen_R_summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="11%" />
+<col width="10%" />
+<col width="7%" />
+<col width="5%" />
+<col width="7%" />
+<col width="2%" />
+<col width="3%" />
+<col width="2%" />
+<col width="4%" />
+<col width="4%" />
+<col width="7%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.bin.ausgeglichen.R</td>
+<td align="left">Ich bin ausgeglichen</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">4</td>
+<td align="right">2.777778</td>
+<td align="right">1.092906</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2583&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_bin_ausgeglichen_R_labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="Ich_werde_nervös_und_unruhig__wenn_ich_an_meine_derzeitigen_Angelegenheiten_denke_" class="section level3 tabset">
+<h3 class="tabset">Ich.werde.nervös.und.unruhig..wenn.ich.an.meine.derzeitigen.Angelegenheiten.denke.</h3>
+<p>Ich werde nervös und unruhig, wenn ich an meine derzeitigen Angelegenheiten denke.</p>
+<div id="Ich_werde_nervös_und_unruhig__wenn_ich_an_meine_derzeitigen_Angelegenheiten_denke__distribution" class="section level4">
+<h4>Distribution</h4>
+<div class="figure" style="text-align: center">
+<img src="figure/Codebook_STAI.Rmd/distribution-141-1.png" alt="Distribution of values for Ich.werde.nervös.und.unruhig..wenn.ich.an.meine.derzeitigen.Angelegenheiten.denke." width="672" />
+<p class="caption">
+Distribution of values for Ich.werde.nervös.und.unruhig..wenn.ich.an.meine.derzeitigen.Angelegenheiten.denke.
+</p>
+</div>
+<div class="alert alert-warning">
+<strong>Warning!</strong> The custom <code>fig.path</code> you set was ignored by workflowr.
+</div>
+<p>1 missing values.</p>
+</div>
+<div id="Ich_werde_nervös_und_unruhig__wenn_ich_an_meine_derzeitigen_Angelegenheiten_denke__summary" class="section level4">
+<h4>Summary statistics</h4>
+<table>
+<colgroup>
+<col width="26%" />
+<col width="26%" />
+<col width="4%" />
+<col width="3%" />
+<col width="4%" />
+<col width="1%" />
+<col width="2%" />
+<col width="1%" />
+<col width="2%" />
+<col width="3%" />
+<col width="4%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="left">label</th>
+<th align="left">data_type</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">min</th>
+<th align="left">median</th>
+<th align="left">max</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">n_value_labels</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Ich.werde.nervös.und.unruhig..wenn.ich.an.meine.derzeitigen.Angelegenheiten.denke.</td>
+<td align="left">Ich werde nervös und unruhig, wenn ich an meine derzeitigen Angelegenheiten denke.</td>
+<td align="left">haven_labelled</td>
+<td align="right">1</td>
+<td align="right">0.9</td>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left">4</td>
+<td align="right">2.555556</td>
+<td align="right">0.7264832</td>
+<td align="right">4</td>
+<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="Ich_werde_nervös_und_unruhig__wenn_ich_an_meine_derzeitigen_Angelegenheiten_denke__labels" class="section level4">
+<h4>Value labels</h4>
+<table>
+<caption>Response choices</caption>
+<thead>
+<tr class="header">
+<th align="left">name</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">fast nie</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">manchmal</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">oft</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">fast immer</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="missingness-report" class="section level2">
+<h2>Missingness report</h2>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["description"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Ich.bin.vergnügt.R"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Ich.werde.schnell.müde."],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Mir.ist.zum.Weinen.zumute."],"name":[4],"type":["dbl"],"align":["right"]},{"label":["Ich.glaube..mir.geht.es.schlechter.als.anderen.Leuten."],"name":[5],"type":["dbl"],"align":["right"]},{"label":["Ich.verpasse.günstige.Gelegenheiten..weil.ich.mich.nicht.schnell.genug.entscheiden.kann."],"name":[6],"type":["dbl"],"align":["right"]},{"label":["Ich.fühle.mich.ausgeruht.R"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["Ich.bin.ruhig.und.gelassen.R"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["Ich.glaube..dass.mir.meine.Schwierigkeiten.über.den.Kopf.wachsen."],"name":[9],"type":["dbl"],"align":["right"]},{"label":["Ich.mache.mir.zuviel.Gedanken.über.unwichtige.Dinge."],"name":[10],"type":["dbl"],"align":["right"]},{"label":["Ich.bin.glücklich.R"],"name":[11],"type":["dbl"],"align":["right"]},{"label":["Ich.neige.dazu..alles.schwer.zu.nehmen."],"name":[12],"type":["dbl"],"align":["right"]},{"label":["Mir.fehlt.es.an.Selbstvertrauen."],"name":[13],"type":["dbl"],"align":["right"]},{"label":["Ich.fühle.mich.geborgen.R"],"name":[14],"type":["dbl"],"align":["right"]},{"label":["Ich.mache.mir.Sorgen.über.mögliches.Missgeschick."],"name":[15],"type":["dbl"],"align":["right"]},{"label":["Ich.fühle.mich.niedergeschlagen."],"name":[16],"type":["dbl"],"align":["right"]},{"label":["Ich.bin.zufrieden.R"],"name":[17],"type":["dbl"],"align":["right"]},{"label":["Unwichtige.Gedanken.gehen.mir.durch.den.Kopf.und.bedrücken.mich."],"name":[18],"type":["dbl"],"align":["right"]},{"label":["Enttäuschungen.nehme.ich.so.schwer..dass.ich.sie.nicht.vergessen.kann."],"name":[19],"type":["dbl"],"align":["right"]},{"label":["Ich.bin.ausgeglichen.R"],"name":[20],"type":["dbl"],"align":["right"]},{"label":["Ich.werde.nervös.und.unruhig..wenn.ich.an.meine.derzeitigen.Angelegenheiten.denke."],"name":[21],"type":["dbl"],"align":["right"]},{"label":["var_miss"],"name":[22],"type":["dbl"],"align":["right"]},{"label":["n_miss"],"name":[23],"type":["dbl"],"align":["right"]}],"data":[{"1":"Missing values per variable","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1","16":"1","17":"1","18":"1","19":"1","20":"1","21":"1","22":"20","23":"20"},{"1":"Missing values in 0 variables","2":"1","3":"1","4":"1","5":"1","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"1","15":"1","16":"1","17":"1","18":"1","19":"1","20":"1","21":"1","22":"0","23":"9"},{"1":"Missing values in 20 variables","2":"0","3":"0","4":"0","5":"0","6":"0","7":"0","8":"0","9":"0","10":"0","11":"0","12":"0","13":"0","14":"0","15":"0","16":"0","17":"0","18":"0","19":"0","20":"0","21":"0","22":"20","23":"1"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div id="codebook-table" class="section level2">
+<h2>Codebook table</h2>
+<div id="htmlwidget-5fc2dd05cd7afda0dede" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5fc2dd05cd7afda0dede">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1.77777777777778\" data-max=\"2.77777777777778\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"0.5\" data-max=\"1.11803398874989\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[["<a href=\"#Ich_bin_vergnügt_R\">Ich.bin.vergnügt.R<\/a>","<a href=\"#Ich_werde_schnell_müde_\">Ich.werde.schnell.müde.<\/a>","<a href=\"#Mir_ist_zum_Weinen_zumute_\">Mir.ist.zum.Weinen.zumute.<\/a>","<a href=\"#Ich_glaube__mir_geht_es_schlechter_als_anderen_Leuten_\">Ich.glaube..mir.geht.es.schlechter.als.anderen.Leuten.<\/a>","<a href=\"#Ich_verpasse_günstige_Gelegenheiten__weil_ich_mich_nicht_schnell_genug_entscheiden_kann_\">Ich.verpasse.günstige.Gelegenheiten..weil.ich.mich.nicht.schnell.genug.entscheiden.kann.<\/a>","<a href=\"#Ich_fühle_mich_ausgeruht_R\">Ich.fühle.mich.ausgeruht.R<\/a>","<a href=\"#Ich_bin_ruhig_und_gelassen_R\">Ich.bin.ruhig.und.gelassen.R<\/a>","<a href=\"#Ich_glaube__dass_mir_meine_Schwierigkeiten_über_den_Kopf_wachsen_\">Ich.glaube..dass.mir.meine.Schwierigkeiten.über.den.Kopf.wachsen.<\/a>","<a href=\"#Ich_mache_mir_zuviel_Gedanken_über_unwichtige_Dinge_\">Ich.mache.mir.zuviel.Gedanken.über.unwichtige.Dinge.<\/a>","<a href=\"#Ich_bin_glücklich_R\">Ich.bin.glücklich.R<\/a>","<a href=\"#Ich_neige_dazu__alles_schwer_zu_nehmen_\">Ich.neige.dazu..alles.schwer.zu.nehmen.<\/a>","<a href=\"#Mir_fehlt_es_an_Selbstvertrauen_\">Mir.fehlt.es.an.Selbstvertrauen.<\/a>","<a href=\"#Ich_fühle_mich_geborgen_R\">Ich.fühle.mich.geborgen.R<\/a>","<a href=\"#Ich_mache_mir_Sorgen_über_mögliches_Missgeschick_\">Ich.mache.mir.Sorgen.über.mögliches.Missgeschick.<\/a>","<a href=\"#Ich_fühle_mich_niedergeschlagen_\">Ich.fühle.mich.niedergeschlagen.<\/a>","<a href=\"#Ich_bin_zufrieden_R\">Ich.bin.zufrieden.R<\/a>","<a href=\"#Unwichtige_Gedanken_gehen_mir_durch_den_Kopf_und_bedrücken_mich_\">Unwichtige.Gedanken.gehen.mir.durch.den.Kopf.und.bedrücken.mich.<\/a>","<a href=\"#Enttäuschungen_nehme_ich_so_schwer__dass_ich_sie_nicht_vergessen_kann_\">Enttäuschungen.nehme.ich.so.schwer..dass.ich.sie.nicht.vergessen.kann.<\/a>","<a href=\"#Ich_bin_ausgeglichen_R\">Ich.bin.ausgeglichen.R<\/a>","<a href=\"#Ich_werde_nervös_und_unruhig__wenn_ich_an_meine_derzeitigen_Angelegenheiten_denke_\">Ich.werde.nervös.und.unruhig..wenn.ich.an.meine.derzeitigen.Angelegenheiten.denke.<\/a>"],["Ich bin vergnügt.","Ich werde schnell müde.","Mir ist zum Weinen zumute.","Ich glaube, mir geht es schlechter als anderen Leuten.","Ich verpasse günstige Gelegenheiten, weil ich mich nicht schnell genug entscheiden kann.","Ich fühle mich ausgeruht.","Ich bin ruhig und gelassen.","Ich glaube, dass mir meine Schwierigkeiten über den Kopf wachsen.","Ich mache mir zuviel Gedanken über unwichtige Dinge.","Ich bin glücklich.","Ich neige dazu, alles schwer zu nehmen.","Mir fehlt es an Selbstvertrauen.","Ich fühle mich geborgen.","Ich mache mir Sorgen über mögliches Missgeschick.","Ich fühle mich niedergeschlagen.","Ich bin zufrieden.","Unwichtige Gedanken gehen mir durch den Kopf und bedrücken mich.","Enttäuschungen nehme ich so schwer, dass ich sie nicht vergessen kann.","Ich bin ausgeglichen","Ich werde nervös und unruhig, wenn ich an meine derzeitigen Angelegenheiten denke."],["haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled"],["4. fast nie,<br>3. manchmal,<br>2. oft,<br>1. fast immer","1. fast nie,<br>2. manchmal,<br>3. oft,<br>4. fast immer","1. fast nie,<br>2. manchmal,<br>3. oft,<br>4. fast immer","1. fast nie,<br>2. manchmal,<br>3. oft,<br>4. fast immer","1. fast nie,<br>2. manchmal,<br>3. oft,<br>4. fast immer","4. fast nie,<br>3. manchmal,<br>2. oft,<br>1. fast immer","4. fast nie,<br>3. manchmal,<br>2. oft,<br>1. fast immer","1. fast nie,<br>2. manchmal,<br>3. oft,<br>4. fast immer","1. fast nie,<br>2. manchmal,<br>3. oft,<br>4. fast immer","4. fast nie,<br>3. manchmal,<br>2. oft,<br>1. fast immer","1. fast nie,<br>2. manchmal,<br>3. oft,<br>4. fast immer","1. fast nie,<br>2. manchmal,<br>3. oft,<br>4. fast immer","4. fast nie,<br>3. manchmal,<br>2. oft,<br>1. fast immer","1. fast nie,<br>2. manchmal,<br>3. oft,<br>4. fast immer","1. fast nie,<br>2. manchmal,<br>3. oft,<br>4. fast immer","4. fast nie,<br>3. manchmal,<br>2. oft,<br>1. fast immer","1. fast nie,<br>2. manchmal,<br>3. oft,<br>4. fast immer","1. fast nie,<br>2. manchmal,<br>3. oft,<br>4. fast immer","4. fast nie,<br>3. manchmal,<br>2. oft,<br>1. fast immer","1. fast nie,<br>2. manchmal,<br>3. oft,<br>4. fast immer"],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9],["1","1","1","1","1","2","1","2","2","1","1","1","1","1","1","2","1","1","1","2"],["2","2","2","2","2","3","3","3","2","2","2","2","3","2","2","3","2","2","3","2"],["4","4","3","4","4","3","4","4","4","3","3","4","4","4","4","3","3","4","4","4"],[2.44444444444444,2.22222222222222,1.77777777777778,2,2.33333333333333,2.66666666666667,2.55555555555556,2.66666666666667,2.66666666666667,2.22222222222222,2,2,2.66666666666667,2.44444444444444,2.22222222222222,2.55555555555556,2.33333333333333,2.44444444444444,2.77777777777778,2.55555555555556],[0.881917103688197,0.833333333333333,0.833333333333333,1.11803398874989,0.866025403784439,0.5,0.881917103688197,0.707106781186548,0.866025403784439,0.833333333333333,0.866025403784439,1,1,0.881917103688197,0.833333333333333,0.52704627669473,0.707106781186548,0.881917103688197,1.092906420717,0.726483157256779],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],["▂▁▇▁▁▆▁▂","▁▁▇▁▁▁▁▁","▇▁▁▆▁▁▁▃","▇▁▃▁▁▃▁▂","▂▁▇▁▁▃▁▂","▃▁▁▁▁▁▁▇","▂▁▆▁▁▇▁▂","▇▁▁▇▁▁▁▂","▇▁▁▃▁▁▁▃","▃▁▁▆▁▁▁▇","▇▁▁▇▁▁▁▇","▆▁▇▁▁▂▁▂","▂▁▇▁▁▇▁▅","▂▁▇▁▁▆▁▂","▁▁▇▁▁▁▁▁","▆▁▁▁▁▁▁▇","▂▁▁▇▁▁▁▇","▂▁▇▁▁▆▁▂","▃▁▁▁▁▇▁▃","▇▁▁▅▁▁▁▂"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>name<\/th>\n      <th>label<\/th>\n      <th>data_type<\/th>\n      <th>value_labels<\/th>\n      <th>n_missing<\/th>\n      <th>complete_rate<\/th>\n      <th>min<\/th>\n      <th>median<\/th>\n      <th>max<\/th>\n      <th>mean<\/th>\n      <th>sd<\/th>\n      <th>n_value_labels<\/th>\n      <th>hist<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"pageLength":200,"columnDefs":[{"className":"dt-right","targets":[4,5,9,10,11]}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,200]}},"evals":[],"jsHooks":[]}</script>
+<script type="application/ld+json">
+{
+  "name": "STAI",
+  "datePublished": "2021-06-07",
+  "description": "The dataset has N=10 rows and 20 columns.\n9 rows have no missing values on any column.\n\n\n## Table of variables\nThis table contains variable names, labels, and number of missing values.\nSee the complete codebook for more.\n\n[truncated]\n\n### Note\nThis dataset was automatically described using the [codebook R package](https://rubenarslan.github.io/codebook/) (version 0.9.2).",
+  "keywords": ["Ich.bin.vergnügt.R", "Ich.werde.schnell.müde.", "Mir.ist.zum.Weinen.zumute.", "Ich.glaube..mir.geht.es.schlechter.als.anderen.Leuten.", "Ich.verpasse.günstige.Gelegenheiten..weil.ich.mich.nicht.schnell.genug.entscheiden.kann.", "Ich.fühle.mich.ausgeruht.R", "Ich.bin.ruhig.und.gelassen.R", "Ich.glaube..dass.mir.meine.Schwierigkeiten.über.den.Kopf.wachsen.", "Ich.mache.mir.zuviel.Gedanken.über.unwichtige.Dinge.", "Ich.bin.glücklich.R", "Ich.neige.dazu..alles.schwer.zu.nehmen.", "Mir.fehlt.es.an.Selbstvertrauen.", "Ich.fühle.mich.geborgen.R", "Ich.mache.mir.Sorgen.über.mögliches.Missgeschick.", "Ich.fühle.mich.niedergeschlagen.", "Ich.bin.zufrieden.R", "Unwichtige.Gedanken.gehen.mir.durch.den.Kopf.und.bedrücken.mich.", "Enttäuschungen.nehme.ich.so.schwer..dass.ich.sie.nicht.vergessen.kann.", "Ich.bin.ausgeglichen.R", "Ich.werde.nervös.und.unruhig..wenn.ich.an.meine.derzeitigen.Angelegenheiten.denke."],
+  "@context": "http://schema.org/",
+  "@type": "Dataset",
+  "variableMeasured": [
+    {
+      "name": "Ich.bin.vergnügt.R",
+      "description": "Ich bin vergnügt.",
+      "value": "4. fast nie,\n3. manchmal,\n2. oft,\n1. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.werde.schnell.müde.",
+      "description": "Ich werde schnell müde.",
+      "value": "1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Mir.ist.zum.Weinen.zumute.",
+      "description": "Mir ist zum Weinen zumute.",
+      "value": "1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.glaube..mir.geht.es.schlechter.als.anderen.Leuten.",
+      "description": "Ich glaube, mir geht es schlechter als anderen Leuten.",
+      "value": "1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.verpasse.günstige.Gelegenheiten..weil.ich.mich.nicht.schnell.genug.entscheiden.kann.",
+      "description": "Ich verpasse günstige Gelegenheiten, weil ich mich nicht schnell genug entscheiden kann.",
+      "value": "1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.fühle.mich.ausgeruht.R",
+      "description": "Ich fühle mich ausgeruht.",
+      "value": "4. fast nie,\n3. manchmal,\n2. oft,\n1. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.bin.ruhig.und.gelassen.R",
+      "description": "Ich bin ruhig und gelassen.",
+      "value": "4. fast nie,\n3. manchmal,\n2. oft,\n1. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.glaube..dass.mir.meine.Schwierigkeiten.über.den.Kopf.wachsen.",
+      "description": "Ich glaube, dass mir meine Schwierigkeiten über den Kopf wachsen.",
+      "value": "1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.mache.mir.zuviel.Gedanken.über.unwichtige.Dinge.",
+      "description": "Ich mache mir zuviel Gedanken über unwichtige Dinge.",
+      "value": "1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.bin.glücklich.R",
+      "description": "Ich bin glücklich.",
+      "value": "4. fast nie,\n3. manchmal,\n2. oft,\n1. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.neige.dazu..alles.schwer.zu.nehmen.",
+      "description": "Ich neige dazu, alles schwer zu nehmen.",
+      "value": "1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Mir.fehlt.es.an.Selbstvertrauen.",
+      "description": "Mir fehlt es an Selbstvertrauen.",
+      "value": "1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.fühle.mich.geborgen.R",
+      "description": "Ich fühle mich geborgen.",
+      "value": "4. fast nie,\n3. manchmal,\n2. oft,\n1. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.mache.mir.Sorgen.über.mögliches.Missgeschick.",
+      "description": "Ich mache mir Sorgen über mögliches Missgeschick.",
+      "value": "1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.fühle.mich.niedergeschlagen.",
+      "description": "Ich fühle mich niedergeschlagen.",
+      "value": "1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.bin.zufrieden.R",
+      "description": "Ich bin zufrieden.",
+      "value": "4. fast nie,\n3. manchmal,\n2. oft,\n1. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Unwichtige.Gedanken.gehen.mir.durch.den.Kopf.und.bedrücken.mich.",
+      "description": "Unwichtige Gedanken gehen mir durch den Kopf und bedrücken mich.",
+      "value": "1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Enttäuschungen.nehme.ich.so.schwer..dass.ich.sie.nicht.vergessen.kann.",
+      "description": "Enttäuschungen nehme ich so schwer, dass ich sie nicht vergessen kann.",
+      "value": "1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.bin.ausgeglichen.R",
+      "description": "Ich bin ausgeglichen",
+      "value": "4. fast nie,\n3. manchmal,\n2. oft,\n1. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    },
+    {
+      "name": "Ich.werde.nervös.und.unruhig..wenn.ich.an.meine.derzeitigen.Angelegenheiten.denke.",
+      "description": "Ich werde nervös und unruhig, wenn ich an meine derzeitigen Angelegenheiten denke.",
+      "value": "1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer",
+      "maxValue": 4,
+      "minValue": 1,
+      "@type": "propertyValue"
+    }
+  ]
+}
+</script>
+<details>
+<summary>
+JSON-LD metadata
+</summary>
+<p>The following JSON-LD can be found by search engines, if you share this codebook publicly on the web.</p>
+<pre class="json"><code>{
+  &quot;name&quot;: &quot;STAI&quot;,
+  &quot;datePublished&quot;: &quot;2021-06-07&quot;,
+  &quot;description&quot;: &quot;The dataset has N=10 rows and 20 columns.\n9 rows have no missing values on any column.\n\n\n## Table of variables\nThis table contains variable names, labels, and number of missing values.\nSee the complete codebook for more.\n\n[truncated]\n\n### Note\nThis dataset was automatically described using the [codebook R package](https://rubenarslan.github.io/codebook/) (version 0.9.2).&quot;,
+  &quot;keywords&quot;: [&quot;Ich.bin.vergnügt.R&quot;, &quot;Ich.werde.schnell.müde.&quot;, &quot;Mir.ist.zum.Weinen.zumute.&quot;, &quot;Ich.glaube..mir.geht.es.schlechter.als.anderen.Leuten.&quot;, &quot;Ich.verpasse.günstige.Gelegenheiten..weil.ich.mich.nicht.schnell.genug.entscheiden.kann.&quot;, &quot;Ich.fühle.mich.ausgeruht.R&quot;, &quot;Ich.bin.ruhig.und.gelassen.R&quot;, &quot;Ich.glaube..dass.mir.meine.Schwierigkeiten.über.den.Kopf.wachsen.&quot;, &quot;Ich.mache.mir.zuviel.Gedanken.über.unwichtige.Dinge.&quot;, &quot;Ich.bin.glücklich.R&quot;, &quot;Ich.neige.dazu..alles.schwer.zu.nehmen.&quot;, &quot;Mir.fehlt.es.an.Selbstvertrauen.&quot;, &quot;Ich.fühle.mich.geborgen.R&quot;, &quot;Ich.mache.mir.Sorgen.über.mögliches.Missgeschick.&quot;, &quot;Ich.fühle.mich.niedergeschlagen.&quot;, &quot;Ich.bin.zufrieden.R&quot;, &quot;Unwichtige.Gedanken.gehen.mir.durch.den.Kopf.und.bedrücken.mich.&quot;, &quot;Enttäuschungen.nehme.ich.so.schwer..dass.ich.sie.nicht.vergessen.kann.&quot;, &quot;Ich.bin.ausgeglichen.R&quot;, &quot;Ich.werde.nervös.und.unruhig..wenn.ich.an.meine.derzeitigen.Angelegenheiten.denke.&quot;],
+  &quot;@context&quot;: &quot;http://schema.org/&quot;,
+  &quot;@type&quot;: &quot;Dataset&quot;,
+  &quot;variableMeasured&quot;: [
+    {
+      &quot;name&quot;: &quot;Ich.bin.vergnügt.R&quot;,
+      &quot;description&quot;: &quot;Ich bin vergnügt.&quot;,
+      &quot;value&quot;: &quot;4. fast nie,\n3. manchmal,\n2. oft,\n1. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.werde.schnell.müde.&quot;,
+      &quot;description&quot;: &quot;Ich werde schnell müde.&quot;,
+      &quot;value&quot;: &quot;1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Mir.ist.zum.Weinen.zumute.&quot;,
+      &quot;description&quot;: &quot;Mir ist zum Weinen zumute.&quot;,
+      &quot;value&quot;: &quot;1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.glaube..mir.geht.es.schlechter.als.anderen.Leuten.&quot;,
+      &quot;description&quot;: &quot;Ich glaube, mir geht es schlechter als anderen Leuten.&quot;,
+      &quot;value&quot;: &quot;1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.verpasse.günstige.Gelegenheiten..weil.ich.mich.nicht.schnell.genug.entscheiden.kann.&quot;,
+      &quot;description&quot;: &quot;Ich verpasse günstige Gelegenheiten, weil ich mich nicht schnell genug entscheiden kann.&quot;,
+      &quot;value&quot;: &quot;1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.fühle.mich.ausgeruht.R&quot;,
+      &quot;description&quot;: &quot;Ich fühle mich ausgeruht.&quot;,
+      &quot;value&quot;: &quot;4. fast nie,\n3. manchmal,\n2. oft,\n1. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.bin.ruhig.und.gelassen.R&quot;,
+      &quot;description&quot;: &quot;Ich bin ruhig und gelassen.&quot;,
+      &quot;value&quot;: &quot;4. fast nie,\n3. manchmal,\n2. oft,\n1. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.glaube..dass.mir.meine.Schwierigkeiten.über.den.Kopf.wachsen.&quot;,
+      &quot;description&quot;: &quot;Ich glaube, dass mir meine Schwierigkeiten über den Kopf wachsen.&quot;,
+      &quot;value&quot;: &quot;1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.mache.mir.zuviel.Gedanken.über.unwichtige.Dinge.&quot;,
+      &quot;description&quot;: &quot;Ich mache mir zuviel Gedanken über unwichtige Dinge.&quot;,
+      &quot;value&quot;: &quot;1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.bin.glücklich.R&quot;,
+      &quot;description&quot;: &quot;Ich bin glücklich.&quot;,
+      &quot;value&quot;: &quot;4. fast nie,\n3. manchmal,\n2. oft,\n1. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.neige.dazu..alles.schwer.zu.nehmen.&quot;,
+      &quot;description&quot;: &quot;Ich neige dazu, alles schwer zu nehmen.&quot;,
+      &quot;value&quot;: &quot;1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Mir.fehlt.es.an.Selbstvertrauen.&quot;,
+      &quot;description&quot;: &quot;Mir fehlt es an Selbstvertrauen.&quot;,
+      &quot;value&quot;: &quot;1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.fühle.mich.geborgen.R&quot;,
+      &quot;description&quot;: &quot;Ich fühle mich geborgen.&quot;,
+      &quot;value&quot;: &quot;4. fast nie,\n3. manchmal,\n2. oft,\n1. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.mache.mir.Sorgen.über.mögliches.Missgeschick.&quot;,
+      &quot;description&quot;: &quot;Ich mache mir Sorgen über mögliches Missgeschick.&quot;,
+      &quot;value&quot;: &quot;1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.fühle.mich.niedergeschlagen.&quot;,
+      &quot;description&quot;: &quot;Ich fühle mich niedergeschlagen.&quot;,
+      &quot;value&quot;: &quot;1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.bin.zufrieden.R&quot;,
+      &quot;description&quot;: &quot;Ich bin zufrieden.&quot;,
+      &quot;value&quot;: &quot;4. fast nie,\n3. manchmal,\n2. oft,\n1. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Unwichtige.Gedanken.gehen.mir.durch.den.Kopf.und.bedrücken.mich.&quot;,
+      &quot;description&quot;: &quot;Unwichtige Gedanken gehen mir durch den Kopf und bedrücken mich.&quot;,
+      &quot;value&quot;: &quot;1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Enttäuschungen.nehme.ich.so.schwer..dass.ich.sie.nicht.vergessen.kann.&quot;,
+      &quot;description&quot;: &quot;Enttäuschungen nehme ich so schwer, dass ich sie nicht vergessen kann.&quot;,
+      &quot;value&quot;: &quot;1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.bin.ausgeglichen.R&quot;,
+      &quot;description&quot;: &quot;Ich bin ausgeglichen&quot;,
+      &quot;value&quot;: &quot;4. fast nie,\n3. manchmal,\n2. oft,\n1. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    },
+    {
+      &quot;name&quot;: &quot;Ich.werde.nervös.und.unruhig..wenn.ich.an.meine.derzeitigen.Angelegenheiten.denke.&quot;,
+      &quot;description&quot;: &quot;Ich werde nervös und unruhig, wenn ich an meine derzeitigen Angelegenheiten denke.&quot;,
+      &quot;value&quot;: &quot;1. fast nie,\n2. manchmal,\n3. oft,\n4. fast immer&quot;,
+      &quot;maxValue&quot;: 4,
+      &quot;minValue&quot;: 1,
+      &quot;@type&quot;: &quot;propertyValue&quot;
+    }
+  ]
+}`</code></pre>
+</details>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
@@ -974,7 +3436,7 @@ add_likert_labels)</code></pre>
 </p>
 <div id="workflowr-sessioninfo" class="collapse">
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>R version 4.0.4 (2021-02-15)
+<pre><code>R version 4.0.2 (2020-06-22)
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 Running under: Windows 10 x64 (build 19042)
 
@@ -989,24 +3451,31 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
-[1] ltm_1.1-1       polycor_0.7-10  msm_1.6.8       MASS_7.3-53    
+[1] ltm_1.1-1       polycor_0.7-10  msm_1.6.8       MASS_7.3-53.1  
 [5] dplyr_1.0.5     labelled_2.8.0  here_1.0.1      codebook_0.9.2 
 [9] workflowr_1.6.2
 
 loaded via a namespace (and not attached):
- [1] tidyselect_1.1.0  xfun_0.22         purrr_0.3.4       splines_4.0.4    
- [5] haven_2.3.1       lattice_0.20-41   expm_0.999-6      colorspace_2.0-0 
- [9] vctrs_0.3.7       generics_0.1.0    htmltools_0.5.1.1 yaml_2.2.1       
-[13] utf8_1.2.1        survival_3.2-7    rlang_0.4.10      later_1.1.0.1    
-[17] pillar_1.6.0      glue_1.4.2        DBI_1.1.1         lifecycle_1.0.0  
-[21] stringr_1.4.0     munsell_0.5.0     gtable_0.3.0      mvtnorm_1.1-1    
-[25] evaluate_0.14     knitr_1.32        forcats_0.5.1     httpuv_1.5.5     
-[29] fansi_0.4.2       Rcpp_1.0.6        promises_1.2.0.1  scales_1.1.1     
-[33] fs_1.5.0          ggplot2_3.3.3     hms_1.0.0         digest_0.6.27    
-[37] stringi_1.5.3     grid_4.0.4        rprojroot_2.0.2   tools_4.0.4      
-[41] magrittr_2.0.1    tibble_3.1.0      crayon_1.4.1      whisker_0.4      
-[45] pkgconfig_2.0.3   ellipsis_0.3.1    Matrix_1.3-2      assertthat_0.2.1 
-[49] rmarkdown_2.7     R6_2.5.0          git2r_0.28.0      compiler_4.0.4   </code></pre>
+ [1] Rcpp_1.0.6        mvtnorm_1.1-1     lattice_0.20-41   tidyr_1.1.3      
+ [5] listenv_0.8.0     assertthat_0.2.1  rprojroot_2.0.2   digest_0.6.27    
+ [9] utf8_1.2.1        mime_0.10         parallelly_1.24.0 repr_1.1.3       
+[13] R6_2.5.0          evaluate_0.14     ggplot2_3.3.3     highr_0.9        
+[17] pillar_1.6.0      rlang_0.4.10      whisker_0.4       jquerylib_0.1.3  
+[21] DT_0.18           Matrix_1.2-18     rmarkdown_2.7     labeling_0.4.2   
+[25] splines_4.0.2     stringr_1.4.0     htmlwidgets_1.5.3 munsell_0.5.0    
+[29] shiny_1.6.0       compiler_4.0.2    httpuv_1.6.0      xfun_0.22        
+[33] base64enc_0.1-3   pkgconfig_2.0.3   globals_0.14.0    htmltools_0.5.1.1
+[37] tidyselect_1.1.0  tibble_3.1.1      expm_0.999-6      codetools_0.2-16 
+[41] fansi_0.4.2       future_1.21.0     crayon_1.4.1      later_1.2.0      
+[45] grid_4.0.2        xtable_1.8-4      jsonlite_1.7.2    gtable_0.3.0     
+[49] lifecycle_1.0.0   DBI_1.1.1         git2r_0.28.0      magrittr_2.0.1   
+[53] scales_1.1.1      stringi_1.5.3     farver_2.1.0      fs_1.5.0         
+[57] promises_1.2.0.1  rmdpartials_0.5.8 skimr_2.1.3       bslib_0.2.4      
+[61] ellipsis_0.3.1    generics_0.1.0    vctrs_0.3.7       tools_4.0.2      
+[65] forcats_0.5.1     glue_1.4.2        purrr_0.3.4       crosstalk_1.1.1  
+[69] hms_1.0.0         fastmap_1.1.0     parallel_4.0.2    survival_3.1-12  
+[73] yaml_2.2.1        colorspace_2.0-0  knitr_1.33        haven_2.4.1      
+[77] sass_0.3.1       </code></pre>
 </div>
 </div>
 
@@ -1022,6 +3491,8 @@ footer is added to webpages before the MathJax javascript. -->
     "HTML-CSS": { availableFonts: ["TeX"] }
   });
 </script>
+
+
 
 
 </div>
