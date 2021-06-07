@@ -14,7 +14,8 @@
 
 <title>Codebook BIS_BAS</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -37,6 +38,27 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.18/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="site_libs/jszip-1.10.20/jszip.min.js"></script>
+<script src="site_libs/pdfmake-1.10.20/pdfmake.js"></script>
+<script src="site_libs/pdfmake-1.10.20/vfs_fonts.js"></script>
+<link href="site_libs/dt-ext-buttons-1.10.20/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="site_libs/dt-ext-buttons-1.10.20/js/dataTables.buttons.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.flash.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.html5.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.colVis.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.print.min.js"></script>
+<link href="site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="site_libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="site_libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -47,6 +69,8 @@ div.section {
   padding-top: 12px;
 }
 </style>
+
+
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -386,7 +410,7 @@ div.tocify {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2021-05-08
+<strong>Last updated:</strong> 2021-06-06
 </p>
 <p>
 <strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
@@ -477,16 +501,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystree5a7c8b322a74f5e4b38409de7a1663cbf4b9daectargetblank5a7c8b3a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/5a7c8b322a74f5e4b38409de7a1663cbf4b9daec" target="_blank">5a7c8b3</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystreef19a82b96fc1135300d03b9116abca4ec55ea795targetblankf19a82ba"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/f19a82b96fc1135300d03b9116abca4ec55ea795" target="_blank">f19a82b</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomNinaAkmannApproachAvoidanceSurveystree5a7c8b322a74f5e4b38409de7a1663cbf4b9daectargetblank5a7c8b3a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcompsychubApproachAvoidanceSurveystreef19a82b96fc1135300d03b9116abca4ec55ea795targetblankf19a82ba" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/tree/5a7c8b322a74f5e4b38409de7a1663cbf4b9daec" target="_blank">5a7c8b3</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/psychub/ApproachAvoidanceSurveys/tree/f19a82b96fc1135300d03b9116abca4ec55ea795" target="_blank">f19a82b</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -538,10 +562,27 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/8ad6a8b6c0871ca41535a4276a9755dbaa6e794b/docs/Codebook_BIS_BAS.html" target="_blank">8ad6a8b</a>
+</td>
+<td>
+Nina-Akmann
+</td>
+<td>
+2021-05-08
+</td>
+<td>
+changing stuff
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
-<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/5a7c8b322a74f5e4b38409de7a1663cbf4b9daec/analysis/Codebook_BIS_BAS.Rmd" target="_blank">5a7c8b3</a>
+<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/5a7c8b322a74f5e4b38409de7a1663cbf4b9daec/analysis/Codebook_BIS_BAS.Rmd" target="_blank">5a7c8b3</a>
 </td>
 <td>
 Nina-Akmann
@@ -558,7 +599,7 @@ deleting aggregated scales
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/5a7c8b322a74f5e4b38409de7a1663cbf4b9daec/docs/Codebook_BIS_BAS.html" target="_blank">5a7c8b3</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/5a7c8b322a74f5e4b38409de7a1663cbf4b9daec/docs/Codebook_BIS_BAS.html" target="_blank">5a7c8b3</a>
 </td>
 <td>
 Nina-Akmann
@@ -575,7 +616,7 @@ deleting aggregated scales
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/04bb55e3bb76fa8eb4f37c9f981639d172de3acc/docs/Codebook_BIS_BAS.html" target="_blank">04bb55e</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/04bb55e3bb76fa8eb4f37c9f981639d172de3acc/docs/Codebook_BIS_BAS.html" target="_blank">04bb55e</a>
 </td>
 <td>
 Nina-Akmann
@@ -592,7 +633,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/018906588fdee75949fecf7e85a9d88ed28aa4b8/docs/Codebook_BIS_BAS.html" target="_blank">0189065</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/018906588fdee75949fecf7e85a9d88ed28aa4b8/docs/Codebook_BIS_BAS.html" target="_blank">0189065</a>
 </td>
 <td>
 psychub
@@ -609,7 +650,7 @@ Build site.
 Rmd
 </td>
 <td>
-<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/eaa2e31cb3317c234f220b1493aa2246a17b2730/analysis/Codebook_BIS_BAS.Rmd" target="_blank">eaa2e31</a>
+<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/eaa2e31cb3317c234f220b1493aa2246a17b2730/analysis/Codebook_BIS_BAS.Rmd" target="_blank">eaa2e31</a>
 </td>
 <td>
 psychub
@@ -626,7 +667,7 @@ changed stuff
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/eaa2e31cb3317c234f220b1493aa2246a17b2730/docs/Codebook_BIS_BAS.html" target="_blank">eaa2e31</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/eaa2e31cb3317c234f220b1493aa2246a17b2730/docs/Codebook_BIS_BAS.html" target="_blank">eaa2e31</a>
 </td>
 <td>
 psychub
@@ -643,7 +684,7 @@ changed stuff
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/75ba9c3ccc8b186e5b50a799b5f502a005e044a4/docs/Codebook_BIS_BAS.html" target="_blank">75ba9c3</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/75ba9c3ccc8b186e5b50a799b5f502a005e044a4/docs/Codebook_BIS_BAS.html" target="_blank">75ba9c3</a>
 </td>
 <td>
 Nina-Akmann
@@ -660,7 +701,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/d343cdba431016ab94e84bb5e234b617d2cd6570/docs/Codebook_BIS_BAS.html" target="_blank">d343cdb</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/d343cdba431016ab94e84bb5e234b617d2cd6570/docs/Codebook_BIS_BAS.html" target="_blank">d343cdb</a>
 </td>
 <td>
 psychub
@@ -677,7 +718,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/a05202ea4c9f3c42caebaabe513d44c90dc90ad2/docs/Codebook_BIS_BAS.html" target="_blank">a05202e</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/a05202ea4c9f3c42caebaabe513d44c90dc90ad2/docs/Codebook_BIS_BAS.html" target="_blank">a05202e</a>
 </td>
 <td>
 psychub
@@ -694,7 +735,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/6884916b8a5e0fd91cc6fa6b39dc979f9296b870/docs/Codebook_BIS_BAS.html" target="_blank">6884916</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/6884916b8a5e0fd91cc6fa6b39dc979f9296b870/docs/Codebook_BIS_BAS.html" target="_blank">6884916</a>
 </td>
 <td>
 psychub
@@ -711,7 +752,7 @@ Build site.
 html
 </td>
 <td>
-<a href="https://rawcdn.githack.com/Nina-Akmann/ApproachAvoidanceSurveys/fb6508126fc7b0413a142583617c966c00d70cda/docs/Codebook_BIS_BAS.html" target="_blank">fb65081</a>
+<a href="https://rawcdn.githack.com/psychub/ApproachAvoidanceSurveys/fb6508126fc7b0413a142583617c966c00d70cda/docs/Codebook_BIS_BAS.html" target="_blank">fb65081</a>
 </td>
 <td>
 Nina-Akmann
@@ -728,7 +769,7 @@ Build site.
 Rmd
 </td>
 <td>
-<a href="https://github.com/Nina-Akmann/ApproachAvoidanceSurveys/blob/ee4649809d89eb6c1499c576b699353f40036425/analysis/Codebook_BIS_BAS.Rmd" target="_blank">ee46498</a>
+<a href="https://github.com/psychub/ApproachAvoidanceSurveys/blob/ee4649809d89eb6c1499c576b699353f40036425/analysis/Codebook_BIS_BAS.Rmd" target="_blank">ee46498</a>
 </td>
 <td>
 Nina-Akmann
@@ -834,9 +875,11 @@ add_likert_labels)</code></pre>
 <p><strong>Dataset name</strong>: BIS_BAS</p>
 <p>The dataset has N=10 rows and 24 columns. 9 rows have no missing values on any column.</p>
 <details>
-<p><summary title="Expand this section to see some additional metadata in a structured format that is useful for search engines">Metadata for search engines</summary></p>
+<summary title="Expand this section to see some additional metadata in a structured format that is useful for search engines">
+Metadata for search engines
+</summary>
 <ul>
-<li><strong>Date published</strong>: 2021-05-08</li>
+<li><strong>Date published</strong>: 2021-06-06</li>
 </ul>
 <table class="kable_wrapper">
 <tbody>
@@ -935,7 +978,7 @@ add_likert_labels)</code></pre>
 </div>
 </div>
 <div id="Eine_eigene_Familie_ist_die_wichtigste_Sache_im_Leben_" class="section level3 tabset">
-<h3>Eine.eigene.Familie.ist.die.wichtigste.Sache.im.Leben.</h3>
+<h3 class="tabset">Eine.eigene.Familie.ist.die.wichtigste.Sache.im.Leben.</h3>
 <p>Eine eigene Familie ist die wichtigste Sache im Leben.</p>
 <div id="Eine_eigene_Familie_ist_die_wichtigste_Sache_im_Leben__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1033,7 +1076,7 @@ Distribution of values for Eine.eigene.Familie.ist.die.wichtigste.Sache.im.Leben
 </div>
 </div>
 <div id="Sogar_wenn_mir_etwas_Schlimmes_bevor_steht__bin_ich_selten_nervös_oder_ängstlich_R" class="section level3 tabset">
-<h3>Sogar.wenn.mir.etwas.Schlimmes.bevor.steht..bin.ich.selten.nervös.oder.ängstlich.R</h3>
+<h3 class="tabset">Sogar.wenn.mir.etwas.Schlimmes.bevor.steht..bin.ich.selten.nervös.oder.ängstlich.R</h3>
 <p>Sogar wenn mir etwas Schlimmes bevorsteht, bin ich selten nervös oder ängstlich.</p>
 <div id="Sogar_wenn_mir_etwas_Schlimmes_bevor_steht__bin_ich_selten_nervös_oder_ängstlich_R_distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1131,7 +1174,7 @@ Distribution of values for Sogar.wenn.mir.etwas.Schlimmes.bevor.steht..bin.ich.s
 </div>
 </div>
 <div id="Ich_strenge_mich_besonders_an__damit_ich_erreiche__was_ich_möchte_" class="section level3 tabset">
-<h3>Ich.strenge.mich.besonders.an..damit.ich.erreiche..was.ich.möchte.</h3>
+<h3 class="tabset">Ich.strenge.mich.besonders.an..damit.ich.erreiche..was.ich.möchte.</h3>
 <p>Ich strenge mich besonders an, damit ich erreiche, was ich möchte.</p>
 <div id="Ich_strenge_mich_besonders_an__damit_ich_erreiche__was_ich_möchte__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1229,7 +1272,7 @@ Distribution of values for Ich.strenge.mich.besonders.an..damit.ich.erreiche..wa
 </div>
 </div>
 <div id="Wenn_mir_etwas_gut_gelingt__bleibe_ich_sehr_gern_bei_der_Sache_" class="section level3 tabset">
-<h3>Wenn.mir.etwas.gut.gelingt..bleibe.ich.sehr.gern.bei.der.Sache.</h3>
+<h3 class="tabset">Wenn.mir.etwas.gut.gelingt..bleibe.ich.sehr.gern.bei.der.Sache.</h3>
 <p>Wenn mir etwas gut gelingt, bleibe ich sehr gern bei der Sache.</p>
 <div id="Wenn_mir_etwas_gut_gelingt__bleibe_ich_sehr_gern_bei_der_Sache__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1327,7 +1370,7 @@ Distribution of values for Wenn.mir.etwas.gut.gelingt..bleibe.ich.sehr.gern.bei.
 </div>
 </div>
 <div id="Ich_bin_immer_bereit__etwas_Neues_zu_versuchen__wenn_ich_denke__dass_es_Spass_machen_wird_" class="section level3 tabset">
-<h3>Ich.bin.immer.bereit..etwas.Neues.zu.versuchen..wenn.ich.denke..dass.es.Spass.machen.wird.</h3>
+<h3 class="tabset">Ich.bin.immer.bereit..etwas.Neues.zu.versuchen..wenn.ich.denke..dass.es.Spass.machen.wird.</h3>
 <p>Ich bin immer bereit, etwas Neues zu versuchen, wenn ich denke, dass es Spaß machen wird.</p>
 <div id="Ich_bin_immer_bereit__etwas_Neues_zu_versuchen__wenn_ich_denke__dass_es_Spass_machen_wird__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1425,7 +1468,7 @@ Distribution of values for Ich.bin.immer.bereit..etwas.Neues.zu.versuchen..wenn.
 </div>
 </div>
 <div id="Es_ist_wichtig_für_mich__wie_ich_gekleidet_bin_" class="section level3 tabset">
-<h3>Es.ist.wichtig.für.mich..wie.ich.gekleidet.bin.</h3>
+<h3 class="tabset">Es.ist.wichtig.für.mich..wie.ich.gekleidet.bin.</h3>
 <p>Es ist wichtig für mich, wie ich gekleidet bin.</p>
 <div id="Es_ist_wichtig_für_mich__wie_ich_gekleidet_bin__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1523,7 +1566,7 @@ Distribution of values for Es.ist.wichtig.für.mich..wie.ich.gekleidet.bin.
 </div>
 </div>
 <div id="Wenn_ich_erreiche__was_ich_will__bin_ich_voller_Energie_und_Spannung_" class="section level3 tabset">
-<h3>Wenn.ich.erreiche..was.ich.will..bin.ich.voller.Energie.und.Spannung.</h3>
+<h3 class="tabset">Wenn.ich.erreiche..was.ich.will..bin.ich.voller.Energie.und.Spannung.</h3>
 <p>Wenn ich erreiche, was ich will, bin ich voller Energie und Spannung.</p>
 <div id="Wenn_ich_erreiche__was_ich_will__bin_ich_voller_Energie_und_Spannung__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1621,7 +1664,7 @@ Distribution of values for Wenn.ich.erreiche..was.ich.will..bin.ich.voller.Energ
 </div>
 </div>
 <div id="Kritik_oder_Beschimpfungen_verletzen_mich_ziemlich_stark_" class="section level3 tabset">
-<h3>Kritik.oder.Beschimpfungen.verletzen.mich.ziemlich.stark.</h3>
+<h3 class="tabset">Kritik.oder.Beschimpfungen.verletzen.mich.ziemlich.stark.</h3>
 <p>Kritik und Verletzungen verletzen mich ziemlich stark.</p>
 <div id="Kritik_oder_Beschimpfungen_verletzen_mich_ziemlich_stark__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1719,7 +1762,7 @@ Distribution of values for Kritik.oder.Beschimpfungen.verletzen.mich.ziemlich.st
 </div>
 </div>
 <div id="Wenn_ich_etwas_haben_will__tue_ich_gewöhnlich_alles__um_es_zu_bekommen_" class="section level3 tabset">
-<h3>Wenn.ich.etwas.haben.will..tue.ich.gewöhnlich.alles..um.es.zu.bekommen.</h3>
+<h3 class="tabset">Wenn.ich.etwas.haben.will..tue.ich.gewöhnlich.alles..um.es.zu.bekommen.</h3>
 <p>Wenn ich etwas haben will, tue ich gewöhnlich alles, um es zu bekommen.</p>
 <div id="Wenn_ich_etwas_haben_will__tue_ich_gewöhnlich_alles__um_es_zu_bekommen__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1817,7 +1860,7 @@ Distribution of values for Wenn.ich.etwas.haben.will..tue.ich.gewöhnlich.alles.
 </div>
 </div>
 <div id="Ich_werde_oft_Dinge_nur_deshalb_tun__weil_Sie_Spass_machen_könnten_" class="section level3 tabset">
-<h3>Ich.werde.oft.Dinge.nur.deshalb.tun..weil.Sie.Spass.machen.könnten.</h3>
+<h3 class="tabset">Ich.werde.oft.Dinge.nur.deshalb.tun..weil.Sie.Spass.machen.könnten.</h3>
 <p>Ich werde oft Dinge nur deshalb tun, weil sie Spaß machen könnten.</p>
 <div id="Ich_werde_oft_Dinge_nur_deshalb_tun__weil_Sie_Spass_machen_könnten__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -1915,7 +1958,7 @@ Distribution of values for Ich.werde.oft.Dinge.nur.deshalb.tun..weil.Sie.Spass.m
 </div>
 </div>
 <div id="Es_ist_schwierig_für_mich__Zeit_für_solche_Dinge_wie_Friseurbesuche_zu_finden_" class="section level3 tabset">
-<h3>Es.ist.schwierig.für.mich..Zeit.für.solche.Dinge.wie.Friseurbesuche.zu.finden.</h3>
+<h3 class="tabset">Es.ist.schwierig.für.mich..Zeit.für.solche.Dinge.wie.Friseurbesuche.zu.finden.</h3>
 <p>Es ist schwierig für mich, Zeit für solche Dinge wie Friseurbesuche zu finden.</p>
 <div id="Es_ist_schwierig_für_mich__Zeit_für_solche_Dinge_wie_Friseurbesuche_zu_finden__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2013,7 +2056,7 @@ Distribution of values for Es.ist.schwierig.für.mich..Zeit.für.solche.Dinge.wi
 </div>
 </div>
 <div id="Wenn_ich_eine_Chance_sehe__etwas_Erwünschtes_zu_bekommen__versuche_ich_sofort_mein_Glück_" class="section level3 tabset">
-<h3>Wenn.ich.eine.Chance.sehe..etwas.Erwünschtes.zu.bekommen..versuche.ich.sofort.mein.Glück.</h3>
+<h3 class="tabset">Wenn.ich.eine.Chance.sehe..etwas.Erwünschtes.zu.bekommen..versuche.ich.sofort.mein.Glück.</h3>
 <p>Wenn ich die Chance sehe, etwas Erwünschtes zu bekommen, versuche ich sofort mein Glück.</p>
 <div id="Wenn_ich_eine_Chance_sehe__etwas_Erwünschtes_zu_bekommen__versuche_ich_sofort_mein_Glück__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2111,7 +2154,7 @@ Distribution of values for Wenn.ich.eine.Chance.sehe..etwas.Erwünschtes.zu.beko
 </div>
 </div>
 <div id="Ich_bin_ziemlich_besorgt_oder_verstimmt__wenn_ich_glaube_oder_weiß__dass_jemand_wütend_auf_mich_ist_" class="section level3 tabset">
-<h3>Ich.bin.ziemlich.besorgt.oder.verstimmt..wenn.ich.glaube.oder.weiß..dass.jemand.wütend.auf.mich.ist.</h3>
+<h3 class="tabset">Ich.bin.ziemlich.besorgt.oder.verstimmt..wenn.ich.glaube.oder.weiß..dass.jemand.wütend.auf.mich.ist.</h3>
 <p>Ich bin ziemlich besorgt oder verstimmt, wenn ich glaube oder weiß, dass jemand wütend auf mich ist.</p>
 <div id="Ich_bin_ziemlich_besorgt_oder_verstimmt__wenn_ich_glaube_oder_weiß__dass_jemand_wütend_auf_mich_ist__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2209,7 +2252,7 @@ Distribution of values for Ich.bin.ziemlich.besorgt.oder.verstimmt..wenn.ich.gla
 </div>
 </div>
 <div id="Wenn_ich_eine_Gelegenheit_für_etwas_sehe__das_ich_mag__bin_ich_sofort_voller_Spannung_" class="section level3 tabset">
-<h3>Wenn.ich.eine.Gelegenheit.für.etwas.sehe..das.ich.mag..bin.ich.sofort.voller.Spannung.</h3>
+<h3 class="tabset">Wenn.ich.eine.Gelegenheit.für.etwas.sehe..das.ich.mag..bin.ich.sofort.voller.Spannung.</h3>
 <p>Wenn ich eine Gelegenheit für etwas sehe, das ich mag, bin ich sofort voller Spannung.</p>
 <div id="Wenn_ich_eine_Gelegenheit_für_etwas_sehe__das_ich_mag__bin_ich_sofort_voller_Spannung__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2307,7 +2350,7 @@ Distribution of values for Wenn.ich.eine.Gelegenheit.für.etwas.sehe..das.ich.ma
 </div>
 </div>
 <div id="Ich_handle_oft_so__wie_es_mir_gerade_in_den_Sinn_kommt_" class="section level3 tabset">
-<h3>Ich.handle.oft.so..wie.es.mir.gerade.in.den.Sinn.kommt.</h3>
+<h3 class="tabset">Ich.handle.oft.so..wie.es.mir.gerade.in.den.Sinn.kommt.</h3>
 <p>Ich handle oft so, wie es mir gerade in den Sinn kommt.</p>
 <div id="Ich_handle_oft_so__wie_es_mir_gerade_in_den_Sinn_kommt__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2405,7 +2448,7 @@ Distribution of values for Ich.handle.oft.so..wie.es.mir.gerade.in.den.Sinn.komm
 </div>
 </div>
 <div id="Wenn_ich_glaube__dass_mir_etwas_Unangenehmes_bevorsteht__bin_ich_gewöhnlich_ziemlich_unruhig_" class="section level3 tabset">
-<h3>Wenn.ich.glaube..dass.mir.etwas.Unangenehmes.bevorsteht..bin.ich.gewöhnlich.ziemlich.unruhig.</h3>
+<h3 class="tabset">Wenn.ich.glaube..dass.mir.etwas.Unangenehmes.bevorsteht..bin.ich.gewöhnlich.ziemlich.unruhig.</h3>
 <p>Wenn ich glaube, dass mir etwas Unangenehmes bevorsteht, bin ich gewöhnlich ziemlich unruhig.</p>
 <div id="Wenn_ich_glaube__dass_mir_etwas_Unangenehmes_bevorsteht__bin_ich_gewöhnlich_ziemlich_unruhig__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2503,7 +2546,7 @@ Distribution of values for Wenn.ich.glaube..dass.mir.etwas.Unangenehmes.bevorste
 </div>
 </div>
 <div id="Ich_wundere_mich_oft_über_das_menschliche_Verhalten_" class="section level3 tabset">
-<h3>Ich.wundere.mich.oft.über.das.menschliche.Verhalten.</h3>
+<h3 class="tabset">Ich.wundere.mich.oft.über.das.menschliche.Verhalten.</h3>
 <p>Ich wundere mich oft über das menschliche Verhalten.</p>
 <div id="Ich_wundere_mich_oft_über_das_menschliche_Verhalten__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2601,7 +2644,7 @@ Distribution of values for Ich.wundere.mich.oft.über.das.menschliche.Verhalten.
 </div>
 </div>
 <div id="Wenn_mir_etwas_Schönes_passiert__berührt_mich_das_sehr_stark_" class="section level3 tabset">
-<h3>Wenn.mir.etwas.Schönes.passiert..berührt.mich.das.sehr.stark.</h3>
+<h3 class="tabset">Wenn.mir.etwas.Schönes.passiert..berührt.mich.das.sehr.stark.</h3>
 <p>Wenn mir etwas Schönes passiert, berührt mich das sehr stark.</p>
 <div id="Wenn_mir_etwas_Schönes_passiert__berührt_mich_das_sehr_stark__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2699,7 +2742,7 @@ Distribution of values for Wenn.mir.etwas.Schönes.passiert..berührt.mich.das.s
 </div>
 </div>
 <div id="Ich_bin_besorgt__wenn_ich_glaube__dass_ich_eine_wichtige_Sache_schlecht_gemacht_habe_" class="section level3 tabset">
-<h3>Ich.bin.besorgt..wenn.ich.glaube..dass.ich.eine.wichtige.Sache.schlecht.gemacht.habe.</h3>
+<h3 class="tabset">Ich.bin.besorgt..wenn.ich.glaube..dass.ich.eine.wichtige.Sache.schlecht.gemacht.habe.</h3>
 <p>Ich bin besorgt, wenn ich glaube, dass ich eine wichtige Sache schlecht gemacht habe.</p>
 <div id="Ich_bin_besorgt__wenn_ich_glaube__dass_ich_eine_wichtige_Sache_schlecht_gemacht_habe__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2797,7 +2840,7 @@ Distribution of values for Ich.bin.besorgt..wenn.ich.glaube..dass.ich.eine.wicht
 </div>
 </div>
 <div id="Ich_brauche_Abwechslung_und_neue_Erfahrungen_" class="section level3 tabset">
-<h3>Ich.brauche.Abwechslung.und.neue.Erfahrungen.</h3>
+<h3 class="tabset">Ich.brauche.Abwechslung.und.neue.Erfahrungen.</h3>
 <p>Ich brauche Abwechslung und neue Erfahrungen.</p>
 <div id="Ich_brauche_Abwechslung_und_neue_Erfahrungen__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2895,7 +2938,7 @@ Distribution of values for Ich.brauche.Abwechslung.und.neue.Erfahrungen.
 </div>
 </div>
 <div id="Wenn_ich_etwas_erreichen_will__verfolge_ich_hartnäckig_mein_Ziel_" class="section level3 tabset">
-<h3>Wenn.ich.etwas.erreichen.will..verfolge.ich.hartnäckig.mein.Ziel.</h3>
+<h3 class="tabset">Wenn.ich.etwas.erreichen.will..verfolge.ich.hartnäckig.mein.Ziel.</h3>
 <p>Wenn ich etwas erreichen will, verfolge ich hartnäckig mein Ziel.</p>
 <div id="Wenn_ich_etwas_erreichen_will__verfolge_ich_hartnäckig_mein_Ziel__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -2993,7 +3036,7 @@ Distribution of values for Wenn.ich.etwas.erreichen.will..verfolge.ich.hartnäck
 </div>
 </div>
 <div id="Verglichen_mit_meinen_Freunden_habe_ich_sehr_wenig_Ängste_R" class="section level3 tabset">
-<h3>Verglichen.mit.meinen.Freunden.habe.ich.sehr.wenig.Ängste.R</h3>
+<h3 class="tabset">Verglichen.mit.meinen.Freunden.habe.ich.sehr.wenig.Ängste.R</h3>
 <p>Verglichen mit meinen Freunden habe ich sehr wenig Ängste.</p>
 <div id="Verglichen_mit_meinen_Freunden_habe_ich_sehr_wenig_Ängste_R_distribution" class="section level4">
 <h4>Distribution</h4>
@@ -3091,7 +3134,7 @@ Distribution of values for Verglichen.mit.meinen.Freunden.habe.ich.sehr.wenig.Ä
 </div>
 </div>
 <div id="Ich_fände_es_sehr_aufregend__einen_Wettbewerb_zu_gewinnen_" class="section level3 tabset">
-<h3>Ich.fände.es.sehr.aufregend..einen.Wettbewerb.zu.gewinnen.</h3>
+<h3 class="tabset">Ich.fände.es.sehr.aufregend..einen.Wettbewerb.zu.gewinnen.</h3>
 <p>Ich fände es sehr aufregend, einen Wettbewerb zu gewinnen.</p>
 <div id="Ich_fände_es_sehr_aufregend__einen_Wettbewerb_zu_gewinnen__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -3189,7 +3232,7 @@ Distribution of values for Ich.fände.es.sehr.aufregend..einen.Wettbewerb.zu.gew
 </div>
 </div>
 <div id="Ich_habe_Angst__Fehler_zu_machen_" class="section level3 tabset">
-<h3>Ich.habe.Angst..Fehler.zu.machen.</h3>
+<h3 class="tabset">Ich.habe.Angst..Fehler.zu.machen.</h3>
 <p>Ich habe Angst, Fehler zu machen.</p>
 <div id="Ich_habe_Angst__Fehler_zu_machen__distribution" class="section level4">
 <h4>Distribution</h4>
@@ -3297,406 +3340,12 @@ Distribution of values for Ich.habe.Angst..Fehler.zu.machen.
 </div>
 <div id="codebook-table" class="section level2">
 <h2>Codebook table</h2>
-<table style="width:100%;">
-<colgroup>
-<col width="38%" />
-<col width="17%" />
-<col width="2%" />
-<col width="16%" />
-<col width="1%" />
-<col width="2%" />
-<col width="0%" />
-<col width="1%" />
-<col width="0%" />
-<col width="1%" />
-<col width="1%" />
-<col width="2%" />
-<col width="11%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">name</th>
-<th align="left">label</th>
-<th align="left">data_type</th>
-<th align="left">value_labels</th>
-<th align="right">n_missing</th>
-<th align="right">complete_rate</th>
-<th align="left">min</th>
-<th align="left">median</th>
-<th align="left">max</th>
-<th align="right">mean</th>
-<th align="right">sd</th>
-<th align="right">n_value_labels</th>
-<th align="left">hist</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><a href="#Eine_eigene_Familie_ist_die_wichtigste_Sache_im_Leben_">Eine.eigene.Familie.ist.die.wichtigste.Sache.im.Leben.</a></td>
-<td align="left">Eine eigene Familie ist die wichtigste Sache im Leben.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">3</td>
-<td align="right">2.111111</td>
-<td align="right">0.7817360</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2586&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Sogar_wenn_mir_etwas_Schlimmes_bevor_steht__bin_ich_selten_nervös_oder_ängstlich_R">Sogar.wenn.mir.etwas.Schlimmes.bevor.steht..bin.ich.selten.nervös.oder.ängstlich.R</a></td>
-<td align="left">Sogar wenn mir etwas Schlimmes bevorsteht, bin ich selten nervös oder ängstlich.</td>
-<td align="left">haven_labelled</td>
-<td align="left">4. trifft gar nicht zu,<br>3. trifft eher nicht zu,<br>2. trifft eher zu,<br>1. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">2</td>
-<td align="left">2</td>
-<td align="left">2</td>
-<td align="right">2.000000</td>
-<td align="right">0.0000000</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ich_strenge_mich_besonders_an__damit_ich_erreiche__was_ich_möchte_">Ich.strenge.mich.besonders.an..damit.ich.erreiche..was.ich.möchte.</a></td>
-<td align="left">Ich strenge mich besonders an, damit ich erreiche, was ich möchte.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">4</td>
-<td align="right">2.444444</td>
-<td align="right">1.1303883</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2585&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Wenn_mir_etwas_gut_gelingt__bleibe_ich_sehr_gern_bei_der_Sache_">Wenn.mir.etwas.gut.gelingt..bleibe.ich.sehr.gern.bei.der.Sache.</a></td>
-<td align="left">Wenn mir etwas gut gelingt, bleibe ich sehr gern bei der Sache.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">4</td>
-<td align="right">2.000000</td>
-<td align="right">1.0000000</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ich_bin_immer_bereit__etwas_Neues_zu_versuchen__wenn_ich_denke__dass_es_Spass_machen_wird_">Ich.bin.immer.bereit..etwas.Neues.zu.versuchen..wenn.ich.denke..dass.es.Spass.machen.wird.</a></td>
-<td align="left">Ich bin immer bereit, etwas Neues zu versuchen, wenn ich denke, dass es Spaß machen wird.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="right">1.555556</td>
-<td align="right">0.7264832</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Es_ist_wichtig_für_mich__wie_ich_gekleidet_bin_">Es.ist.wichtig.für.mich..wie.ich.gekleidet.bin.</a></td>
-<td align="left">Es ist wichtig für mich, wie ich gekleidet bin.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">3</td>
-<td align="right">2.000000</td>
-<td align="right">0.7071068</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2583&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Wenn_ich_erreiche__was_ich_will__bin_ich_voller_Energie_und_Spannung_">Wenn.ich.erreiche..was.ich.will..bin.ich.voller.Energie.und.Spannung.</a></td>
-<td align="left">Wenn ich erreiche, was ich will, bin ich voller Energie und Spannung.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">3</td>
-<td align="right">2.000000</td>
-<td align="right">0.7071068</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2583&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Kritik_oder_Beschimpfungen_verletzen_mich_ziemlich_stark_">Kritik.oder.Beschimpfungen.verletzen.mich.ziemlich.stark.</a></td>
-<td align="left">Kritik und Verletzungen verletzen mich ziemlich stark.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">4</td>
-<td align="right">2.555556</td>
-<td align="right">0.8819171</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Wenn_ich_etwas_haben_will__tue_ich_gewöhnlich_alles__um_es_zu_bekommen_">Wenn.ich.etwas.haben.will..tue.ich.gewöhnlich.alles..um.es.zu.bekommen.</a></td>
-<td align="left">Wenn ich etwas haben will, tue ich gewöhnlich alles, um es zu bekommen.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="left">4</td>
-<td align="right">2.555556</td>
-<td align="right">1.0137938</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Ich_werde_oft_Dinge_nur_deshalb_tun__weil_Sie_Spass_machen_könnten_">Ich.werde.oft.Dinge.nur.deshalb.tun..weil.Sie.Spass.machen.könnten.</a></td>
-<td align="left">Ich werde oft Dinge nur deshalb tun, weil sie Spaß machen könnten.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">4</td>
-<td align="right">2.000000</td>
-<td align="right">1.0000000</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Es_ist_schwierig_für_mich__Zeit_für_solche_Dinge_wie_Friseurbesuche_zu_finden_">Es.ist.schwierig.für.mich..Zeit.für.solche.Dinge.wie.Friseurbesuche.zu.finden.</a></td>
-<td align="left">Es ist schwierig für mich, Zeit für solche Dinge wie Friseurbesuche zu finden.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">2</td>
-<td align="left">3</td>
-<td align="left">4</td>
-<td align="right">2.666667</td>
-<td align="right">0.7071068</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Wenn_ich_eine_Chance_sehe__etwas_Erwünschtes_zu_bekommen__versuche_ich_sofort_mein_Glück_">Wenn.ich.eine.Chance.sehe..etwas.Erwünschtes.zu.bekommen..versuche.ich.sofort.mein.Glück.</a></td>
-<td align="left">Wenn ich die Chance sehe, etwas Erwünschtes zu bekommen, versuche ich sofort mein Glück.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">2</td>
-<td align="right">1.666667</td>
-<td align="right">0.5000000</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ich_bin_ziemlich_besorgt_oder_verstimmt__wenn_ich_glaube_oder_weiß__dass_jemand_wütend_auf_mich_ist_">Ich.bin.ziemlich.besorgt.oder.verstimmt..wenn.ich.glaube.oder.weiß..dass.jemand.wütend.auf.mich.ist.</a></td>
-<td align="left">Ich bin ziemlich besorgt oder verstimmt, wenn ich glaube oder weiß, dass jemand wütend auf mich ist.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">4</td>
-<td align="right">2.333333</td>
-<td align="right">1.1180340</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2583&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Wenn_ich_eine_Gelegenheit_für_etwas_sehe__das_ich_mag__bin_ich_sofort_voller_Spannung_">Wenn.ich.eine.Gelegenheit.für.etwas.sehe..das.ich.mag..bin.ich.sofort.voller.Spannung.</a></td>
-<td align="left">Wenn ich eine Gelegenheit für etwas sehe, das ich mag, bin ich sofort voller Spannung.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">3</td>
-<td align="right">1.777778</td>
-<td align="right">0.8333333</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2583&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ich_handle_oft_so__wie_es_mir_gerade_in_den_Sinn_kommt_">Ich.handle.oft.so..wie.es.mir.gerade.in.den.Sinn.kommt.</a></td>
-<td align="left">Ich handle oft so, wie es mir gerade in den Sinn kommt.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">4</td>
-<td align="right">2.000000</td>
-<td align="right">1.0000000</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Wenn_ich_glaube__dass_mir_etwas_Unangenehmes_bevorsteht__bin_ich_gewöhnlich_ziemlich_unruhig_">Wenn.ich.glaube..dass.mir.etwas.Unangenehmes.bevorsteht..bin.ich.gewöhnlich.ziemlich.unruhig.</a></td>
-<td align="left">Wenn ich glaube, dass mir etwas Unangenehmes bevorsteht, bin ich gewöhnlich ziemlich unruhig.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">4</td>
-<td align="right">2.222222</td>
-<td align="right">1.0929064</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ich_wundere_mich_oft_über_das_menschliche_Verhalten_">Ich.wundere.mich.oft.über.das.menschliche.Verhalten.</a></td>
-<td align="left">Ich wundere mich oft über das menschliche Verhalten.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">4</td>
-<td align="right">2.111111</td>
-<td align="right">1.2692955</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2583&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Wenn_mir_etwas_Schönes_passiert__berührt_mich_das_sehr_stark_">Wenn.mir.etwas.Schönes.passiert..berührt.mich.das.sehr.stark.</a></td>
-<td align="left">Wenn mir etwas Schönes passiert, berührt mich das sehr stark.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">3</td>
-<td align="right">2.000000</td>
-<td align="right">0.7071068</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2583&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ich_bin_besorgt__wenn_ich_glaube__dass_ich_eine_wichtige_Sache_schlecht_gemacht_habe_">Ich.bin.besorgt..wenn.ich.glaube..dass.ich.eine.wichtige.Sache.schlecht.gemacht.habe.</a></td>
-<td align="left">Ich bin besorgt, wenn ich glaube, dass ich eine wichtige Sache schlecht gemacht habe.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">4</td>
-<td align="right">1.888889</td>
-<td align="right">1.0540926</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Ich_brauche_Abwechslung_und_neue_Erfahrungen_">Ich.brauche.Abwechslung.und.neue.Erfahrungen.</a></td>
-<td align="left">Ich brauche Abwechslung und neue Erfahrungen.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">1</td>
-<td align="left">3</td>
-<td align="right">1.444444</td>
-<td align="right">0.7264832</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Wenn_ich_etwas_erreichen_will__verfolge_ich_hartnäckig_mein_Ziel_">Wenn.ich.etwas.erreichen.will..verfolge.ich.hartnäckig.mein.Ziel.</a></td>
-<td align="left">Wenn ich etwas erreichen will, verfolge ich hartnäckig mein Ziel.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">3</td>
-<td align="right">2.222222</td>
-<td align="right">0.8333333</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2586&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Verglichen_mit_meinen_Freunden_habe_ich_sehr_wenig_Ängste_R">Verglichen.mit.meinen.Freunden.habe.ich.sehr.wenig.Ängste.R</a></td>
-<td align="left">Verglichen mit meinen Freunden habe ich sehr wenig Ängste.</td>
-<td align="left">haven_labelled</td>
-<td align="left">4. trifft gar nicht zu,<br>3. trifft eher nicht zu,<br>2. trifft eher zu,<br>1. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">2</td>
-<td align="left">3</td>
-<td align="left">4</td>
-<td align="right">2.666667</td>
-<td align="right">0.7071068</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="#Ich_fände_es_sehr_aufregend__einen_Wettbewerb_zu_gewinnen_">Ich.fände.es.sehr.aufregend..einen.Wettbewerb.zu.gewinnen.</a></td>
-<td align="left">Ich fände es sehr aufregend, einen Wettbewerb zu gewinnen.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">4</td>
-<td align="right">2.333333</td>
-<td align="right">1.0000000</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><a href="#Ich_habe_Angst__Fehler_zu_machen_">Ich.habe.Angst..Fehler.zu.machen.</a></td>
-<td align="left">Ich habe Angst, Fehler zu machen.</td>
-<td align="left">haven_labelled</td>
-<td align="left">1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu</td>
-<td align="right">1</td>
-<td align="right">0.9</td>
-<td align="left">1</td>
-<td align="left">2</td>
-<td align="left">4</td>
-<td align="right">2.111111</td>
-<td align="right">1.0540926</td>
-<td align="right">4</td>
-<td align="left">&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2587&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2581&gt;&lt;U+2582&gt;</td>
-</tr>
-</tbody>
-</table>
+<div id="htmlwidget-5fc2dd05cd7afda0dede" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5fc2dd05cd7afda0dede">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"1.44444444444444\" data-max=\"2.66666666666667\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"0\" data-max=\"1.26929551764399\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[["<a href=\"#Eine_eigene_Familie_ist_die_wichtigste_Sache_im_Leben_\">Eine.eigene.Familie.ist.die.wichtigste.Sache.im.Leben.<\/a>","<a href=\"#Sogar_wenn_mir_etwas_Schlimmes_bevor_steht__bin_ich_selten_nervös_oder_ängstlich_R\">Sogar.wenn.mir.etwas.Schlimmes.bevor.steht..bin.ich.selten.nervös.oder.ängstlich.R<\/a>","<a href=\"#Ich_strenge_mich_besonders_an__damit_ich_erreiche__was_ich_möchte_\">Ich.strenge.mich.besonders.an..damit.ich.erreiche..was.ich.möchte.<\/a>","<a href=\"#Wenn_mir_etwas_gut_gelingt__bleibe_ich_sehr_gern_bei_der_Sache_\">Wenn.mir.etwas.gut.gelingt..bleibe.ich.sehr.gern.bei.der.Sache.<\/a>","<a href=\"#Ich_bin_immer_bereit__etwas_Neues_zu_versuchen__wenn_ich_denke__dass_es_Spass_machen_wird_\">Ich.bin.immer.bereit..etwas.Neues.zu.versuchen..wenn.ich.denke..dass.es.Spass.machen.wird.<\/a>","<a href=\"#Es_ist_wichtig_für_mich__wie_ich_gekleidet_bin_\">Es.ist.wichtig.für.mich..wie.ich.gekleidet.bin.<\/a>","<a href=\"#Wenn_ich_erreiche__was_ich_will__bin_ich_voller_Energie_und_Spannung_\">Wenn.ich.erreiche..was.ich.will..bin.ich.voller.Energie.und.Spannung.<\/a>","<a href=\"#Kritik_oder_Beschimpfungen_verletzen_mich_ziemlich_stark_\">Kritik.oder.Beschimpfungen.verletzen.mich.ziemlich.stark.<\/a>","<a href=\"#Wenn_ich_etwas_haben_will__tue_ich_gewöhnlich_alles__um_es_zu_bekommen_\">Wenn.ich.etwas.haben.will..tue.ich.gewöhnlich.alles..um.es.zu.bekommen.<\/a>","<a href=\"#Ich_werde_oft_Dinge_nur_deshalb_tun__weil_Sie_Spass_machen_könnten_\">Ich.werde.oft.Dinge.nur.deshalb.tun..weil.Sie.Spass.machen.könnten.<\/a>","<a href=\"#Es_ist_schwierig_für_mich__Zeit_für_solche_Dinge_wie_Friseurbesuche_zu_finden_\">Es.ist.schwierig.für.mich..Zeit.für.solche.Dinge.wie.Friseurbesuche.zu.finden.<\/a>","<a href=\"#Wenn_ich_eine_Chance_sehe__etwas_Erwünschtes_zu_bekommen__versuche_ich_sofort_mein_Glück_\">Wenn.ich.eine.Chance.sehe..etwas.Erwünschtes.zu.bekommen..versuche.ich.sofort.mein.Glück.<\/a>","<a href=\"#Ich_bin_ziemlich_besorgt_oder_verstimmt__wenn_ich_glaube_oder_weiß__dass_jemand_wütend_auf_mich_ist_\">Ich.bin.ziemlich.besorgt.oder.verstimmt..wenn.ich.glaube.oder.weiß..dass.jemand.wütend.auf.mich.ist.<\/a>","<a href=\"#Wenn_ich_eine_Gelegenheit_für_etwas_sehe__das_ich_mag__bin_ich_sofort_voller_Spannung_\">Wenn.ich.eine.Gelegenheit.für.etwas.sehe..das.ich.mag..bin.ich.sofort.voller.Spannung.<\/a>","<a href=\"#Ich_handle_oft_so__wie_es_mir_gerade_in_den_Sinn_kommt_\">Ich.handle.oft.so..wie.es.mir.gerade.in.den.Sinn.kommt.<\/a>","<a href=\"#Wenn_ich_glaube__dass_mir_etwas_Unangenehmes_bevorsteht__bin_ich_gewöhnlich_ziemlich_unruhig_\">Wenn.ich.glaube..dass.mir.etwas.Unangenehmes.bevorsteht..bin.ich.gewöhnlich.ziemlich.unruhig.<\/a>","<a href=\"#Ich_wundere_mich_oft_über_das_menschliche_Verhalten_\">Ich.wundere.mich.oft.über.das.menschliche.Verhalten.<\/a>","<a href=\"#Wenn_mir_etwas_Schönes_passiert__berührt_mich_das_sehr_stark_\">Wenn.mir.etwas.Schönes.passiert..berührt.mich.das.sehr.stark.<\/a>","<a href=\"#Ich_bin_besorgt__wenn_ich_glaube__dass_ich_eine_wichtige_Sache_schlecht_gemacht_habe_\">Ich.bin.besorgt..wenn.ich.glaube..dass.ich.eine.wichtige.Sache.schlecht.gemacht.habe.<\/a>","<a href=\"#Ich_brauche_Abwechslung_und_neue_Erfahrungen_\">Ich.brauche.Abwechslung.und.neue.Erfahrungen.<\/a>","<a href=\"#Wenn_ich_etwas_erreichen_will__verfolge_ich_hartnäckig_mein_Ziel_\">Wenn.ich.etwas.erreichen.will..verfolge.ich.hartnäckig.mein.Ziel.<\/a>","<a href=\"#Verglichen_mit_meinen_Freunden_habe_ich_sehr_wenig_Ängste_R\">Verglichen.mit.meinen.Freunden.habe.ich.sehr.wenig.Ängste.R<\/a>","<a href=\"#Ich_fände_es_sehr_aufregend__einen_Wettbewerb_zu_gewinnen_\">Ich.fände.es.sehr.aufregend..einen.Wettbewerb.zu.gewinnen.<\/a>","<a href=\"#Ich_habe_Angst__Fehler_zu_machen_\">Ich.habe.Angst..Fehler.zu.machen.<\/a>"],["Eine eigene Familie ist die wichtigste Sache im Leben.","Sogar wenn mir etwas Schlimmes bevorsteht, bin ich selten nervös oder ängstlich.","Ich strenge mich besonders an, damit ich erreiche, was ich möchte.","Wenn mir etwas gut gelingt, bleibe ich sehr gern bei der Sache.","Ich bin immer bereit, etwas Neues zu versuchen, wenn ich denke, dass es Spaß machen wird.","Es ist wichtig für mich, wie ich gekleidet bin.","Wenn ich erreiche, was ich will, bin ich voller Energie und Spannung.","Kritik und Verletzungen verletzen mich ziemlich stark.","Wenn ich etwas haben will, tue ich gewöhnlich alles, um es zu bekommen.","Ich werde oft Dinge nur deshalb tun, weil sie Spaß machen könnten.","Es ist schwierig für mich, Zeit für solche Dinge wie Friseurbesuche zu finden.","Wenn ich die Chance sehe, etwas Erwünschtes zu bekommen, versuche ich sofort mein Glück.","Ich bin ziemlich besorgt oder verstimmt, wenn ich glaube oder weiß, dass jemand wütend auf mich ist.","Wenn ich eine Gelegenheit für etwas sehe, das ich mag, bin ich sofort voller Spannung.","Ich handle oft so, wie es mir gerade in den Sinn kommt.","Wenn ich glaube, dass mir etwas Unangenehmes bevorsteht, bin ich gewöhnlich ziemlich unruhig.","Ich wundere mich oft über das menschliche Verhalten.","Wenn mir etwas Schönes passiert, berührt mich das sehr stark.","Ich bin besorgt, wenn ich glaube, dass ich eine wichtige Sache schlecht gemacht habe.","Ich brauche Abwechslung und neue Erfahrungen.","Wenn ich etwas erreichen will, verfolge ich hartnäckig mein Ziel.","Verglichen mit meinen Freunden habe ich sehr wenig Ängste.","Ich fände es sehr aufregend, einen Wettbewerb zu gewinnen.","Ich habe Angst, Fehler zu machen."],["haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled","haven_labelled"],["1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","4. trifft gar nicht zu,<br>3. trifft eher nicht zu,<br>2. trifft eher zu,<br>1. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","4. trifft gar nicht zu,<br>3. trifft eher nicht zu,<br>2. trifft eher zu,<br>1. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu","1. trifft gar nicht zu,<br>2. trifft eher nicht zu,<br>3. trifft eher zu,<br>4. trifft genau zu"],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],[0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9,0.9],["1","2","1","1","1","1","1","1","1","1","2","1","1","1","1","1","1","1","1","1","1","2","1","1"],["2","2","2","2","1","2","2","3","3","2","3","2","2","2","2","2","2","2","2","1","2","3","2","2"],["3","2","4","4","3","3","3","4","4","4","4","2","4","3","4","4","4","3","4","3","3","4","4","4"],[2.11111111111111,2,2.44444444444444,2,1.55555555555556,2,2,2.55555555555556,2.55555555555556,2,2.66666666666667,1.66666666666667,2.33333333333333,1.77777777777778,2,2.22222222222222,2.11111111111111,2,1.88888888888889,1.44444444444444,2.22222222222222,2.66666666666667,2.33333333333333,2.11111111111111],[0.781735959970572,0,1.13038833052088,1,0.726483157256779,0.707106781186548,0.707106781186548,0.881917103688197,1.0137937550497,1,0.707106781186548,0.5,1.11803398874989,0.833333333333333,1,1.092906420717,1.26929551764398,0.707106781186548,1.05409255338946,0.726483157256779,0.833333333333333,0.707106781186548,1,1.05409255338946],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],["▃▁▁▇▁▁▁▆","▁▁▁▇▁▁▁▁","▅▁▇▁▁▅▁▅","▆▁▇▁▁▂▁▂","▇▁▁▅▁▁▁▂","▃▁▁▇▁▁▁▃","▃▁▁▇▁▁▁▃","▂▁▆▁▁▇▁▂","▃▁▂▁▁▇▁▂","▆▁▇▁▁▂▁▂","▇▁▁▇▁▁▁▂","▃▁▁▁▁▁▁▇","▃▁▇▁▁▂▁▃","▇▁▁▆▁▁▁▃","▆▁▇▁▁▂▁▂","▇▁▅▁▁▇▁▂","▇▁▃▁▁▂▁▃","▃▁▁▇▁▁▁▃","▇▁▆▁▁▂▁▂","▇▁▁▂▁▁▁▁","▃▁▁▆▁▁▁▇","▇▁▁▇▁▁▁▂","▅▁▇▁▁▇▁▂","▇▁▇▁▁▅▁▂"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>name<\/th>\n      <th>label<\/th>\n      <th>data_type<\/th>\n      <th>value_labels<\/th>\n      <th>n_missing<\/th>\n      <th>complete_rate<\/th>\n      <th>min<\/th>\n      <th>median<\/th>\n      <th>max<\/th>\n      <th>mean<\/th>\n      <th>sd<\/th>\n      <th>n_value_labels<\/th>\n      <th>hist<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"pageLength":200,"columnDefs":[{"className":"dt-right","targets":[4,5,9,10,11]}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,200]}},"evals":[],"jsHooks":[]}</script>
 <script type="application/ld+json">
 {
   "name": "BIS_BAS",
-  "datePublished": "2021-05-08",
+  "datePublished": "2021-06-06",
   "description": "The dataset has N=10 rows and 24 columns.\n9 rows have no missing values on any column.\n\n\n## Table of variables\nThis table contains variable names, labels, and number of missing values.\nSee the complete codebook for more.\n\n[truncated]\n\n### Note\nThis dataset was automatically described using the [codebook R package](https://rubenarslan.github.io/codebook/) (version 0.9.2).",
   "keywords": ["Eine.eigene.Familie.ist.die.wichtigste.Sache.im.Leben.", "Sogar.wenn.mir.etwas.Schlimmes.bevor.steht..bin.ich.selten.nervös.oder.ängstlich.R", "Ich.strenge.mich.besonders.an..damit.ich.erreiche..was.ich.möchte.", "Wenn.mir.etwas.gut.gelingt..bleibe.ich.sehr.gern.bei.der.Sache.", "Ich.bin.immer.bereit..etwas.Neues.zu.versuchen..wenn.ich.denke..dass.es.Spass.machen.wird.", "Es.ist.wichtig.für.mich..wie.ich.gekleidet.bin.", "Wenn.ich.erreiche..was.ich.will..bin.ich.voller.Energie.und.Spannung.", "Kritik.oder.Beschimpfungen.verletzen.mich.ziemlich.stark.", "Wenn.ich.etwas.haben.will..tue.ich.gewöhnlich.alles..um.es.zu.bekommen.", "Ich.werde.oft.Dinge.nur.deshalb.tun..weil.Sie.Spass.machen.könnten.", "Es.ist.schwierig.für.mich..Zeit.für.solche.Dinge.wie.Friseurbesuche.zu.finden.", "Wenn.ich.eine.Chance.sehe..etwas.Erwünschtes.zu.bekommen..versuche.ich.sofort.mein.Glück.", "Ich.bin.ziemlich.besorgt.oder.verstimmt..wenn.ich.glaube.oder.weiß..dass.jemand.wütend.auf.mich.ist.", "Wenn.ich.eine.Gelegenheit.für.etwas.sehe..das.ich.mag..bin.ich.sofort.voller.Spannung.", "Ich.handle.oft.so..wie.es.mir.gerade.in.den.Sinn.kommt.", "Wenn.ich.glaube..dass.mir.etwas.Unangenehmes.bevorsteht..bin.ich.gewöhnlich.ziemlich.unruhig.", "Ich.wundere.mich.oft.über.das.menschliche.Verhalten.", "Wenn.mir.etwas.Schönes.passiert..berührt.mich.das.sehr.stark.", "Ich.bin.besorgt..wenn.ich.glaube..dass.ich.eine.wichtige.Sache.schlecht.gemacht.habe.", "Ich.brauche.Abwechslung.und.neue.Erfahrungen.", "Wenn.ich.etwas.erreichen.will..verfolge.ich.hartnäckig.mein.Ziel.", "Verglichen.mit.meinen.Freunden.habe.ich.sehr.wenig.Ängste.R", "Ich.fände.es.sehr.aufregend..einen.Wettbewerb.zu.gewinnen.", "Ich.habe.Angst..Fehler.zu.machen."],
   "@context": "http://schema.org/",
@@ -3898,10 +3547,13 @@ Distribution of values for Ich.habe.Angst..Fehler.zu.machen.
 }
 </script>
 <details>
-<p><summary>JSON-LD metadata</summary> The following JSON-LD can be found by search engines, if you share this codebook publicly on the web.</p>
+<summary>
+JSON-LD metadata
+</summary>
+<p>The following JSON-LD can be found by search engines, if you share this codebook publicly on the web.</p>
 <pre class="json"><code>{
   &quot;name&quot;: &quot;BIS_BAS&quot;,
-  &quot;datePublished&quot;: &quot;2021-05-08&quot;,
+  &quot;datePublished&quot;: &quot;2021-06-06&quot;,
   &quot;description&quot;: &quot;The dataset has N=10 rows and 24 columns.\n9 rows have no missing values on any column.\n\n\n## Table of variables\nThis table contains variable names, labels, and number of missing values.\nSee the complete codebook for more.\n\n[truncated]\n\n### Note\nThis dataset was automatically described using the [codebook R package](https://rubenarslan.github.io/codebook/) (version 0.9.2).&quot;,
   &quot;keywords&quot;: [&quot;Eine.eigene.Familie.ist.die.wichtigste.Sache.im.Leben.&quot;, &quot;Sogar.wenn.mir.etwas.Schlimmes.bevor.steht..bin.ich.selten.nervös.oder.ängstlich.R&quot;, &quot;Ich.strenge.mich.besonders.an..damit.ich.erreiche..was.ich.möchte.&quot;, &quot;Wenn.mir.etwas.gut.gelingt..bleibe.ich.sehr.gern.bei.der.Sache.&quot;, &quot;Ich.bin.immer.bereit..etwas.Neues.zu.versuchen..wenn.ich.denke..dass.es.Spass.machen.wird.&quot;, &quot;Es.ist.wichtig.für.mich..wie.ich.gekleidet.bin.&quot;, &quot;Wenn.ich.erreiche..was.ich.will..bin.ich.voller.Energie.und.Spannung.&quot;, &quot;Kritik.oder.Beschimpfungen.verletzen.mich.ziemlich.stark.&quot;, &quot;Wenn.ich.etwas.haben.will..tue.ich.gewöhnlich.alles..um.es.zu.bekommen.&quot;, &quot;Ich.werde.oft.Dinge.nur.deshalb.tun..weil.Sie.Spass.machen.könnten.&quot;, &quot;Es.ist.schwierig.für.mich..Zeit.für.solche.Dinge.wie.Friseurbesuche.zu.finden.&quot;, &quot;Wenn.ich.eine.Chance.sehe..etwas.Erwünschtes.zu.bekommen..versuche.ich.sofort.mein.Glück.&quot;, &quot;Ich.bin.ziemlich.besorgt.oder.verstimmt..wenn.ich.glaube.oder.weiß..dass.jemand.wütend.auf.mich.ist.&quot;, &quot;Wenn.ich.eine.Gelegenheit.für.etwas.sehe..das.ich.mag..bin.ich.sofort.voller.Spannung.&quot;, &quot;Ich.handle.oft.so..wie.es.mir.gerade.in.den.Sinn.kommt.&quot;, &quot;Wenn.ich.glaube..dass.mir.etwas.Unangenehmes.bevorsteht..bin.ich.gewöhnlich.ziemlich.unruhig.&quot;, &quot;Ich.wundere.mich.oft.über.das.menschliche.Verhalten.&quot;, &quot;Wenn.mir.etwas.Schönes.passiert..berührt.mich.das.sehr.stark.&quot;, &quot;Ich.bin.besorgt..wenn.ich.glaube..dass.ich.eine.wichtige.Sache.schlecht.gemacht.habe.&quot;, &quot;Ich.brauche.Abwechslung.und.neue.Erfahrungen.&quot;, &quot;Wenn.ich.etwas.erreichen.will..verfolge.ich.hartnäckig.mein.Ziel.&quot;, &quot;Verglichen.mit.meinen.Freunden.habe.ich.sehr.wenig.Ängste.R&quot;, &quot;Ich.fände.es.sehr.aufregend..einen.Wettbewerb.zu.gewinnen.&quot;, &quot;Ich.habe.Angst..Fehler.zu.machen.&quot;],
   &quot;@context&quot;: &quot;http://schema.org/&quot;,
@@ -4110,7 +3762,7 @@ Distribution of values for Ich.habe.Angst..Fehler.zu.machen.
 </p>
 <div id="workflowr-sessioninfo" class="collapse">
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>R version 4.0.4 (2021-02-15)
+<pre><code>R version 4.0.2 (2020-06-22)
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 Running under: Windows 10 x64 (build 19042)
 
@@ -4128,22 +3780,24 @@ other attached packages:
 [1] dplyr_1.0.5    labelled_2.8.0 here_1.0.1     codebook_0.9.2
 
 loaded via a namespace (and not attached):
- [1] tidyselect_1.1.0  xfun_0.22         repr_1.1.3        purrr_0.3.4      
- [5] listenv_0.8.0     haven_2.3.1       colorspace_2.0-0  vctrs_0.3.7      
- [9] generics_0.1.0    htmltools_0.5.1.1 base64enc_0.1-3   yaml_2.2.1       
-[13] utf8_1.2.1        rlang_0.4.10      later_1.1.0.1     pillar_1.6.0     
-[17] glue_1.4.2        DBI_1.1.1         lifecycle_1.0.0   stringr_1.4.0    
-[21] munsell_0.5.0     gtable_0.3.0      workflowr_1.6.2   future_1.21.0    
-[25] rmdpartials_0.5.8 codetools_0.2-18  evaluate_0.14     labeling_0.4.2   
-[29] knitr_1.32        forcats_0.5.1     httpuv_1.5.5      parallel_4.0.4   
-[33] fansi_0.4.2       highr_0.8         Rcpp_1.0.6        promises_1.2.0.1 
-[37] scales_1.1.1      jsonlite_1.7.2    farver_2.1.0      parallelly_1.24.0
-[41] fs_1.5.0          ggplot2_3.3.3     hms_1.0.0         digest_0.6.27    
-[45] stringi_1.5.3     grid_4.0.4        rprojroot_2.0.2   tools_4.0.4      
-[49] magrittr_2.0.1    tibble_3.1.0      tidyr_1.1.3       crayon_1.4.1     
-[53] whisker_0.4       pkgconfig_2.0.3   ellipsis_0.3.1    skimr_2.1.3      
-[57] assertthat_0.2.1  rmarkdown_2.7     R6_2.5.0          globals_0.14.0   
-[61] git2r_0.28.0      compiler_4.0.4   </code></pre>
+ [1] Rcpp_1.0.6        tidyr_1.1.3       listenv_0.8.0     assertthat_0.2.1 
+ [5] rprojroot_2.0.2   digest_0.6.27     utf8_1.2.1        mime_0.10        
+ [9] parallelly_1.24.0 R6_2.5.0          repr_1.1.3        evaluate_0.14    
+[13] ggplot2_3.3.3     highr_0.9         pillar_1.6.0      rlang_0.4.10     
+[17] whisker_0.4       jquerylib_0.1.3   DT_0.18           rmarkdown_2.7    
+[21] labeling_0.4.2    stringr_1.4.0     htmlwidgets_1.5.3 munsell_0.5.0    
+[25] shiny_1.6.0       compiler_4.0.2    httpuv_1.6.0      xfun_0.22        
+[29] pkgconfig_2.0.3   base64enc_0.1-3   globals_0.14.0    htmltools_0.5.1.1
+[33] tidyselect_1.1.0  tibble_3.1.1      workflowr_1.6.2   codetools_0.2-16 
+[37] fansi_0.4.2       future_1.21.0     crayon_1.4.1      later_1.2.0      
+[41] grid_4.0.2        xtable_1.8-4      jsonlite_1.7.2    gtable_0.3.0     
+[45] lifecycle_1.0.0   DBI_1.1.1         git2r_0.28.0      magrittr_2.0.1   
+[49] scales_1.1.1      stringi_1.5.3     farver_2.1.0      fs_1.5.0         
+[53] promises_1.2.0.1  rmdpartials_0.5.8 skimr_2.1.3       bslib_0.2.4      
+[57] ellipsis_0.3.1    generics_0.1.0    vctrs_0.3.7       tools_4.0.2      
+[61] forcats_0.5.1     glue_1.4.2        purrr_0.3.4       hms_1.0.0        
+[65] crosstalk_1.1.1   fastmap_1.1.0     parallel_4.0.2    yaml_2.2.1       
+[69] colorspace_2.0-0  knitr_1.33        haven_2.4.1       sass_0.3.1       </code></pre>
 </div>
 </div>
 
@@ -4159,6 +3813,8 @@ footer is added to webpages before the MathJax javascript. -->
     "HTML-CSS": { availableFonts: ["TeX"] }
   });
 </script>
+
+
 
 
 </div>
