@@ -12,9 +12,9 @@ navbar:
   - text: License
     href: license.html
   right:
-  - icon: fa-git
+  - icon: fa-github
     style:
-    transform: scale(2,2)
+      transform: scale(3,3)
     text: Source code
     href: https://github.com/Nina-Akmann/ApproachAvoidanceSurveys
 output:
