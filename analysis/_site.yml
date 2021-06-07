@@ -21,6 +21,6 @@ output:
   workflowr::wflow_html:
     toc: yes
     toc_float: yes
-    theme: sandstone
+    theme: journal
     highlight: textmate
     css: style.css
