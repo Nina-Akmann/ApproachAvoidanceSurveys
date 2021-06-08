@@ -9,7 +9,7 @@ bibliography: UKE/UKE.bib
 
 ### The State-Trait Anxiety Inventory (STAI)
 
-**Construct:** Adult anxiety usw..
+**Construct:** Adult anxiety
 
 **Description of Measure:** The State-Trait Anxiety Inventory (STAI) is a commonly used measure of trait and state anxiety (Spielberger, Gorsuch, Lushene, Vagg, & Jacobs, 1983). It can be used in clinical settings to diagnose anxiety and to distinguish it from depressive syndromes. It also is often used in research as an indicator of caregiver distress (e.g., Greene et al., 2017, Ugalde et al., 2014).
 
@@ -31,23 +31,25 @@ Studies also have shown that it is a sensitive predictor of caregiver distress o
 
 **Psychometric properties:** Both the English-translated and French versions of the IUS show excellent internal consistency (alpha=0.94/alpha=0.91) and good test-retest reliability (r=0.74/r=0.78) over a 5-week period. In addition, they show convergent and divergent validity with respect to measurement methods for worry, depression, and anxiety. 
 
-Buhr, K., & Dugas, M. J. (2002). The intolerance of uncertainty scale: psychometric properties of the English version, Behaviour Research and Therapy, 40, 931 - 945
+Buhr, K., & Dugas, M. J. (2002). The intolerance of uncertainty scale: psychometric properties of the English version. Behaviour Research and Therapy, 40, 931 - 945
 
 ***Click on this [link](Codebook_IUS.html) to see our codebook for IUS.***
 
-### BIS_BAS scales 
+### BIS/ BAS scales 
 
-Several theorists have argued that two general motivational systems underlie behavior. A behavioral approach system (BAS) is believed to regulate appetitive motives, in which the goal is to move toward something desired. A behavioral avoidance (or inhibition) system (BIS) is said to regulate aversive motives, in which the goal is to move away from something unpleasant. We developed the BIS/BAS scales to assess individual differences in the sensitivity of these systems.
+**Construct:** According to Gray (1981, 1982) individual behavior can be described by two distinct motivational systems. The BIS (behavioral inhibition system) regulates avoidance behavior when aversive stimuli are presented. The BAS (behavioral activation system) controls approach behavior in response to the presentation of appetitive stimuli. Through investigations in animals and pharmacological studies, sensitivity in these systems was found to be related to the personality dimensions of anxiety and impulsivity (Gray, 1991, 1994). 
 
-*Carver, C. S., & White, T. L. (1994). Behavioral inhibition, behavioral activation, and affective responses to impending reward and punishment: The BIS/BAS scales. Journal of Personality and Social Psychology, 67, 319-333.*
+**Description of measurement:** Carver and White (1994) developed the BIS/ BAS scales for measuring individual dispositional differences in these two systems. The questionnaire consists of 24 items that represent a series of statements that can be used to describe oneself. Participants rate the extent to which the statements apply to them on a scale ranging from 1='does not apply to me at all' to 4= 'applies to me exactly'. In the present study we used the German version of the BIS/ BAS scale (Beauducel et al., 1999). 
 
-Each item of this questionnaire is a statement that a person may either agree with or disagree with. For each item, indicate how much you agree or disagree with what the item says. Please respond to all the items; do not leave any blank. Choose only one response to each statement. Please be as accurate and honest as you can be. Respond to each item as if it were the only item. That is, don't worry about being "consistent" in your responses. Choose from the following four response options:
+**Psychometric properties**: The German version of the BIS/ BAS scales shows a Cronbachs alpha for the BIS scale of alpha=0.78 and for the BAS alpha= 0.81. The discriminatory power of the items ranges from 0.28 to 0.64. The split-half reliability is r=0.79 for BIS and r=0.82 for BAS. The intercorrelations of the BIS/ BAS scales are moderate.
 
--   1 = very true for me
--   2 = somewhat true for me
--   3 = somewhat false for me
--   4 = very false for me
+Carver, C. S., & White, T. L. (1994). Behavioral inhibition, behavioral activation, and affective responses to impending reward and punishment: The BIS/ BAS Scales. Journal of Personality and Social Psychology, 67(2), 319 – 333. https://psycnet.apa.org/doi/10.1037/0022-3514.67.2.319 
+
+Strobel, A., Beauducel, A., Debener, S. & Brocke, B. (2001). Eine deutschsprachige Version des BIS/BAS Fragebogens von Carver und White. Zeitschrift für Differentielle und Diagnostische Psychologie, 22(3), 216 – 227. https://psycnet.apa.org/doi/10.1024/0170-1789.22.3.216
+
+
+
 
 [@DepartmentPsychologyBIS]
 
-***Click on this [link](Codebook_BIS_BAS.html) to see our codebook for BIS_BAS.***
+***Click on this [link](Codebook_BIS_BAS.html) to see our codebook for BIS/ BAS.***
