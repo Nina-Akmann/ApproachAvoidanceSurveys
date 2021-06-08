@@ -113,6 +113,7 @@ BIS_BAS <- BIS_BAS %>%
 ## Create codebook
 ```{r codebook}
 codebook(BIS_BAS)
+# hashtags
 ```
 
 
