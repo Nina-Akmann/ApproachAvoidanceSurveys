@@ -19,7 +19,6 @@ https://www.apa.org/pi/about/publications/caregivers/practice-settings/assessmen
 
 Spielberger, C. D. (1983). State-Trait Anxiety Inventory for Adults (STAI-AD). APA PsychTests. https://psycnet.apa.org/doi/10.1037/t06496-000
 
-[@StateTraitAnxietyInventory]
 
 ***Click on this [link](Codebook_STAI.html) to see our codebook for STAI.***
 
@@ -31,7 +30,7 @@ Spielberger, C. D. (1983). State-Trait Anxiety Inventory for Adults (STAI-AD). A
 
 **Psychometric properties:** Both the English-translated and French versions of the IUS show excellent internal consistency (alpha=0.94/alpha=0.91) and good test-retest reliability (r=0.74/r=0.78) over a 5-week period. In addition, they show convergent and divergent validity with respect to measurement methods for worry, depression, and anxiety. 
 
-Buhr, K., & Dugas, M. J. (2002). The intolerance of uncertainty scale: psychometric properties of the English version. Behaviour Research and Therapy, 40, 931 - 945
+Buhr, K., & Dugas, M. J. (2002). The intolerance of uncertainty scale: psychometric properties of the English version. Behaviour Research and Therapy, 40, 931 – 945. https://doi.org/10.1016/S0005-7967(01)00092-4
 
 ***Click on this [link](Codebook_IUS.html) to see our codebook for IUS.***
 
@@ -48,8 +47,7 @@ Carver, C. S., & White, T. L. (1994). Behavioral inhibition, behavioral activati
 Strobel, A., Beauducel, A., Debener, S. & Brocke, B. (2001). Eine deutschsprachige Version des BIS/BAS Fragebogens von Carver und White. Zeitschrift für Differentielle und Diagnostische Psychologie, 22(3), 216 – 227. https://psycnet.apa.org/doi/10.1024/0170-1789.22.3.216
 
 
-
-
-[@DepartmentPsychologyBIS]
-
 ***Click on this [link](Codebook_BIS_BAS.html) to see our codebook for BIS/ BAS.***
+
+
+
