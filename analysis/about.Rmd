@@ -24,12 +24,3 @@ library(usethis)    # version control with git/github
 Avoidance is typically considered a maladaptive behavioral response to excessive fear and anxiety, potentially leading to the maintenance of anxiety disorders. Recent experimental work has focused on approach-avoidance (AA) conflicts by simulating foraging tasks under predation, often targeting on decision making strategies. However, little has been known about the impact of individual differences upon the AA strategies within a threatening environment. Here, we present a novel avoidance paradigm , in which an immersive AA conflict is induced in a virtual foraging task. The task is built on a matrix designed environment, which enables us to track and visualize the AA-behavior as a function of spatial movement. Individuals are required to survive a five-day period (blocks) by collecting the necessary amount of food (tokens) within three different nature-related terrains (forest, sea, desert). Each terrain, however, is assigned to a different probability of encountering an aversive (electrical) stimulus in combination with being struck by lightning in the virtual environment while collecting a token. The probabilities of receiving the unpleasant stimulus are parametrically graded to the covered distance along the terrain. In order to encourage approach behaviour, the amount of potential reward is inversely parametrically modulated to the probability of receiving the aversive stimulus. Thus, each individual is required to perform a certain approach-avoidance strategy to achieve the task's goal, as to the time spent in each terrain and the spatial movement along the field. Each strategy behaviour results in a unique "tipping point" between the traversed distance and the maximum achieved reward, revealing the extent to which each individual is willing to approach or to avoid a threat as a trade-off for better performance (reward).
 
 ![Alex poster](images/indexRmd_EMHFC_poster_Alexandros_Kastrinogiannis.jpg)
-
-```{r poster Alex, message=FALSE, echo=FALSE, fig.cap="Poster Alexandros Kastrinogianis", out.width = '100%', dpi=300}
-
-
-include_graphics(here("images/indexRmd_EMHFC_poster_Alexandros_Kastrinogiannis.jpg"))
-# trying to solve the problem of relative paths
-
-```
-
